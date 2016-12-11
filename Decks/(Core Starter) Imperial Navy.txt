@@ -1,0 +1,68 @@
+
+Faction - Imperial Navy
+
+8 - Objectives
+================================
+1 - Reconnaissance Mission     (036-1)
+1 - Imperial Command           (026-1)
+1 - Kuat Reinforcements        (027-1)
+1 - The Ultimate Power         (028-1)
+1 - Death and Despayre         (029-1)
+1 - Defense Protocol           (030-1)
+1 - The Endor Gambit           (031-1)
+1 - Take Them Prisoner         (032-1)
+
+21 - Units
+================================
+1 - Human Replica Droid        (036-2)
+1 - Human Replica Droid        (036-3)
+1 - Admiral Motti              (026-2)
+1 - Duty Officer               (026-3)
+1 - Heavy Stormtrooper Squad   (026-4)
+1 - Heavy Stormtrooper Squad   (026-5)
+1 - "Backstabber"              (027-2)
+1 - TIE Fighter                (027-3)
+1 - TIE Bomber                 (027-4)
+1 - Grand Moff Tarkin          (028-2)
+1 - Superlaser Engineer        (028-3)
+1 - Stormtrooper Elite         (028-4)
+1 - Devastator                 (029-2)
+1 - Imperial Officer           (029-3)
+1 - TIE Attack Squadron        (030-2)
+1 - TIE Fighter                (030-3)
+1 - AT-ST Commander            (031-2)
+1 - AT-ST                      (031-3)
+1 - AT-ST                      (031-4)
+1 - Death Star Trooper         (032-2)
+1 - Death Star Trooper         (032-3)
+
+5 - Enhancements
+================================
+1 - Orbital Bombardment        (026-6)
+1 - Control Room               (028-5)
+1 - Control Room               (029-4)
+1 - Defense Upgrade            (029-5)
+1 - Aft Armor Plating          (031-5)
+
+8 - Events
+================================
+1 - Tallon Roll                (027-5)
+1 - Death from Above           (027-6)
+1 - Superlaser Blast           (028-6)
+1 - Tallon Roll                (030-4)
+1 - Death from Above           (030-5)
+1 - Detained                   (032-4)
+1 - Trooper Assault            (032-5)
+1 - Tear This Ship Apart       (032-6)
+
+6 - Fate Cards
+================================
+1 - Heat of Battle             (036-4)
+1 - Target of Opportunity      (036-5)
+1 - Twist of Fate              (036-6)
+1 - Heat of Battle             (029-6)
+1 - Twist of Fate              (030-6)
+1 - Target of Opportunity      (031-6)
+
+0 - Missions
+================================

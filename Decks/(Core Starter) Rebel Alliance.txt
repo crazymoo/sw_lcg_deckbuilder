@@ -1,0 +1,68 @@
+
+Faction - Rebel Alliance
+
+8 - Objectives
+================================
+1 - The Defense of Yavin 4     (008-1)
+1 - Mission Briefing           (009-1)
+1 - Fleeing the Empire         (010-1)
+1 - The Rebel Fleet            (011-1)
+1 - Draw Their Fire            (012-1)
+1 - Mobilize the Squadrons     (013-1)
+1 - Decoy at Dantooine         (014-1)
+1 - Hit and Run                (018-1)
+
+19 - Units
+================================
+1 - Red Two                    (008-2)
+1 - Y-Wing                     (008-3)
+1 - Mon Mothma                 (009-2)
+1 - Battlefield Engineers      (009-3)
+1 - A-Wing                     (009-4)
+1 - Leia Organa                (010-2)
+1 - Fleet Officer              (010-3)
+1 - Home One                   (011-2)
+1 - Y-Wing                     (011-3)
+1 - Repair Droid               (011-4)
+1 - Admiral Ackbar             (012-2)
+1 - X-Wing Escort              (012-3)
+1 - X-Wing                     (012-4)
+1 - X-Wing                     (013-2)
+1 - Rookie Pilot               (013-3)
+1 - Wookiee Navigator          (014-2)
+1 - Rebel Trooper              (014-3)
+1 - Secret Informant           (018-2)
+1 - Secret Informant           (018-3)
+
+8 - Enhancements
+================================
+1 - Astromech Droid Upgrade    (008-4)
+1 - Hidden Outpost             (008-5)
+1 - Heavy Blaster Emplacement  (009-5)
+1 - Stolen Plans               (010-4)
+1 - Hidden Outpost             (011-5)
+1 - Fleet Command Center       (012-5)
+1 - Trench Run                 (013-4)
+1 - False Lead                 (014-4)
+
+7 - Events
+================================
+1 - Rebel Assault              (008-6)
+1 - You're My Only Hope        (010-5)
+1 - Heroic Sacrifice           (012-6)
+1 - Rebel Assault              (013-5)
+1 - Covering Fire              (013-6)
+1 - Fall Back!                 (014-5)
+1 - A New Hope                 (014-6)
+
+6 - Fate Cards
+================================
+1 - Heat of Battle             (009-6)
+1 - Twist of Fate              (010-6)
+1 - Target of Opportunity      (011-6)
+1 - Heat of Battle             (018-4)
+1 - Target of Opportunity      (018-5)
+1 - Twist of Fate              (018-6)
+
+0 - Missions
+================================

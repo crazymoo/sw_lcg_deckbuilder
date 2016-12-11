@@ -1,0 +1,142 @@
+Ace.
+Alderaan.
+Almas.
+Alter.
+Anoat.
+Aquaris.
+Arc Hammer.
+Armor.
+Assassin.
+Base.
+Bellassa.
+Black Squadron.
+Black Sun.
+Bothan.
+Bounty.
+Bounty Hunter.
+Boz Pity.
+Capital Ship.
+Carida.
+Character.
+Civilian.
+Classified.
+Cloud City.
+Condition.
+Control.
+Corellia.
+Coruscant.
+Creature.
+Cyborg.
+Dagobah.
+Dantooine.
+Dathomir.
+Death Squadron.
+Death Star.
+Decoy.
+Deneba.
+Despayre.
+Diplomacy.
+Doctrine.
+Droid.
+Dromund Kaas.
+Elrood.
+Endor.
+Engineer.
+Eriadu.
+Espionage.
+Ewok.
+Executor.
+Fighter.
+Fleet.
+Force.
+Force Sensitive.
+Force Spirit.
+Force User.
+Formation.
+Fortification.
+Gamble.
+Gambler.
+Gamor.
+Gand.
+Gnarltree.
+Grand Vizier.
+Gunner.
+Home One.
+Hoth.
+Hutt.
+Imdaar Alpha.
+Imperial Guard.
+Inquisitor.
+Item.
+Kashyyyk.
+Kessel.
+Kuat.
+Leader.
+Liberty.
+Lightsaber Form.
+Location.
+Logisitics.
+Lothal.
+Lusankya.
+Maneuver.
+Malachor V.
+Masterpiece.
+Marksman.
+Mechis III.
+Mercenary.
+Millenium Falcon.
+Mission.
+Mon Cala.
+Monster.
+Moraband.
+Myrkr.
+Nar Shaddaa.
+Officer.
+Operation.
+Ord Mantell.
+Outer Rim.
+Pilot.
+Prakith.
+Prefsbelt.
+Quanton.
+Ralltiir.
+Renegade Squadron.
+Roche.
+Rogue.
+Ruusan.
+Scavenger.
+Scoundrel.
+Scum.
+Sense.
+Shelkonwa.
+Sithspawn.
+Skill.
+Slaver.
+Smuggler.
+Space Station.
+Specter.
+Speeder.
+Spintir.
+Spirit.
+Spy.
+Squadron.
+Stygeon Prime.
+Sulon Star.
+Taanab.
+Tactic.
+Tactician.
+Talay.
+Tatooine.
+Tepasi.
+Thief.
+Title.
+Trandosha.
+Transport.
+Trap.
+Trooper.
+Upgrade.
+Vehicle.
+Walker.
+Weapon.
+Wookiee.
+Yavin 4.

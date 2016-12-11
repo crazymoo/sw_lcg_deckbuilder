@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="d5cf89e5-1984-4873-8ae0-f06eea411bb3">
+  <section name="Affiliation">
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000216">Smugglers and Spies</card>
+  </section>
+  <section name="Command Deck">
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000710">Hyperspace Marauder</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000711">Hired Hands</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000712">Hired Hands</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000374">Millennium Falcon</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000375">Cloud City Operative</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000698">Moldy Crow</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000699">Ruusan Colonist</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000700">Ruusan Colonist</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000728">Yoda</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000729">Dagobah Nudj</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000818">Luke Skywalker</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000819">Speeder Bike</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000548">Obi-Wan Kenobi</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000549">Shistavanen Wolfman</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000550">Shistavanen Wolfman</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000713">Deneba Refueling Station</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000376">Cloud City Guest Quarters</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000701">Valley of the Jedi</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000730">Dagobah Training Grounds</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000820">Luke's Lightsaber</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000821">I Am a Jedi</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000551">Force Cleansing</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000714">Make Your Own Luck</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000377">Bamboozle</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000702">My Ally Is the Force</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000731">Yoda, You Seek Yoda</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000378">Twist of Fate</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000732">Seeds of Decay</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000822">Heat of Battle</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000552">Supporting Fire</card>
+  </section>
+  <section name="Objective Deck">
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000709">Along the Gamor Run</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000373">Asteroid Sanctuary</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000697">The Flight of the Crow</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000727">May the Force Be With You</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000817">A Hero's Trial</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000547">Watchers in the Wasteland</card>
+  </section>
+</deck>

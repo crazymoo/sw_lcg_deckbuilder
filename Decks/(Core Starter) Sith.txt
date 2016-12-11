@@ -1,0 +1,68 @@
+
+Faction - Sith
+
+8 - Objectives
+================================
+1 - Fall of the Jedi           (019-1)
+1 - Counsel of the Sith        (020-1)
+1 - Black Squadron Assault     (021-1)
+1 - The Heart of the Empire    (022-1)
+1 - The Emperor's Web          (023-1)
+1 - Cruel Interrogations       (024-1)
+1 - Shadows of Dathomir        (025-1)
+1 - Reconnaissance Mission     (036-1)
+
+19 - Units
+================================
+1 - Darth Vader                (019-2)
+1 - Dark Side Apprentice       (019-3)
+1 - Advisor to the Emperor     (020-2)
+1 - Kuati Security Team        (020-3)
+1 - Vader's TIE Advanced       (021-2)
+1 - TIE Advanced               (021-3)
+1 - Black Squadron Pilot       (021-4)
+1 - Coruscant Defense Fleet    (022-2)
+1 - Kuati Security Team        (022-3)
+1 - Emperor Palpatine          (023-2)
+1 - Emperor's Royal Guard      (023-3)
+1 - Interrogation Droid        (024-2)
+1 - Interrogation Droid        (024-3)
+1 - ISB Interrogators          (024-4)
+1 - Nightsister                (025-2)
+1 - Nightsister                (025-3)
+1 - Rancor                     (025-4)
+1 - Human Replica Droid        (036-2)
+1 - Human Replica Droid        (036-3)
+
+6 - Enhancements
+================================
+1 - Vader's Lightsaber         (019-4)
+1 - Sith Library               (020-4)
+1 - Sith Library               (022-4)
+1 - Sith Library               (023-4)
+1 - Intimidated                (024-5)
+1 - The Hand's Blessing        (025-5)
+
+9 - Events
+================================
+1 - Force Choke                (019-5)
+1 - Dark Precognition          (020-5)
+1 - I'm On the Leader          (021-5)
+1 - Force Stasis               (022-5)
+1 - There Is No Escape         (022-6)
+1 - Force Lightning            (023-5)
+1 - Force Choke                (023-6)
+1 - Interrogation              (024-6)
+1 - A Disturbance In the Force (025-6)
+
+6 - Fate Cards
+================================
+1 - Heat of Battle             (019-6)
+1 - Twist of Fate              (020-6)
+1 - Target of Opportunity      (021-6)
+1 - Heat of Battle             (036-4)
+1 - Target of Opportunity      (036-5)
+1 - Twist of Fate              (036-6)
+
+0 - Missions
+================================

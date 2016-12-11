@@ -1,0 +1,56 @@
+
+Faction - Imperial Navy
+
+9 - Objectives
+================================
+1 - Defending the Trench       (159-1)
+1 - Endor Entrapment           (205-1)
+2 - The Tarkin Doctrine        (178-1)
+1 - Enforced Loyalty           (180-1)
+2 - Sector Lockdown            (194-1)
+2 - Might of the Empire        (179-1)
+
+23 - Units
+================================
+1 - Darth Vader                (159-2)
+1 - Vader's TIE Advanced       (159-3)
+1 - Black Squadron Fighter     (159-4)
+1 - Interdictor-class Heavy Crusier (205-2)
+1 - Gladiator-class Star Destroyer (205-3)
+1 - Gladiator-class Star Destroyer (205-4)
+2 - Grand Moff Tarkin          (178-2)
+2 - Stormtrooper Assault Team  (178-3)
+1 - Colonel Yularen            (180-2)
+1 - Lieutenant Mithel          (180-3)
+1 - MSE-6 "Mouse" Droid        (180-4)
+2 - Captain Zed                (194-2)
+2 - Stalker                    (194-3)
+2 - Storm Commando             (194-4)
+2 - Chimaera                   (179-2)
+2 - DP20 Corellian Gunship     (179-3)
+
+9 - Enhancements
+================================
+1 - Closed Formation           (159-5)
+1 - Control Room               (205-5)
+2 - Rule by Fear               (178-4)
+1 - Control Room               (180-5)
+2 - Sector Garrison            (194-5)
+2 - Fleet Staging Area         (179-4)
+
+8 - Events
+================================
+2 - Moment of Triumph          (178-5)
+2 - Search and Detain          (194-6)
+2 - Tractor Beam               (179-5)
+2 - The Empire Strikes Back    (179-6)
+
+5 - Fate Cards
+================================
+1 - I Have You Now             (159-6)
+1 - Battle of Endor            (205-6)
+2 - Twist of Fate              (178-6)
+1 - The Imperial Fist          (180-6)
+
+0 - Missions
+================================
