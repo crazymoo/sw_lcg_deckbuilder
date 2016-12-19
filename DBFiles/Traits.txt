@@ -91,6 +91,7 @@ Monster.
 Moraband.
 Myrkr.
 Nar Shaddaa.
+Night.
 Officer.
 Operation.
 Ord Mantell.
@@ -121,6 +122,7 @@ Spirit.
 Spy.
 Squadron.
 Stygeon Prime.
+Sullust.
 Sulon Star.
 Taanab.
 Tactic.
