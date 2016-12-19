@@ -1,3 +1,6 @@
+Update - version 1.0.5.5 (12/19/2016)
+ - Added 'A Wretched Hive' & 'Meditation and Mastery'
+
 Update - version 1.0.5.4 (09/09/2016)
  - Added Ancient Rivals
 

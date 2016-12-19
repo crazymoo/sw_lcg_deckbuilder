@@ -5,7 +5,6 @@ community WHO OWN THE ACTUAL CARDS.  The Star Wars IP belongs to Disney and
 Lucasfilm LTD.  Star Wars The Card Game is copyrighted material of FFG.  The 
 card images are copyrighted to FFG and their respective artists.
 
-The menus are pretty much straight-forward and do what they say they will do.
 
 The Deck Editor:
 
@@ -38,15 +37,9 @@ the '====' characters) the view will expand/contract to allow you to see all the
 cards within it's view.  Experiment with it a little and I think you'll soon get
 the hang of it.
 
-The 'Grid' does have some basic sort functionality.  You can click on the header 
-of any column in the grid to have it sort the cards alphabetically by that column.
-First click is ascending order, and the next click is descending order.  To put 
-the 'Grid' back to it's original state (Card set order), click back on the 
-'Card Id#' column.  So....need to find a card?  You know its name but not its
-set...click the Card Title column and find your card that way.  Admittedly, in 
-Version 1.0 of the program searching is pretty much non-existant, but it hasn't 
-bothered me too much as there are only 200 sets out so far and I think most of 
-us know them.
+The 'Grid' can be sorted by using the grid filter buttons which are located above
+the actual grid.  A bit of experimentation with the filters will most likely 
+get you what you want.
 
 You can also right-click on the grid to view an entire objective set.  Right-
 clicking on the window closes it again.
