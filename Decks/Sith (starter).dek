@@ -1,0 +1,63 @@
+<deck version="0.8">
+
+<game>StarWars-LCG</game>
+
+<superzone name="Command">
+<card><name id="Core-19-2">Darth Vader (19)</name><set>Core</set></card>
+<card><name id="Core-19-3">Dark Side Apprentice (19)</name><set>Core</set></card>
+<card><name id="Core-20-2">Advisor to the Emperor (20)</name><set>Core</set></card>
+<card><name id="Core-20-3">Kuati Security Team (20)</name><set>Core</set></card>
+<card><name id="Core-21-2">Vader's TIE Advanced (21)</name><set>Core</set></card>
+<card><name id="Core-21-3">TIE Advanced (21)</name><set>Core</set></card>
+<card><name id="Core-21-4">Black Squadron Pilot (21)</name><set>Core</set></card>
+<card><name id="Core-22-2">Coruscant Defense Fleet</name><set>Core</set></card>
+<card><name id="Core-22-3">Kuati Security Team (22)</name><set>Core</set></card>
+<card><name id="Core-23-2">Emperor Palpatine (23)</name><set>Core</set></card>
+<card><name id="Core-23-3">Emperor's Royal Guard (23)</name><set>Core</set></card>
+<card><name id="Core-24-2">Interrogation Droid (24-2)</name><set>Core</set></card>
+<card><name id="Core-24-3">Interrogation Droid (24-3)</name><set>Core</set></card>
+<card><name id="Core-24-4">ISB Interrogators</name><set>Core</set></card>
+<card><name id="Core-25-2">Nightsister (25-2)</name><set>Core</set></card>
+<card><name id="Core-25-3">Nightsister (25-3)</name><set>Core</set></card>
+<card><name id="Core-25-4">Rancor</name><set>Core</set></card>
+<card><name id="Core-36-2">Human Replica Droid (36-2)</name><set>Core</set></card>
+<card><name id="Core-36-3">Human Replica Droid (36-3)</name><set>Core</set></card>
+<card><name id="Core-19-4">Vader's Lightsaber</name><set>Core</set></card>
+<card><name id="Core-20-4">Sith Library (20)</name><set>Core</set></card>
+<card><name id="Core-22-4">Sith Library (22)</name><set>Core</set></card>
+<card><name id="Core-23-4">Sith Library (23)</name><set>Core</set></card>
+<card><name id="Core-24-5">Intimidated</name><set>Core</set></card>
+<card><name id="Core-25-5">The Hand's Blessing</name><set>Core</set></card>
+<card><name id="Core-19-5">Force Choke (19)</name><set>Core</set></card>
+<card><name id="Core-20-5">Dark Precognition</name><set>Core</set></card>
+<card><name id="Core-21-5">I'm On the Leader</name><set>Core</set></card>
+<card><name id="Core-22-5">Force Stasis (22)</name><set>Core</set></card>
+<card><name id="Core-22-6">There Is No Escape</name><set>Core</set></card>
+<card><name id="Core-23-5">Force Lightning</name><set>Core</set></card>
+<card><name id="Core-23-6">Force Choke (23)</name><set>Core</set></card>
+<card><name id="Core-24-6">Interrogation (24-6)</name><set>Core</set></card>
+<card><name id="Core-25-6">A Disturbance In the Force</name><set>Core</set></card>
+<card><name id="Core-19-6">Heat of Battle (19)</name><set>Core</set></card>
+<card><name id="Core-20-6">Twist of Fate (20)</name><set>Core</set></card>
+<card><name id="Core-21-6">Target of Opportunity (21)</name><set>Core</set></card>
+<card><name id="Core-36-4">Heat of Battle (36)</name><set>Core</set></card>
+<card><name id="Core-36-5">Target of Opportunity (36)</name><set>Core</set></card>
+<card><name id="Core-36-6">Twist of Fate (36)</name><set>Core</set></card>
+</superzone>
+<superzone name="Objectives">
+<card><name id="Core-19-1,ObjBack">Fall of the Jedi</name><set>Core</set></card>
+<card><name id="Core-20-1,ObjBack">Counsel of the Sith</name><set>Core</set></card>
+<card><name id="Core-21-1,ObjBack">Black Squadron Assault</name><set>Core</set></card>
+<card><name id="Core-22-1,ObjBack">The Heart of the Empire</name><set>Core</set></card>
+<card><name id="Core-23-1,ObjBack">The Emperor's Web</name><set>Core</set></card>
+<card><name id="Core-24-1,ObjBack">Cruel Interrogations</name><set>Core</set></card>
+<card><name id="Core-25-1,ObjBack">Shadows of Dathomir</name><set>Core</set></card>
+<card><name id="Core-36-1,ObjBack">Reconnaissance Mission</name><set>Core</set></card>
+</superzone>
+<superzone name="Force">
+<card><name id="Sith">Sith</name><set>Core</set></card>
+<card><name id="Force-DS">DS Force</name><set>Core</set></card>
+<card><name id="Force-DS">DS Force</name><set>Core</set></card>
+<card><name id="Force-DS">DS Force</name><set>Core</set></card>
+</superzone>
+</deck>

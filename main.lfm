@@ -7,13 +7,14 @@ object Form1: TForm1
   Caption = 'Star Wars The Card Game Deck Builder'
   ClientHeight = 596
   ClientWidth = 1089
+  Color = 9018178
   Menu = MainMenu1
   OnCloseQuery = FormCloseQuery
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   OnDropFiles = FormDropFiles
   OnMouseDown = FormMouseDown
-  LCLVersion = '1.4.4.0'
+  LCLVersion = '1.6.0.4'
   object PageControl1: TPageControl
     Left = 0
     Height = 596
@@ -23,6 +24,7 @@ object Form1: TForm1
     Align = alClient
     TabIndex = 0
     TabOrder = 0
+    TabPosition = tpBottom
     OnChange = PageControl1Change
     object tabEditor: TTabSheet
       Caption = 'Deck Editor'
@@ -100,7 +102,7 @@ object Form1: TForm1
                 Align = alClient
                 ClientHeight = 171
                 ClientWidth = 285
-                Color = clBlack
+                Color = 9018178
                 ParentColor = False
                 TabOrder = 0
                 object ScrollBox1: TScrollBox
@@ -113,6 +115,8 @@ object Form1: TForm1
                   Align = alClient
                   ClientHeight = 165
                   ClientWidth = 279
+                  Color = clDefault
+                  ParentColor = False
                   TabOrder = 0
                   object lbxObjectives: TListBox
                     Left = 0
@@ -251,7 +255,7 @@ object Form1: TForm1
             Top = 115
             Width = 791
             Align = alClient
-            AlternateColor = clInfoBk
+            AlternateColor = 12770044
             AutoEdit = False
             ColCount = 18
             ColumnClickSorts = True
@@ -272,16 +276,20 @@ object Form1: TForm1
             Align = alTop
             ClientHeight = 115
             ClientWidth = 791
+            Color = 14410428
+            ParentColor = False
             TabOrder = 1
             object GroupBox2: TGroupBox
-              Left = 0
+              Left = 4
               Height = 107
               Top = 0
-              Width = 785
+              Width = 783
               Anchors = [akTop, akLeft, akRight, akBottom]
               Caption = 'Grid Filters:'
               ClientHeight = 87
-              ClientWidth = 781
+              ClientWidth = 779
+              Color = 14410428
+              ParentColor = False
               TabOrder = 0
               object btnClearFilters: TButton
                 Left = 8
@@ -293,7 +301,7 @@ object Form1: TForm1
                 TabOrder = 0
               end
               object btnJedi: TToggleBox
-                Left = 104
+                Left = 100
                 Height = 25
                 Top = 1
                 Width = 90
@@ -302,7 +310,7 @@ object Form1: TForm1
                 TabOrder = 1
               end
               object btnRebels: TToggleBox
-                Left = 201
+                Left = 197
                 Height = 25
                 Top = 1
                 Width = 90
@@ -311,7 +319,7 @@ object Form1: TForm1
                 TabOrder = 2
               end
               object btnSmugglers: TToggleBox
-                Left = 298
+                Left = 294
                 Height = 25
                 Top = 1
                 Width = 90
@@ -320,7 +328,7 @@ object Form1: TForm1
                 TabOrder = 3
               end
               object btnSith: TToggleBox
-                Left = 395
+                Left = 391
                 Height = 25
                 Top = 1
                 Width = 90
@@ -329,7 +337,7 @@ object Form1: TForm1
                 TabOrder = 4
               end
               object btnNavy: TToggleBox
-                Left = 492
+                Left = 488
                 Height = 25
                 Top = 1
                 Width = 90
@@ -338,7 +346,7 @@ object Form1: TForm1
                 TabOrder = 5
               end
               object btnScum: TToggleBox
-                Left = 589
+                Left = 585
                 Height = 25
                 Top = 1
                 Width = 90
@@ -347,7 +355,7 @@ object Form1: TForm1
                 TabOrder = 6
               end
               object btnNeutral: TToggleBox
-                Left = 686
+                Left = 682
                 Height = 25
                 Top = 1
                 Width = 90
@@ -356,7 +364,7 @@ object Form1: TForm1
                 TabOrder = 7
               end
               object btnObjective: TToggleBox
-                Left = 104
+                Left = 100
                 Height = 25
                 Top = 29
                 Width = 90
@@ -365,7 +373,7 @@ object Form1: TForm1
                 TabOrder = 8
               end
               object btnUnit: TToggleBox
-                Left = 201
+                Left = 197
                 Height = 25
                 Top = 29
                 Width = 90
@@ -374,7 +382,7 @@ object Form1: TForm1
                 TabOrder = 9
               end
               object btnEnhancement: TToggleBox
-                Left = 298
+                Left = 294
                 Height = 25
                 Top = 29
                 Width = 90
@@ -383,7 +391,7 @@ object Form1: TForm1
                 TabOrder = 10
               end
               object btnEvent: TToggleBox
-                Left = 395
+                Left = 391
                 Height = 25
                 Top = 29
                 Width = 90
@@ -392,7 +400,7 @@ object Form1: TForm1
                 TabOrder = 11
               end
               object btnFate: TToggleBox
-                Left = 492
+                Left = 488
                 Height = 25
                 Top = 29
                 Width = 90
@@ -401,7 +409,7 @@ object Form1: TForm1
                 TabOrder = 12
               end
               object btnMission: TToggleBox
-                Left = 589
+                Left = 585
                 Height = 25
                 Top = 29
                 Width = 90
@@ -410,7 +418,7 @@ object Form1: TForm1
                 TabOrder = 13
               end
               object cbxFilterProduct: TComboBox
-                Left = 104
+                Left = 100
                 Height = 23
                 Top = 58
                 Width = 187
@@ -426,7 +434,7 @@ object Form1: TForm1
                 Text = '- Select Product -'
               end
               object cbxFilterTrait: TComboBox
-                Left = 298
+                Left = 294
                 Height = 23
                 Top = 58
                 Width = 187
@@ -7467,17 +7475,9 @@ object Form1: TForm1
         Caption = '&Create New Deck'
         OnClick = mniNewDeckClick
       end
-      object mniLoadOctgn: TMenuItem
-        Caption = 'Load &Octgn Deck (*.o8d)'
-        OnClick = mniLoadOctgnClick
-      end
       object mniLoadDeck: TMenuItem
         Caption = '&Load Text Deck (*.txt)'
         OnClick = mniLoadDeckClick
-      end
-      object mniSaveOctgn: TMenuItem
-        Caption = 'Save Octgn &Deck (*.o8d)'
-        OnClick = mniSaveOctgnClick
       end
       object mniSaveDeck: TMenuItem
         Caption = '&Save Text Deck (*.txt)'
@@ -7486,6 +7486,27 @@ object Form1: TForm1
       object mniExit: TMenuItem
         Caption = '&Exit'
         OnClick = mniExitClick
+      end
+    end
+    object mniOctgnDecks: TMenuItem
+      Caption = 'Octgn Decks'
+      object mniLoadOctgn: TMenuItem
+        Caption = 'Load Octgn Deck (*.o8d)'
+        OnClick = mniLoadOctgnClick
+      end
+      object mniSaveOctgn: TMenuItem
+        Caption = 'Save Octgn Deck (*.o8d)'
+        OnClick = mniSaveOctgnClick
+      end
+    end
+    object mniLackeyDecks: TMenuItem
+      Caption = 'Lackey Decks'
+      object mniLoadLackey: TMenuItem
+        Caption = 'Load Lackey Deck (*.dek)'
+      end
+      object mniSaveLackey: TMenuItem
+        Caption = 'Save Lackey Deck (*.dek)'
+        OnClick = mniSaveLackeyClick
       end
     end
   end
