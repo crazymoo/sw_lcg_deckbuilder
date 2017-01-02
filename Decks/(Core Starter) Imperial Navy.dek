@@ -1,0 +1,63 @@
+<deck version="0.8">
+
+<game>StarWars-LCG</game>
+
+<superzone name="Command">
+<card><name id="Core-36-2">Human Replica Droid (36-2)</name><set>Core</set></card>
+<card><name id="Core-36-3">Human Replica Droid (36-3)</name><set>Core</set></card>
+<card><name id="Core-26-2">Admiral Motti</name><set>Core</set></card>
+<card><name id="Core-26-3">Duty Officer</name><set>Core</set></card>
+<card><name id="Core-26-4">Heavy Stormtrooper Squad (26-4)</name><set>Core</set></card>
+<card><name id="Core-26-5">Heavy Stormtrooper Squad (26-5)</name><set>Core</set></card>
+<card><name id="Core-27-2">"Backstabber"</name><set>Core</set></card>
+<card><name id="Core-27-3">TIE Fighter (27)</name><set>Core</set></card>
+<card><name id="Core-27-4">TIE Bomber</name><set>Core</set></card>
+<card><name id="Core-28-2">Grand Moff Tarkin (28)</name><set>Core</set></card>
+<card><name id="Core-28-3">Superlaser Engineer</name><set>Core</set></card>
+<card><name id="Core-28-4">Stormtrooper Elite</name><set>Core</set></card>
+<card><name id="Core-29-2">Devastator</name><set>Core</set></card>
+<card><name id="Core-29-3">Imperial Officer</name><set>Core</set></card>
+<card><name id="Core-30-2">TIE Attack Squadron</name><set>Core</set></card>
+<card><name id="Core-30-3">TIE Fighter (30)</name><set>Core</set></card>
+<card><name id="Core-31-2">AT-ST Commander</name><set>Core</set></card>
+<card><name id="Core-31-3">AT-ST (31-3)</name><set>Core</set></card>
+<card><name id="Core-31-4">AT-ST (31-4)</name><set>Core</set></card>
+<card><name id="Core-32-2">Death Star Trooper (32-2)</name><set>Core</set></card>
+<card><name id="Core-32-3">Death Star Trooper (32-3)</name><set>Core</set></card>
+<card><name id="Core-26-6">Orbital Bombardment</name><set>Core</set></card>
+<card><name id="Core-28-5">Control Room (28)</name><set>Core</set></card>
+<card><name id="Core-29-4">Control Room (29)</name><set>Core</set></card>
+<card><name id="Core-29-5">Defense Upgrade</name><set>Core</set></card>
+<card><name id="Core-31-5">Aft Armor Plating</name><set>Core</set></card>
+<card><name id="Core-27-5">Tallon Roll (27)</name><set>Core</set></card>
+<card><name id="Core-27-6">Death from Above (27)</name><set>Core</set></card>
+<card><name id="Core-28-6">Superlaser Blast</name><set>Core</set></card>
+<card><name id="Core-30-4">Tallon Roll (30)</name><set>Core</set></card>
+<card><name id="Core-30-5">Death from Above (30)</name><set>Core</set></card>
+<card><name id="Core-32-4">Detained</name><set>Core</set></card>
+<card><name id="Core-32-5">Trooper Assault</name><set>Core</set></card>
+<card><name id="Core-32-6">Tear This Ship Apart</name><set>Core</set></card>
+<card><name id="Core-36-4">Heat of Battle (36)</name><set>Core</set></card>
+<card><name id="Core-36-5">Target of Opportunity (36)</name><set>Core</set></card>
+<card><name id="Core-36-6">Twist of Fate (36)</name><set>Core</set></card>
+<card><name id="Core-29-6">Heat of Battle (29)</name><set>Core</set></card>
+<card><name id="Core-30-6">Twist of Fate (30)</name><set>Core</set></card>
+<card><name id="Core-31-6">Target of Opportunity (31)</name><set>Core</set></card>
+</superzone>
+<superzone name="Objectives">
+<card><name id="Core-36-1,ObjBack">Reconnaissance Mission</name><set>Core</set></card>
+<card><name id="Core-26-1,ObjBack">Imperial Command</name><set>Core</set></card>
+<card><name id="Core-27-1,ObjBack">Kuat Reinforcements</name><set>Core</set></card>
+<card><name id="Core-28-1,ObjBack">The Ultimate Power</name><set>Core</set></card>
+<card><name id="Core-29-1,ObjBack">Death and Despayre</name><set>Core</set></card>
+<card><name id="Core-30-1,ObjBack">Defense Protocol</name><set>Core</set></card>
+<card><name id="Core-31-1,ObjBack">The Endor Gambit</name><set>Core</set></card>
+<card><name id="Core-32-1,ObjBack">Take Them Prisoner</name><set>Core</set></card>
+</superzone>
+<superzone name="Force">
+<card><name id="Imperial Navy">Imperial Navy</name><set>Core</set></card>
+<card><name id="Force-DS">DS Force</name><set>Core</set></card>
+<card><name id="Force-DS">DS Force</name><set>Core</set></card>
+<card><name id="Force-DS">DS Force</name><set>Core</set></card>
+</superzone>
+</deck>

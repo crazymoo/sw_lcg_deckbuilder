@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="C:\lazarus_1.4.4\fpc\2.6.4\bin\i386-win32\fpc.exe" Date="1195613038"/>
-  <Params Value=" -MObjFPC -Scghi -O2 -Xs -WG -l -vewnhibq &quot;-FiC:\Users\dingle7\Documents\Programming\Lazarus Projects\SW LCG DeckBuilder\lib\i386-win32&quot; -FuC:\lazarus_1.4.4\components\tachart\lib\i386-win32\win32 -FuC:\lazarus_1.4.4\components\ideintf\units\i386-win32\win32 -FuC:\lazarus_1.4.4\components\lazcontrols\lib\i386-win32\win32 -FuC:\lazarus_1.4.4\lcl\units\i386-win32\win32 -FuC:\lazarus_1.4.4\lcl\units\i386-win32 -FuC:\lazarus_1.4.4\components\lazutils\lib\i386-win32 -FuC:\lazarus_1.4.4\packager\units\i386-win32 &quot;-FuC:\Users\dingle7\Documents\Programming\Lazarus Projects\SW LCG DeckBuilder\&quot; &quot;-FUC:\Users\dingle7\Documents\Programming\Lazarus Projects\SW LCG DeckBuilder\lib\i386-win32\&quot; -dLCL -dLCLwin32 SWLCGCardsDB.pas"/>
-</CONFIG>

@@ -1,0 +1,81 @@
+<deck version="0.8">
+
+<game>StarWars-LCG</game>
+
+<superzone name="Command">
+<card><name id="IE-180-2">Colonel Yularen</name><set>IE</set></card>
+<card><name id="IE-180-3">Lieutenant Mithel</name><set>IE</set></card>
+<card><name id="IE-180-4">MSE-6 'Mouse' Droid</name><set>IE</set></card>
+<card><name id="IE-180-5">Control Room (180)</name><set>IE</set></card>
+<card><name id="IE-180-6">The Imperial Fist</name><set>IE</set></card>
+<card><name id="Core-26-3">Duty Officer</name><set>Core</set></card>
+<card><name id="Core-26-4">Heavy Stormtrooper Squad (26-4)</name><set>Core</set></card>
+<card><name id="Core-26-5">Heavy Stormtrooper Squad (26-5)</name><set>Core</set></card>
+<card><name id="Core-26-6">Orbital Bombardment</name><set>Core</set></card>
+<card><name id="Core-26-2P">Admiral Motti (P)</name><set>Promo</set></card>
+<card><name id="Hoth-58-6">Battle of Hoth (58)</name><set>Hoth</set></card>
+<card><name id="Hoth-58-5">Forward Command Post (58-5)</name><set>Hoth</set></card>
+<card><name id="Hoth-58-4">Forward Command Post (58-4)</name><set>Hoth</set></card>
+<card><name id="Hoth-58-3">Snowtrooper Vanguard</name><set>Hoth</set></card>
+<card><name id="Hoth-58-2">Snowtrooper</name><set>Hoth</set></card>
+<card><name id="BtS-140-6">Precision Fire</name><set>BtS</set></card>
+<card><name id="BtS-140-6">Precision Fire</name><set>BtS</set></card>
+<card><name id="BtS-140-5">Imperial Discipline</name><set>BtS</set></card>
+<card><name id="BtS-140-5">Imperial Discipline</name><set>BtS</set></card>
+<card><name id="BtS-140-4">Security Task Force (140-4)</name><set>BtS</set></card>
+<card><name id="BtS-140-4">Security Task Force (140-4)</name><set>BtS</set></card>
+<card><name id="BtS-140-3">Security Task Force (140-3)</name><set>BtS</set></card>
+<card><name id="BtS-140-3">Security Task Force (140-3)</name><set>BtS</set></card>
+<card><name id="BtS-140-2">General Tagge</name><set>BtS</set></card>
+<card><name id="BtS-140-2">General Tagge</name><set>BtS</set></card>
+<card><name id="RS-164-2">Grand Admiral Thrawn</name><set>RS</set></card>
+<card><name id="RS-164-3">Noghri Bodyguard (164-3)</name><set>RS</set></card>
+<card><name id="RS-164-4">Noghri Bodyguard (164-4)</name><set>RS</set></card>
+<card><name id="RS-164-5">Chain of Command</name><set>RS</set></card>
+<card><name id="RS-164-6">Supporting Fire (164)</name><set>RS</set></card>
+<card><name id="IE-178-6">Twist of Fate (178)</name><set>IE</set></card>
+<card><name id="IE-178-6">Twist of Fate (178)</name><set>IE</set></card>
+<card><name id="IE-178-5">Moment of Triumph</name><set>IE</set></card>
+<card><name id="IE-178-5">Moment of Triumph</name><set>IE</set></card>
+<card><name id="IE-178-4">Rule by Fear</name><set>IE</set></card>
+<card><name id="IE-178-4">Rule by Fear</name><set>IE</set></card>
+<card><name id="IE-178-3">Stormtrooper Assault Team</name><set>IE</set></card>
+<card><name id="IE-178-3">Stormtrooper Assault Team</name><set>IE</set></card>
+<card><name id="IE-178-2">Grand Moff Tarkin (178)</name><set>IE</set></card>
+<card><name id="IE-178-2">Grand Moff Tarkin (178)</name><set>IE</set></card>
+<card><name id="EN-187-6">Prepared Ambush</name><set>EN</set></card>
+<card><name id="EN-187-6">Prepared Ambush</name><set>EN</set></card>
+<card><name id="EN-187-5">Secret Objective (187)</name><set>EN</set></card>
+<card><name id="EN-187-5">Secret Objective (187)</name><set>EN</set></card>
+<card><name id="EN-187-4">Scout Trooper (187-4)</name><set>EN</set></card>
+<card><name id="EN-187-4">Scout Trooper (187-4)</name><set>EN</set></card>
+<card><name id="EN-187-3">Scout Trooper (187-3)</name><set>EN</set></card>
+<card><name id="EN-187-3">Scout Trooper (187-3)</name><set>EN</set></card>
+<card><name id="EN-187-2">Lieutenant Renz</name><set>EN</set></card>
+<card><name id="EN-187-2">Lieutenant Renz</name><set>EN</set></card>
+<card><name id="EotF-101-5">Experimental Tech Lab</name><set>EotF</set></card>
+<card><name id="EotF-101-2">General Mohc</name><set>EotF</set></card>
+<card><name id="EotF-101-3">Phase I Dark Trooper (101-3)</name><set>EotF</set></card>
+<card><name id="EotF-101-4">Phase I Dark Trooper (101-4)</name><set>EotF</set></card>
+<card><name id="EotF-101-6">Heat of Battle (101)</name><set>EotF</set></card>
+</superzone>
+<superzone name="Objectives">
+<card><name id="BtS-140-1,ObjBack">Family Connections</name><set>BtS</set></card>
+<card><name id="BtS-140-1,ObjBack">Family Connections</name><set>BtS</set></card>
+<card><name id="RS-164-1,ObjBack">The Last Grand Admiral</name><set>RS</set></card>
+<card><name id="IE-178-1,ObjBack">The Tarkin Doctrine</name><set>IE</set></card>
+<card><name id="IE-178-1,ObjBack">The Tarkin Doctrine</name><set>IE</set></card>
+<card><name id="EN-187-1,ObjBack">The Emperor's Legion</name><set>EN</set></card>
+<card><name id="EN-187-1,ObjBack">The Emperor's Legion</name><set>EN</set></card>
+<card><name id="Hoth-58-1,ObjBack">Sabotage in the Snow</name><set>Hoth</set></card>
+<card><name id="Core-26-1,ObjBack">Imperial Command</name><set>Core</set></card>
+<card><name id="IE-180-1,ObjBack">Enforced Loyalty</name><set>IE</set></card>
+<card><name id="EotF-101-5">Experimental Tech Lab</name><set>EotF</set></card>
+</superzone>
+<superzone name="Force">
+<card><name id="NavyP">Imperial Navy (P)</name><set>Promo</set></card>
+<card><name id="Force-DSF">Fan DS Force</name><set>Promo</set></card>
+<card><name id="Force-DSF">Fan DS Force</name><set>Promo</set></card>
+<card><name id="Force-DSF">Fan DS Force</name><set>Promo</set></card>
+</superzone>
+</deck>
