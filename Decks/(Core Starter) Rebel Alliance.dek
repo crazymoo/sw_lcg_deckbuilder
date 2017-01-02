@@ -1,0 +1,63 @@
+<deck version="0.8">
+
+<game>StarWars-LCG</game>
+
+<superzone name="Command">
+<card><name id="Core-8-2">Red Two (8)</name><set>Core</set></card>
+<card><name id="Core-8-3">Y-Wing (8)</name><set>Core</set></card>
+<card><name id="Core-9-2">Mon Mothma</name><set>Core</set></card>
+<card><name id="Core-9-3">Battlefield Engineers</name><set>Core</set></card>
+<card><name id="Core-9-4">A-Wing</name><set>Core</set></card>
+<card><name id="Core-10-2">Leia Organa (10)</name><set>Core</set></card>
+<card><name id="Core-10-3">Fleet Officer</name><set>Core</set></card>
+<card><name id="Core-11-2">Home One (11)</name><set>Core</set></card>
+<card><name id="Core-11-3">Y-Wing (11)</name><set>Core</set></card>
+<card><name id="Core-11-4">Repair Droid</name><set>Core</set></card>
+<card><name id="Core-12-2">Admiral Ackbar (12)</name><set>Core</set></card>
+<card><name id="Core-12-3">X-Wing Escort</name><set>Core</set></card>
+<card><name id="Core-12-4">X-Wing (12-4)</name><set>Core</set></card>
+<card><name id="Core-13-2">X-Wing (13-2)</name><set>Core</set></card>
+<card><name id="Core-13-3">Rookie Pilot</name><set>Core</set></card>
+<card><name id="Core-14-2">Wookiee Navigator</name><set>Core</set></card>
+<card><name id="Core-14-3">Rebel Trooper</name><set>Core</set></card>
+<card><name id="Core-18-2">Secret Informant (18-2)</name><set>Core</set></card>
+<card><name id="Core-18-3">Secret Informant (18-3)</name><set>Core</set></card>
+<card><name id="Core-8-4">Astromech Droid Upgrade</name><set>Core</set></card>
+<card><name id="Core-8-5">Hidden Outpost (8)</name><set>Core</set></card>
+<card><name id="Core-9-5">Heavy Blaster Emplacement</name><set>Core</set></card>
+<card><name id="Core-10-4">Stolen Plans</name><set>Core</set></card>
+<card><name id="Core-11-5">Hidden Outpost (11)</name><set>Core</set></card>
+<card><name id="Core-12-5">Fleet Command Center</name><set>Core</set></card>
+<card><name id="Core-13-4">Trench Run</name><set>Core</set></card>
+<card><name id="Core-14-4">False Lead</name><set>Core</set></card>
+<card><name id="Core-8-6">Rebel Assault (8)</name><set>Core</set></card>
+<card><name id="Core-10-5">You're My Only Hope</name><set>Core</set></card>
+<card><name id="Core-12-6">Heroic Sacrifice</name><set>Core</set></card>
+<card><name id="Core-13-5">Rebel Assault (13)</name><set>Core</set></card>
+<card><name id="Core-13-6">Covering Fire</name><set>Core</set></card>
+<card><name id="Core-14-5">Fall Back!</name><set>Core</set></card>
+<card><name id="Core-14-6">A New Hope (14)</name><set>Core</set></card>
+<card><name id="Core-9-6">Heat of Battle (9)</name><set>Core</set></card>
+<card><name id="Core-10-6">Twist of Fate (10)</name><set>Core</set></card>
+<card><name id="Core-11-6">Target of Opportunity (11)</name><set>Core</set></card>
+<card><name id="Core-18-4">Heat of Battle (18)</name><set>Core</set></card>
+<card><name id="Core-18-5">Target of Opportunity (18)</name><set>Core</set></card>
+<card><name id="Core-18-6">Twist of Fate (18)</name><set>Core</set></card>
+</superzone>
+<superzone name="Objectives">
+<card><name id="Core-8-1,ObjBack">The Defense of Yavin 4</name><set>Core</set></card>
+<card><name id="Core-9-1,ObjBack">Mission Briefing</name><set>Core</set></card>
+<card><name id="Core-10-1,ObjBack">Fleeing the Empire</name><set>Core</set></card>
+<card><name id="Core-11-1,ObjBack">The Rebel Fleet</name><set>Core</set></card>
+<card><name id="Core-12-1,ObjBack">Draw Their Fire</name><set>Core</set></card>
+<card><name id="Core-13-1,ObjBack">Mobilize the Squadrons</name><set>Core</set></card>
+<card><name id="Core-14-1,ObjBack">Decoy at Dantooine</name><set>Core</set></card>
+<card><name id="Core-18-1,ObjBack">Hit and Run</name><set>Core</set></card>
+</superzone>
+<superzone name="Force">
+<card><name id="Rebel Alliance">Rebel Alliance</name><set>Core</set></card>
+<card><name id="Force-LS">LS Force</name><set>Core</set></card>
+<card><name id="Force-LS">LS Force</name><set>Core</set></card>
+<card><name id="Force-LS">LS Force</name><set>Core</set></card>
+</superzone>
+</deck>

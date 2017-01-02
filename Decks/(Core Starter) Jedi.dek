@@ -1,0 +1,63 @@
+<deck version="0.8">
+
+<game>StarWars-LCG</game>
+
+<superzone name="Command">
+<card><name id="Core-1-2">Luke Skywalker (1)</name><set>Core</set></card>
+<card><name id="Core-1-3">Twi'lek Loyalist (1)</name><set>Core</set></card>
+<card><name id="Core-2-2">Yoda (2)</name><set>Core</set></card>
+<card><name id="Core-2-3">Believer in the Old Ways (2)</name><set>Core</set></card>
+<card><name id="Core-3-2">Obi-Wan Kenobi (3)</name><set>Core</set></card>
+<card><name id="Core-3-3">Jedi in Hiding (3)</name><set>Core</set></card>
+<card><name id="Core-4-2">Red Five (4)</name><set>Core</set></card>
+<card><name id="Core-4-3">R2-D2 (4)</name><set>Core</set></card>
+<card><name id="Core-4-4">Twi'lek Loyalist (4)</name><set>Core</set></card>
+<card><name id="Core-5-2">C-3P0 (5)</name><set>Core</set></card>
+<card><name id="Core-5-3">Guardian of Peace (5-3)</name><set>Core</set></card>
+<card><name id="Core-5-4">Guardian of Peace (5-4)</name><set>Core</set></card>
+<card><name id="Core-6-2">Redemption</name><set>Core</set></card>
+<card><name id="Core-6-3">Corellian Engineer</name><set>Core</set></card>
+<card><name id="Core-7-2">Jedi in Hiding (7)</name><set>Core</set></card>
+<card><name id="Core-7-3">Believer in the Old Ways (7)</name><set>Core</set></card>
+<card><name id="Core-18-2">Secret Informant (18-2)</name><set>Core</set></card>
+<card><name id="Core-18-3">Secret Informant (18-3)</name><set>Core</set></card>
+<card><name id="Core-1-4">Jedi Lightsaber</name><set>Core</set></card>
+<card><name id="Core-1-5">Trust Your Feelings</name><set>Core</set></card>
+<card><name id="Core-1-6">Dagobah Training Grounds (1)</name><set>Core</set></card>
+<card><name id="Core-2-4">Shii-Cho Training</name><set>Core</set></card>
+<card><name id="Core-2-5">Dagobah Training Grounds (2)</name><set>Core</set></card>
+<card><name id="Core-7-4">Ancient Monument</name><set>Core</set></card>
+<card><name id="Core-2-6">Counter-stroke</name><set>Core</set></card>
+<card><name id="Core-3-4">Jedi Mind Trick (3)</name><set>Core</set></card>
+<card><name id="Core-3-5">Our Most Desperate Hour</name><set>Core</set></card>
+<card><name id="Core-4-5">Double Strike</name><set>Core</set></card>
+<card><name id="Core-5-5">Lightsaber Deflection (5)</name><set>Core</set></card>
+<card><name id="Core-6-4">Return of the Jedi (6)</name><set>Core</set></card>
+<card><name id="Core-6-5">Emergency Repair</name><set>Core</set></card>
+<card><name id="Core-6-6">Force Rejuvenation (6)</name><set>Core</set></card>
+<card><name id="Core-7-5">Jedi Mind Trick (7)</name><set>Core</set></card>
+<card><name id="Core-7-6">It Binds All Things</name><set>Core</set></card>
+<card><name id="Core-3-6">Heat of Battle (3)</name><set>Core</set></card>
+<card><name id="Core-4-6">Target of Opportunity (4)</name><set>Core</set></card>
+<card><name id="Core-5-6">Twist of Fate (5)</name><set>Core</set></card>
+<card><name id="Core-18-4">Heat of Battle (18)</name><set>Core</set></card>
+<card><name id="Core-18-5">Target of Opportunity (18)</name><set>Core</set></card>
+<card><name id="Core-18-6">Twist of Fate (18)</name><set>Core</set></card>
+</superzone>
+<superzone name="Objectives">
+<card><name id="Core-1-1,ObjBack">A Hero's Journey</name><set>Core</set></card>
+<card><name id="Core-2-1,ObjBack">In You Must Go</name><set>Core</set></card>
+<card><name id="Core-3-1,ObjBack">Forgotten Heroes</name><set>Core</set></card>
+<card><name id="Core-4-1,ObjBack">A Journey to Dagobah</name><set>Core</set></card>
+<card><name id="Core-5-1,ObjBack">The Secret of Yavin 4</name><set>Core</set></card>
+<card><name id="Core-6-1,ObjBack">Last Minute Rescue</name><set>Core</set></card>
+<card><name id="Core-7-1,ObjBack">Jedi Training</name><set>Core</set></card>
+<card><name id="Core-18-1,ObjBack">Hit and Run</name><set>Core</set></card>
+</superzone>
+<superzone name="Force">
+<card><name id="Jedi">Jedi</name><set>Core</set></card>
+<card><name id="Force-LS">LS Force</name><set>Core</set></card>
+<card><name id="Force-LS">LS Force</name><set>Core</set></card>
+<card><name id="Force-LS">LS Force</name><set>Core</set></card>
+</superzone>
+</deck>

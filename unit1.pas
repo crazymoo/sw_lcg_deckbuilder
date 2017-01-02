@@ -96,29 +96,17 @@ begin
   for i:=0 to recordCount-1 do
   begin
     if (cardDB[i].setNumber = selectedSet) and (cardDB[i].cardInSet = '1') then
-      begin
-        imgCard1.Picture.LoadFromFile('DBFiles\images\'+cardDB[i].cardPic);
-      end;
+        imgCard1.Picture.LoadFromFile(cardDB[i].cardPic);
     if (cardDB[i].setNumber = selectedSet) and (cardDB[i].cardInSet = '2') then
-      begin
-        imgCard2.Picture.LoadFromFile('DBFiles\images\'+cardDB[i].cardPic);
-      end;
+        imgCard2.Picture.LoadFromFile(cardDB[i].cardPic);
     if (cardDB[i].setNumber = selectedSet) and (cardDB[i].cardInSet = '3') then
-      begin
-        imgCard3.Picture.LoadFromFile('DBFiles\images\'+cardDB[i].cardPic);
-      end;
+        imgCard3.Picture.LoadFromFile(cardDB[i].cardPic);
     if (cardDB[i].setNumber = selectedSet) and (cardDB[i].cardInSet = '4') then
-      begin
-        imgCard4.Picture.LoadFromFile('DBFiles\images\'+cardDB[i].cardPic);
-      end;
+        imgCard4.Picture.LoadFromFile(cardDB[i].cardPic);
     if (cardDB[i].setNumber = selectedSet) and (cardDB[i].cardInSet = '5') then
-      begin
-        imgCard5.Picture.LoadFromFile('DBFiles\images\'+cardDB[i].cardPic);
-      end;
+        imgCard5.Picture.LoadFromFile(cardDB[i].cardPic);
     if (cardDB[i].setNumber = selectedSet) and (cardDB[i].cardInSet = '6') then
-      begin
-        imgCard6.Picture.LoadFromFile('DBFiles\images\'+cardDB[i].cardPic);
-      end;
+        imgCard6.Picture.LoadFromFile(cardDB[i].cardPic);
   end;
 end;
 

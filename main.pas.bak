@@ -217,6 +217,7 @@ type
     procedure FormDestroy(Sender: TObject);
     procedure FormDropFiles(Sender: TObject; const FileNames: array of String);
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton);
+    procedure mniLoadLackeyClick(Sender: TObject);
     procedure mniLoadOctgnClick(Sender: TObject);
     procedure mniNewDeckClick(Sender: TObject);
     procedure mniExitClick(Sender: TObject);
@@ -292,7 +293,7 @@ var
   drawDeck, objDeck, reusedCards: array of String;
   arrOctgn: array of array[0..1] of String;
   arrCycleLookup: array of array[0..1] of String;
-  addedCards: Boolean;
+  addedCards, isDeckLoading: Boolean;
 
 implementation
 
@@ -303,6 +304,7 @@ implementation
 procedure TForm1.FormCreate(Sender: TObject);
 begin
   addedCards:=False;
+  isDeckLoading:=False;
   formerBucket := TListBox.Create(nil);
   recordCount := 0;
   LoadInData;
@@ -317,7 +319,7 @@ procedure TForm1.FormDropFiles(Sender: TObject; const FileNames: array of String
 var
   aPic: TPicture;
   aFile: string;
-  i: integer;
+  i, dbRow: integer;
 begin
   aFile := FileNames[0];
   if PageControl1.ActivePage = tabAddCards then
@@ -338,7 +340,26 @@ begin
     finally
       aPic.Free;
     end;
-  end;
+  end
+  else
+  if PageControl1.ActivePage = tabEditor then
+  begin
+    aPic := TPicture.Create;
+    try
+      try
+        aPic.LoadFromFile(aFile);
+        imgCardImage.Picture := aPic;
+        imgCardImage.Visible:=true;
+        dbRow := sgdCards.Row - 1;
+        cardDB[dbRow].cardPic := aFile;
+        addedCards := True;
+      except
+        imgCardImage.Visible:=false;
+      end;
+    finally
+      aPic.Free;
+    end;
+  end
 end;
 
 procedure TForm1.FormMouseDown(Sender: TObject; Button: TMouseButton);
@@ -347,18 +368,78 @@ begin
     tabAddCards.TabVisible := not tabAddCards.TabVisible;
 end;
 
+procedure TForm1.mniLoadLackeyClick(Sender: TObject);
+var
+  f: TextFile;
+  oName, faction, tmpStr: String;
+  start, stop, i: Integer;
+begin
+  OpenDialog1.InitialDir := '\Decks';
+  OpenDialog1.Filter := 'Lackey files|*.dek';
+  if OpenDialog1.Execute then
+  begin
+    isDeckLoading := True;
+    try
+      RefreshBuckets;
+      AssignFile(f, OpenDialog1.FileName);
+      Reset(f);
+      Readln(f, tmpStr);
+      while not EoF(f) do
+      begin
+        if Pos('name="Objectives">', tmpStr) > 0 then
+        begin
+          Readln(f, tmpStr);
+          while tmpStr <> '</superzone>' do
+          begin
+            start := Pos('ObjBack">', tmpStr)+9;
+            stop := Pos('</name>', tmpStr);
+            oName := Copy(tmpStr, start, stop-start);
+            for i:=0 to Length(cardDB)-1 do
+              if (cardDB[i].cardTitle = oName) and (cardDB[i].cardType = 'Objective') then
+              begin
+                 sgdCards.Row := i+1;
+                 sgdCardsDblClick(Self);
+              end;
+            Readln(f, tmpStr);
+          end;
+        end
+        else
+        if Pos('name="Force">', tmpStr) > 0 then
+        begin
+          Readln(f, tmpStr);
+          tmpStr := Copy(tmpStr, 17, 99);
+          start := Pos('">', tmpStr) + 2;
+          stop := Pos('</name>', tmpStr);
+          faction := Copy(tmpStr, start, stop-start);
+          for i:=0 to Length(cardDB)-1 do
+            if (cardDB[i].cardTitle = faction) and (cardDB[i].cardType = 'Faction') then
+            begin
+              sgdCards.Row := i+1;
+              sgdCardsDblClick(Self);
+            end;
+        end;
+        Readln(f, tmpStr);
+      end;
+    finally
+      CloseFile(f);
+      isDeckLoading := False;
+    end;
+    PageControl1Change(Sender);
+  end;
+end;
+
 procedure TForm1.mniLoadOctgnClick(Sender: TObject);
 var
   f: TextFile;
-  setNum, setId, tmpStr: String;
-  objectiveSet: array [1..6] of TCard;
-  i, j, cnt, numSets, start, stop: Integer;
+  tmpStr, oName: String;
+  i, j, numSets, start, stop: Integer;
 begin
   OpenDialog1.InitialDir := '\Decks';
   OpenDialog1.Filter := 'Octgn files|*.o8d';
   if OpenDialog1.Execute then
   begin
     try
+      isDeckLoading := True;
       RefreshBuckets;
       AssignFile(f, OpenDialog1.FileName);
       Reset(f);
@@ -378,88 +459,23 @@ begin
           Readln(f, tmpStr);
           repeat
             numSets:=StrToInt(Copy(tmpStr, (Pos('qty="',tmpStr)+5), 1));
-            setId:=Copy(tmpStr, (Pos('id="',tmpStr)+4),
-                        (Pos('">',tmpStr)-(Pos('id="',tmpStr)+4)));
-            for i:=0 to Length(arrOctgn)-1 do
-            begin
-              if arrOctgn[i][1] = setId then
-              begin
-                start:=0; stop:=0;
-                start := Pos('(', arrOctgn[i][0])+1;
-                stop := Pos('-', arrOctgn[i][0]);
-                setNum := Copy(arrOctgn[i][0], start, stop-start);
-                break;
-              end;
-            end;
-            // get all cards in the set...
-            cnt := 0;
+            start := Pos('">', tmpStr)+2;
+            stop := Pos('</card>', tmpStr);
+            oName := Copy(tmpStr, start, stop-start);
             for i:=0 to Length(cardDB)-1 do
-            begin
-              if cardDB[i].setNumber = setNum then
+              if (cardDB[i].cardTitle = oName) and (cardDB[i].cardType = 'Objective') then
               begin
-                Inc(cnt);
-                objectiveSet[cnt] := cardDB[i];
+                 sgdCards.Row := i+1;
+                 for j:=1 to numSets do
+                   sgdCardsDblClick(Self);
               end;
-              if cnt = 6 then
-                break;
-            end;
-            // now place the cards from the set in the proper 'buckets'...
-            for j:=1 to numSets do
-            begin
-              for i:=1 to 6 do
-              begin
-                case objectiveSet[i].cardType of
-                  'Objective':
-                    begin
-                      AddCardToBucket(lbxObjectives, objectiveSet[i].cardTitle,
-                       objectiveSet[i].setNumber, objectiveSet[i].cardInSet);
-                      if lbxObjectives.Height > 21 then
-                        ResizeBucket(lbxObjectives);
-                    end;
-                  'Unit':
-                    begin
-                      AddCardToBucket(lbxUnits, objectiveSet[i].cardTitle,
-                       objectiveSet[i].setNumber, objectiveSet[i].cardInSet);
-                      if lbxUnits.Height > 21 then
-                        ResizeBucket(lbxUnits);
-                    end;
-                  'Enhancement':
-                    begin
-                      AddCardToBucket(lbxEnhancements, objectiveSet[i].cardTitle,
-                       objectiveSet[i].setNumber, objectiveSet[i].cardInSet);
-                      if lbxEnhancements.Height > 21 then
-                        ResizeBucket(lbxEnhancements);
-                    end;
-                  'Event':
-                    begin
-                      AddCardToBucket(lbxEvents, objectiveSet[i].cardTitle,
-                       objectiveSet[i].setNumber, objectiveSet[i].cardInSet);
-                      if lbxEvents.Height > 21 then
-                        ResizeBucket(lbxEvents);
-                    end;
-                  'Fate':
-                    begin
-                      AddCardToBucket(lbxFateCards, objectiveSet[i].cardTitle,
-                       objectiveSet[i].setNumber, objectiveSet[i].cardInSet);
-                      if lbxFateCards.Height > 21 then
-                        ResizeBucket(lbxFateCards);
-                    end;
-                  'Mission':
-                    begin
-                      AddCardToBucket(lbxMissions, objectiveSet[i].cardTitle,
-                       objectiveSet[i].setNumber, objectiveSet[i].cardInSet);
-                      if lbxMissions.Height > 21 then
-                        ResizeBucket(lbxMissions);
-                    end;
-                end;
-              end;
-            end;
             Readln(f, tmpStr);
           until Pos('</section>', tmpStr) > 0;
         end;
       end;
     finally
       CloseFile(f);
+      isDeckLoading := False;
     end;
     PageControl1Change(Sender);
   end;
@@ -477,6 +493,7 @@ begin
       chartFactionsPieSeries1.Clear;
       chartCostLineSeries1.Clear;
     end;
+    PageControl1Change(Sender);
   end;
 end;
 
@@ -488,15 +505,15 @@ end;
 procedure TForm1.mniLoadDeckClick(Sender: TObject);
 var
   f: TextFile;
-  setNum, tmpStr: String;
-  oSet: array [1..6] of TCard;
-  i, j, cnt, numSets: Integer;
+  oName, tmpStr: String;
+  i, j, numSets: Integer;
 begin
   OpenDialog1.InitialDir := '\Decks';
   OpenDialog1.Filter := 'Text files|*.txt';
   if OpenDialog1.Execute then
   begin
     try
+      isDeckLoading := True;
       RefreshBuckets;
       AssignFile(f, OpenDialog1.FileName);
       Reset(f);
@@ -511,67 +528,13 @@ begin
           Readln(f, tmpStr); Readln(f, tmpStr);
           repeat
             numSets := StrToInt(Copy(tmpStr, 1, 1));
-            setNum := Copy(tmpStr, (Pos('(', tmpStr) + 1), 3);
-            // get all cards in the set...
-            cnt := 0;
+            oName := Trim(Copy(tmpStr, 5, (Pos('(',tmpStr)-1)-5));
             for i:=0 to Length(cardDB)-1 do
-            begin
-              if cardDB[i].setNumber = setNum then
+              if (cardDB[i].cardTitle = oName) and (cardDB[i].cardType = 'Objective') then
               begin
-                Inc(cnt);
-                oSet[cnt] := cardDB[i];
-              end;
-              if cnt = 6 then
-                break;
-            end;
-            // now place the cards from the set in the proper 'buckets'...
-            for j:=1 to numSets do
-              for i:=1 to 6 do
-              begin
-                case oSet[i].cardType of
-                  'Objective':
-                    begin
-                      AddCardToBucket(lbxObjectives, oSet[i].cardTitle,
-                       oSet[i].setNumber, oSet[i].cardInSet);
-                      if lbxObjectives.Height > 21 then
-                        ResizeBucket(lbxObjectives);
-                    end;
-                  'Unit':
-                    begin
-                      AddCardToBucket(lbxUnits, oSet[i].cardTitle,
-                       oSet[i].setNumber, oSet[i].cardInSet);
-                      if lbxUnits.Height > 21 then
-                        ResizeBucket(lbxUnits);
-                    end;
-                  'Enhancement':
-                    begin
-                      AddCardToBucket(lbxEnhancements, oSet[i].cardTitle,
-                       oSet[i].setNumber, oSet[i].cardInSet);
-                      if lbxEnhancements.Height > 21 then
-                        ResizeBucket(lbxEnhancements);
-                    end;
-                  'Event':
-                    begin
-                      AddCardToBucket(lbxEvents, oSet[i].cardTitle,
-                       oSet[i].setNumber, oSet[i].cardInSet);
-                      if lbxEvents.Height > 21 then
-                        ResizeBucket(lbxEvents);
-                    end;
-                  'Fate':
-                    begin
-                      AddCardToBucket(lbxFateCards, oSet[i].cardTitle,
-                       oSet[i].setNumber, oSet[i].cardInSet);
-                      if lbxFateCards.Height > 21 then
-                        ResizeBucket(lbxFateCards);
-                    end;
-                  'Mission':
-                    begin
-                      AddCardToBucket(lbxMissions, oSet[i].cardTitle,
-                       oSet[i].setNumber, oSet[i].cardInSet);
-                      if lbxMissions.Height > 21 then
-                        ResizeBucket(lbxMissions);
-                    end;
-                end;
+                 sgdCards.Row := i+1;
+                 for j:=1 to numSets do
+                   sgdCardsDblClick(Self);
               end;
             Readln(f, tmpStr);
           until tmpStr = '';
@@ -580,6 +543,7 @@ begin
       end;
     finally
       CloseFile(f);
+      isDeckLoading := False;
     end;
     PageControl1Change(Sender);
   end;
@@ -654,8 +618,8 @@ end;
 
 function TForm1.WriteLackeyXML(line: String; isObjective: Boolean = false): String;
 var
-  x, y: Integer;
-  cycle, title, oSet, cardInSet, tmpStr, searchStr: String;
+  x, y, start, stop: Integer;
+  cycle, title, oSet, cardInSet, tmpStr, searchStr, chkSet: String;
   found: Boolean;
 begin
   result:='';
@@ -685,7 +649,17 @@ begin
   else
   begin
     if Pos('*', tmpStr)=0 then
-      title := searchStr + '(' + oSet + ')';
+      title := searchStr + ' (' + oSet + ')'
+    else
+    // check exception cases like Kyle Katarn
+    if Pos('[', tmpStr)>0 then
+    begin
+      start:=Pos('[',tmpStr)+1;
+      stop:=Pos(']',tmpStr);
+      chkSet:=Copy(tmpStr, start, stop-start);
+      if chkSet = oSet then
+        title := searchStr + ' (' + oSet + ')';
+    end;
   end;
 
   for x:=0 to Length(cardDB)-1 do
@@ -948,13 +922,13 @@ end;
 
 procedure TForm1.PageControl1Change(Sender: TObject);
 var
-  numCards, i, j, indexCnt, numOCards,
+  i, j, index, hyphen, numCards, numOCards,
   nUnits, nEnhancements, nEvents, nFates, nMissions,
   forceIcons, UD, OD, T, EUD, EOD, ET,
   res1, res2, res3, resN,
   fac1Cnt, fac2Cnt, fac3Cnt, neutCnt: Integer;
   comIcons, anIcon, iconValue,
-  fac1Name, fac2Name, fac3Name, lastCard, cardTitle, cardSet, cardInSet: String;
+  fac1Name, fac2Name, fac3Name, lastCard, cardTitle, cardSet, cardInSet, cardID: String;
   arrCost: array [0..10] of integer;
 
   procedure PlaceCards(var aDeck: array of String; aBucket: TListBox);
@@ -965,8 +939,8 @@ var
       for i:=2 to aBucket.Items.Count - 1 do
         for j:=1 to StrToInt(Copy(aBucket.Items[i],1,1)) do
         begin
-          aDeck[indexCnt] := Trim(Copy(aBucket.Items[i], 5, 99));
-          Inc(indexCnt);
+          aDeck[index] := Trim(Copy(aBucket.Items[i], 5, 99));
+          Inc(index);
         end;
   end;
 
@@ -1067,10 +1041,10 @@ begin
     Inc(numOCards, i);
     // set size of array and fill it with the card names
     SetLength(objDeck, numOCards);
-    indexCnt := 0;
+    index := 0;
     PlaceCards(objDeck, lbxObjectives);
     SetLength(drawDeck, numCards);
-    indexCnt := 0;
+    index := 0;
     PlaceCards(drawDeck, lbxUnits);
     PlaceCards(drawDeck, lbxEnhancements);
     PlaceCards(drawDeck, lbxEvents);
@@ -1080,10 +1054,12 @@ begin
     lastCard := '';
     for i:=0 to Length(drawDeck)-1 do
     begin
-      indexCnt := Pos('(',drawDeck[i]);
-      cardTitle := Trim(Copy(drawDeck[i],1,indexCnt-1));
-      cardSet := Copy(drawDeck[i],indexCnt+1, 3);
-      cardInSet := Copy(drawDeck[i],indexCnt+5,1);
+      index := Pos('(',drawDeck[i]);
+      cardID := Copy(drawDeck[i], index, 99);
+      hyphen := Pos('-', cardID);
+      cardTitle := Trim(Copy(drawDeck[i],1,index-1));
+      cardSet := Copy(cardID, 2, hyphen-2);
+      cardInSet := Copy(cardID, hyphen+1, 1);
       for j:=0 to Length(cardDB)-1 do
       begin
         // if card title, set number, and card in set match...
@@ -1096,12 +1072,12 @@ begin
           comIcons:=cardDB[j].combatIcons;
           if comIcons > ' ' then
             repeat
-              indexCnt:=Pos(':',comIcons);
+              index:=Pos(':',comIcons);
               if Pos(',',comIcons) > 0 then
-                anIcon:=Copy(comIcons, indexCnt+1, Pos(',',comIcons)-(indexCnt+1))
+                anIcon:=Copy(comIcons, index+1, Pos(',',comIcons)-(index+1))
               else
-                anIcon:=Copy(comIcons, indexCnt+1, 99);
-              iconValue:=Trim(Copy(comIcons,1,indexCnt-1));
+                anIcon:=Copy(comIcons, index+1, 99);
+              iconValue:=Trim(Copy(comIcons,1,index-1));
               case anIcon of
                 'UD' : Inc(UD, StrToIntDef(iconValue,0));
                 'OD' : Inc(OD, StrToIntDef(iconValue,0));
@@ -1181,10 +1157,12 @@ begin
     end;
     for i:=0 to Length(objDeck)-1 do
     begin
-      indexCnt:=Pos('(',objDeck[i]);
-      cardTitle:=Trim(Copy(objDeck[i],1,indexCnt-1));
-      cardSet:=Copy(objDeck[i],indexCnt+1, 3);
-      cardInSet:=Copy(objDeck[i],indexCnt+5,1);
+      index := Pos('(',objDeck[i]);
+      cardID := Copy(objDeck[i], index, 99);
+      hyphen := Pos('-', cardID);
+      cardTitle := Trim(Copy(objDeck[i],1,index-1));
+      cardSet := Copy(cardID, 2, hyphen-2);
+      cardInSet := Copy(cardID, hyphen+1, 1);
       for j:=0 to Length(cardDB)-1 do
         if (cardTitle = cardDB[j].cardTitle) and
            (cardSet = cardDB[j].setNumber) and
@@ -1383,12 +1361,18 @@ begin
     stop := Pos('-',tmpStr);
     sNum := Copy(tmpStr, 2, stop-2);
     DelSetFromBuckets(sNum);
-    ResizeBucket(lbxObjectives);
-    ResizeBucket(lbxUnits);
-    ResizeBucket(lbxEnhancements);
-    ResizeBucket(lbxEvents);
-    ResizeBucket(lbxFateCards);
-    ResizeBucket(lbxMissions);
+    if lbxObjectives.Height > 21 then
+      ResizeBucket(lbxObjectives);
+    if lbxUnits.Height > 21 then
+      ResizeBucket(lbxUnits);
+    if lbxEnhancements.Height > 21 then
+      ResizeBucket(lbxEnhancements);
+    if lbxEvents.Height > 21 then
+      ResizeBucket(lbxEvents);
+    if lbxFateCards.Height > 21 then
+      ResizeBucket(lbxFateCards);
+    if lbxMissions.Height > 21 then
+      ResizeBucket(lbxMissions);
   end;
 end;
 
@@ -2113,18 +2097,19 @@ begin
   SetTheObjective(selectedSet);
   // special insert for faction cards...
   setNum := sgdCards.Cells[4, sgdCards.Row];
-  if setNum = '000' then
+  if setNum = '0' then
   begin
     lbxFaction.Items[0] := 'Faction - ' + sgdCards.Cells[6, sgdCards.Row];
     Exit;
   end;
   // if a faction has not been chosen, then you are not allowed to add sets...
-  if lbxFaction.Items[0] = 'Faction - <none selected>' then
+  if (not isDeckLoading) and (lbxFaction.Items[0] = 'Faction - <none selected>') then
   begin
     ShowMessage('You MUST select a faction before you can add sets to your deck!');
     Exit;
   end
   else
+  if not isDeckLoading then
   begin
     if ((Pos('Jedi', lbxFaction.Items[0]) > 0) or
         (Pos('Rebel', lbxFaction.Items[0]) > 0) or
@@ -2361,6 +2346,7 @@ var
           lBox.Items[0] := '0 ' + Copy(lBox.Items[0], k, 99);
         break;
       end;
+    lBox.ItemIndex:=0;
   end;
 
 begin

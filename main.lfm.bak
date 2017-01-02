@@ -111,7 +111,7 @@ object Form1: TForm1
                   Top = 1
                   Width = 283
                   HorzScrollBar.Page = 100
-                  VertScrollBar.Page = 147
+                  VertScrollBar.Page = 165
                   Align = alClient
                   ClientHeight = 165
                   ClientWidth = 279
@@ -120,10 +120,12 @@ object Form1: TForm1
                   TabOrder = 0
                   object lbxObjectives: TListBox
                     Left = 0
-                    Height = 21
+                    Height = 24
                     Top = 21
                     Width = 279
                     Align = alTop
+                    ClickOnSelChange = False
+                    ExtendedSelect = False
                     Items.Strings = (
                       '0 - Objectives'
                       '================================'
@@ -141,6 +143,8 @@ object Form1: TForm1
                     Top = 0
                     Width = 279
                     Align = alTop
+                    ClickOnSelChange = False
+                    ExtendedSelect = False
                     Items.Strings = (
                       'Faction - <none selected>'
                     )
@@ -153,10 +157,12 @@ object Form1: TForm1
                   end
                   object lbxUnits: TListBox
                     Left = 0
-                    Height = 21
-                    Top = 42
+                    Height = 24
+                    Top = 45
                     Width = 279
                     Align = alTop
+                    ClickOnSelChange = False
+                    ExtendedSelect = False
                     Items.Strings = (
                       '0 - Units'
                       '================================'
@@ -170,10 +176,12 @@ object Form1: TForm1
                   end
                   object lbxEvents: TListBox
                     Left = 0
-                    Height = 21
-                    Top = 84
+                    Height = 24
+                    Top = 93
                     Width = 279
                     Align = alTop
+                    ClickOnSelChange = False
+                    ExtendedSelect = False
                     Items.Strings = (
                       '0 - Events'
                       '================================'
@@ -187,10 +195,12 @@ object Form1: TForm1
                   end
                   object lbxEnhancements: TListBox
                     Left = 0
-                    Height = 21
-                    Top = 63
+                    Height = 24
+                    Top = 69
                     Width = 279
                     Align = alTop
+                    ClickOnSelChange = False
+                    ExtendedSelect = False
                     Items.Strings = (
                       '0 - Enhancements'
                       '================================'
@@ -204,10 +214,12 @@ object Form1: TForm1
                   end
                   object lbxFateCards: TListBox
                     Left = 0
-                    Height = 21
-                    Top = 105
+                    Height = 24
+                    Top = 117
                     Width = 279
                     Align = alTop
+                    ClickOnSelChange = False
+                    ExtendedSelect = False
                     Items.Strings = (
                       '0 - Fate Cards'
                       '================================'
@@ -221,10 +233,12 @@ object Form1: TForm1
                   end
                   object lbxMissions: TListBox
                     Left = 0
-                    Height = 21
-                    Top = 126
+                    Height = 24
+                    Top = 141
                     Width = 279
                     Align = alTop
+                    ClickOnSelChange = False
+                    ExtendedSelect = False
                     Items.Strings = (
                       '0 - Missions'
                       '================================'
@@ -7503,6 +7517,7 @@ object Form1: TForm1
       Caption = 'Lackey Decks'
       object mniLoadLackey: TMenuItem
         Caption = 'Load Lackey Deck (*.dek)'
+        OnClick = mniLoadLackeyClick
       end
       object mniSaveLackey: TMenuItem
         Caption = 'Save Lackey Deck (*.dek)'
