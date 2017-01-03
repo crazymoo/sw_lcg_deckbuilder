@@ -247,6 +247,7 @@ type
     procedure RefreshBuckets;
     procedure SetTheObjective(s: String);
     function WriteLackeyXML(line: String; isObjective: Boolean = false): String;
+    procedure SetBuckets;
   public
     { public declarations }
   protected
@@ -683,6 +684,22 @@ begin
               '</name><set>' + cycle + '</set></card>';
 end;
 
+procedure TForm1.SetBuckets;
+begin
+  lbxObjectives.Height := lbxFaction.Height;
+  lbxObjectives.ScrollBy(0,0);
+  lbxUnits.Height := lbxFaction.Height;
+  lbxUnits.ScrollBy(0,0);
+  lbxEnhancements.Height := lbxFaction.Height;
+  lbxEnhancements.ScrollBy(0,0);
+  lbxEvents.Height := lbxFaction.Height;
+  lbxEvents.ScrollBy(0,0);
+  lbxFateCards.Height := lbxFaction.Height;
+  lbxFateCards.ScrollBy(0,0);
+  lbxMissions.Height := lbxFaction.Height;
+  lbxMissions.ScrollBy(0,0);
+end;
+
 procedure TForm1.mniSaveLackeyClick(Sender: TObject);
 var
   f: TextFile;
@@ -947,18 +964,7 @@ var
 begin
   if PageControl1.ActivePage = tabEditor then
   begin
-    lbxObjectives.Height := lbxFaction.Height;
-    lbxObjectives.ScrollBy(0,0);
-    lbxUnits.Height := lbxFaction.Height;
-    lbxUnits.ScrollBy(0,0);
-    lbxEnhancements.Height := lbxFaction.Height;
-    lbxEnhancements.ScrollBy(0,0);
-    lbxEvents.Height := lbxFaction.Height;
-    lbxEvents.ScrollBy(0,0);
-    lbxFateCards.Height := lbxFaction.Height;
-    lbxFateCards.ScrollBy(0,0);
-    lbxMissions.Height := lbxFaction.Height;
-    lbxMissions.ScrollBy(0,0);
+    SetBuckets;
     if lbxFaction.Items[0] <> 'Faction - <none selected>' then
     begin
       fac1Name:=Copy(lbxFaction.Items[0],11,99);
@@ -1679,7 +1685,7 @@ begin
              (Pos(cardDB[j].setNumber, shuffledDeck[i]) > 0) then
           begin
             img.Clear;
-            img.LoadFromFile('DBFiles\images\'+cardDB[j].cardPic);
+            img.LoadFromFile(cardDB[j].cardPic);
             case i of
               0: begin
                    imgSetup1.Picture.Assign(img);
@@ -1738,7 +1744,7 @@ begin
              (Pos(cardDB[j].setNumber, shuffledDeck[i]) > 0) then
           begin
             img.Clear;
-            img.LoadFromFile('DBFiles\images\'+cardDB[j].cardPic);
+            img.LoadFromFile(cardDB[j].cardPic);
             case i of
               0: begin
                    imgObj1.Picture.Assign(img);
@@ -2048,7 +2054,7 @@ begin
       for i:=0 to Length(cardDB)-1 do
         if (cardDB[i].setNumber = selectedSet) and (cardDB[i].cardInSet = cardNum) then
         begin
-          aPic.LoadFromFile('DBFiles\images\'+cardDB[i].cardPic);
+          aPic.LoadFromFile(cardDB[i].cardPic);
           imgCardImage.Picture := aPic;
           imgCardImage.Visible:=true;
           imgCardImage.Stretch := true;
@@ -2192,6 +2198,7 @@ begin
             ResizeBucket(lbxMissions);
         end;
     end;
+  SetBuckets;
 end;
 
 
