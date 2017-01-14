@@ -32,3 +32,5 @@
 32-A Wretched Hive/OC
 33-Meditation and Mastery/OC
 34-Scrap Metal/OC
+35-Power of the Force/OC
+36-Technological Terror/OC

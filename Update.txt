@@ -1,0 +1,71 @@
+Update - (1/12/2017)
+- Added Scrap Metal Force Pack
+
+Update - version 1.0.6.0 (1/1/2017)
+- Added Lackey Deck Load/Save functionality
+- Added a bit of color to the User Interface
+- Added the ability to drap/drop card image files onto the app for the highlighted card in the grid.
+
+Update - version 1.0.5.5 (12/19/2016)
+ - Added 'A Wretched Hive' & 'Meditation and Mastery'
+
+Update - version 1.0.5.4 (09/09/2016)
+ - Added Ancient Rivals
+
+Update - version 1.0.5.3 (07/14/2016)
+ - Added Redemption and Return
+
+Update - version 1.0.5.2 (06/12/2016)
+ - Added Galactic Ambitions
+ - Reworked Octgn.txt and Cards.txt files so that ALL cards now match-up to 
+   their Octgn counter-parts so .o8d decks are 100% correct.
+
+
+Update - version 1.0.5.1 (05/31/2016)
+ - Added Press the Attack Force Pack
+ - Fixed a bug where similar names of card titles (e.g. Maw of Madness and Maw)
+   was causing the wrong card to appear on the Objective Flop on the Deck
+   Stats tab.
+   
+   
+
+Update - version 1.0.4.1 (xx/xx/xxxx)
+ - Added Grid Filters.  Top row of buttons filters the Faction column and the 
+   2nd row filters the Card Type column.  The last row contains the dropdown 
+   to filter the grid by Released Force Pack or Deluxe Box.
+   
+ - New funtionality!  Clicking the right-mouse button anywhere in the card
+   grid will open up a Set View window.  The set in the window will be the six
+   cards belonging to the set of where the cursor was in the grid when the 
+   right-mouse button was clicked.
+   
+   The window can be resized to make it bigger to be able to better view the
+   cards in the set. 
+   
+   To exit the Set View window, either click the 'X' button or right-mouse click
+   anywhere within the window.
+
+
+
+Update - version 1.0.3.5 (04/07/2016)
+
+- Removed the 'Export Decks' and 'Check My Deck!' tabs.
+
+- Program is now able to Load/Save Octgn files.  Makes it easier to 'point' the 
+  applications directory to wherever you have your Octgn files saved...load the
+  file in, swap some objective sets around, and then re-save the deck as an 
+  Octgn file.  Makes changing your Octgn decks ultra-easy.
+  
+- Slight change to the Load/Save methods of Text decks.  The Format the 
+  application now uses for Text Decks (.txt) can be opened directly into any 
+  text editor.  From there you can send the list directly to a printer or even 
+  just copy/paste the list to an email or post it to a forum thread!  No text
+  editing or formatting is needed (unless you don't like my format). :)
+
+- NOTE: If you've downloaded the application before, then you only need to go
+  to the Google Drive and download/install the Update_v1.0.3.5.exe file.  It's 
+  significantly smaller than the complete SW_LCG_Deckbuilder_Setup.exe file due
+  to the lack of the 1200 image files in the installer.
+  
+  But if you're a 'first-timer' to the application, download/install
+  SW_LCG_Deckbuilder_Setup.exe (~487 MB)
