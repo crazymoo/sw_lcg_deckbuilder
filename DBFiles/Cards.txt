@@ -1474,6 +1474,7 @@
 245-4/33-Meditation and Mastery/Master of the Night/ /245/4/Scum and Villainy/Dark/Enhancement/1/1/ / / /Night./Enhance a card you control.  Interrupt: When enhanced card is targeted by an enemy card effect, shuffle this enhancement into its owner's deck to cancel that effect./C:\Program Files (x86)\Star Wars LCG Deckbuilder\DBFiles\images\33-245-04.jpg
 245-5/33-Meditation and Mastery/Blaster Pistol/ /245/5/Neutral/Dark/Enhancement/0/1/ / / /Weapon./Enhance a Character unit. Enhanced unit gains UD./C:\Program Files (x86)\Star Wars LCG Deckbuilder\DBFiles\images\33-245-05.jpg
 245-6/33-Meditation and Mastery/Well Equipped/ /245/6/Neutral/Dark/Fate/ /2/ / / //Remove 1 token (any type) from a unit or objective card you control with 1 or more enhancements on it./C:\Program Files (x86)\Star Wars LCG Deckbuilder\DBFiles\images\33-245-06.jpg
+<<<<<<< HEAD
 246-1/34-Scrap Metal/Hero of a Thousand Devices/ /246/1/Jedi/Light/Objective/ / /1/5/ //Interrupt: When a unit you control with 1 or more enhancements on it leaves play, return any number of those enhancements to their owner's hand./C:\Program Files (x86)\Star Wars LCG Deckbuilder\DBFiles\images\34-246-01.jpg
 246-2/34-Scrap Metal/R2-D2/X/246/2/Jedi/Light/Unit/3/2/ /3/1:UD, 1:OD, 1:EUD/Droid./You may use facedown enhancements on this card as if they were in your hand.  Action: Reveal an enhancement from your hand and attach it as a facedown enhancement to this card./C:\Program Files (x86)\Star Wars LCG Deckbuilder\DBFiles\images\34-246-02.jpg
 246-3/34-Scrap Metal/C-3P0/X/246/3/Jedi/Light/Unit/2/2/1/2/1:ET/Droid./Reaction: After this unit enters play, discard a target enhancement with printed cost 2 or lower./C:\Program Files (x86)\Star Wars LCG Deckbuilder\DBFiles\images\34-246-03.jpg
@@ -1504,4 +1505,6 @@
 250-4/34-Scrap Metal/Freelance Hunter/ /250/4/Neutral/Dark/Unit/2/1/ /2/1:OD, 1:EUD/Character. Bounty Hunter. Mercenary./ /C:\Program Files (x86)\Star Wars LCG Deckbuilder\DBFiles\images\34-250-04.jpg
 250-5/34-Scrap Metal/Death Mark/ /250/5/Scum and Villainy/Dark/Enhancement/1/2/ / / /Condition. Bounty./Enhance an enemy Character or Droid unit. Enhanced unit counts as matching all targeting requirements of Scum event cards./C:\Program Files (x86)\Star Wars LCG Deckbuilder\DBFiles\images\34-250-05.jpg
 250-6/34-Scrap Metal/Hutt's Hospitality/ /250/6/Scum and Villainy/Dark/Event/2/2/ / / //Action: Destroy a target Character or Droid unit with printed cost 2 or lower./C:\Program Files (x86)\Star Wars LCG Deckbuilder\DBFiles\images\34-250-06.jpg
+=======
+>>>>>>> a5b39adb627e07254f71a5fa156301950ba2d15d
 ////////////////
