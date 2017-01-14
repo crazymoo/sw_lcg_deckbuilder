@@ -44,6 +44,11 @@ get you what you want.
 You can also right-click on the grid to view an entire objective set.  Right-
 clicking on the window closes it again.
 
+Also, you can include your own card scans if you like.  Simply highlight a card
+in the grid and then drag the image file and drop it onto the form.  You should
+see your scan replace the prior one.  The program will save the location of 
+the new image in the Cards.txt file along with that card's other information.
+
 The Deck Stats tab:
 
 Not much to say here.  Just a breakdown of whatever current cards you have in 
