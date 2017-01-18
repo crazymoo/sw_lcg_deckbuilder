@@ -1383,6 +1383,9 @@ begin
 end;
 
 procedure TForm1.sgdCardsMouseDown(Sender: TObject; Button: TMouseButton);
+var
+  sNum, sName: String;
+  i: Integer;
 begin
   selectedSet := sgdCards.Cells[4, sgdCards.Row];
   SetTheObjective(selectedSet);
@@ -1400,7 +1403,14 @@ begin
         'Scum and Villainy':   setView.Color := clSCUM;
         'Neutral':             setView.Color := clNEUTRAL;
       end; // case
-      setView.Caption:='Set View - '+sgdCards.Cells[4, sgdCards.Row];
+      sNum := sgdCards.Cells[4, sgdCards.Row];
+      for i:=0 to Length(cardDB)-1 do
+        if (sgdCards.Cells[5, i] = '1') and (sgdCards.Cells[4, i] = sNum) then
+        begin
+          sName := sgdCards.Cells[2, i];
+          break;
+        end;
+      setView.Caption:='Set ' + sNum + ' - ' + sName;
       setView.Visible:=True;
       setView.Show;
     except
