@@ -484,7 +484,7 @@ end;
 
 procedure TForm1.mniNewDeckClick(Sender: TObject);
 begin
-  if Application.MessageBox(PChar('Are you sure you want to make a new deck?'),
+  if Application.MessageBox(PChar('All work on the current deck will be lost (if not saved). Are you sure you want to make a new deck?'),
    PChar('Create New Deck'), mb_OKCANCEL+mb_ICONQUESTION) = mrOK then
   begin
     SetLength(drawDeck, 0);
@@ -704,8 +704,23 @@ procedure TForm1.mniSaveLackeyClick(Sender: TObject);
 var
   f: TextFile;
   line: String;
-  i, copies: Integer;
+  copies: Integer;
   isLight: Boolean;
+
+  procedure TranscribeCards(aListBox: TListBox);
+  var
+    i: Integer;
+  begin
+    for i:=2 to aListBox.Items.Count-1 do
+    begin
+      copies := StrToInt(Copy(aListBox.Items[i], 1, 1));
+      line := aListBox.Items[i];
+      repeat
+        Writeln(f, WriteLackeyXML(line));
+        copies := copies - 1;
+      until copies = 0;
+    end;
+  end;
 
 begin
   SaveDialog1.InitialDir := '\Decks';
@@ -721,68 +736,14 @@ begin
     Writeln(f, '<game>StarWars-LCG</game>');
     Writeln(f, '');
     Writeln(f, '<superzone name="Command">');
-    if StrToInt(Copy(lbxUnits.Items[0],1,1)) > 0 then
-      for i:=2 to lbxUnits.Items.Count-1 do
-      begin
-        copies := StrToInt(Copy(lbxUnits.Items[i], 1, 1));
-        line := lbxUnits.Items[i];
-        repeat
-          Writeln(f, WriteLackeyXML(line));
-          copies := copies - 1;
-        until copies = 0;
-      end;
-    if StrToInt(Copy(lbxEnhancements.Items[0],1,1)) > 0 then
-      for i:=2 to lbxEnhancements.Items.Count-1 do
-      begin
-        copies := StrToInt(Copy(lbxEnhancements.Items[i], 1, 1));
-        line := lbxEnhancements.Items[i];
-        repeat
-          Writeln(f, WriteLackeyXML(line));
-          copies := copies - 1;
-        until copies = 0;
-      end;
-    if StrToInt(Copy(lbxEvents.Items[0],1,1)) > 0 then
-      for i:=2 to lbxEvents.Items.Count-1 do
-      begin
-        copies := StrToInt(Copy(lbxEvents.Items[i], 1, 1));
-        line := lbxEvents.Items[i];
-        repeat
-          Writeln(f, WriteLackeyXML(line));
-          copies := copies - 1;
-        until copies = 0;
-      end;
-    if StrToInt(Copy(lbxFateCards.Items[0],1,1)) > 0 then
-      for i:=2 to lbxFateCards.Items.Count-1 do
-      begin
-        copies := StrToInt(Copy(lbxFateCards.Items[i], 1, 1));
-        line := lbxFateCards.Items[i];
-        repeat
-          Writeln(f, WriteLackeyXML(line));
-          copies := copies - 1;
-        until copies = 0;
-      end;
-    if StrToInt(Copy(lbxMissions.Items[0],1,1)) > 0 then
-      for i:=2 to lbxMissions.Items.Count-1 do
-      begin
-        copies := StrToInt(Copy(lbxMissions.Items[i], 1, 1));
-        line := lbxMissions.Items[i];
-        repeat
-          Writeln(f, WriteLackeyXML(line));
-          copies := copies - 1;
-        until copies = 0;
-      end;
+    if StrToInt(Copy(lbxUnits.Items[0],1,1)) > 0 then TranscribeCards(lbxUnits);
+    if StrToInt(Copy(lbxEnhancements.Items[0],1,1)) > 0 then TranscribeCards(lbxEnhancements);
+    if StrToInt(Copy(lbxEvents.Items[0],1,1)) > 0 then TranscribeCards(lbxEvents);
+    if StrToInt(Copy(lbxFateCards.Items[0],1,1)) > 0 then TranscribeCards(lbxFateCards);
+    if StrToInt(Copy(lbxMissions.Items[0],1,1)) > 0 then TranscribeCards(lbxMissions);
     Writeln(f, '</superzone>');
     Writeln(f, '<superzone name="Objectives">');
-    if StrToInt(Copy(lbxObjectives.Items[0],1,1)) > 0 then
-      for i:=2 to lbxObjectives.Items.Count-1 do
-      begin
-        copies := StrToInt(Copy(lbxObjectives.Items[i], 1, 1));
-        line := lbxObjectives.Items[i];
-        repeat
-          Writeln(f, WriteLackeyXML(line, true));
-          copies := copies - 1;
-        until copies = 0;
-      end;
+    if StrToInt(Copy(lbxObjectives.Items[0],1,1)) > 0 then TranscribeCards(lbxObjectives);
     Writeln(f, '</superzone>');
     Writeln(f, '<superzone name="Force">');
     if Pos('Jedi', lbxFaction.Items[0]) > 0 then
@@ -842,7 +803,6 @@ procedure TForm1.mniSaveOctgnClick(Sender: TObject);
 var
   f: TextFile;
   j, line, s, title: String;
-  i: Integer;
 
   function GetCardID(cardName: String): String;
   var
@@ -853,15 +813,22 @@ var
         result := arrOctgn[x][1];
   end;
 
-  procedure WriteXML;
+  procedure TranscribeCards(aListBox: TListBox);
+  var
+    i: Integer;
   begin
-    Delete(line, 1, 4);
-    title := line;
-    Delete(title, Pos('(', title)-1, 10);
-    line:=ScrubStr(line);
-    Delete(line, Pos('(', line)-1, 1);
-    Writeln(f, '    <card qty="' + j + '" id="' + GetCardID(line) +
-            '">' + title + '</card>');
+    for i:=2 to aListBox.Items.Count-1 do
+    begin
+      j := Copy(aListBox.Items[i], 1, 1);
+      line := aListBox.Items[i];
+      Delete(line, 1, 4);
+      title := line;
+      Delete(title, Pos('(', title)-1, 10);
+      line:=ScrubStr(line);
+      Delete(line, Pos('(', line)-1, 1);
+      Writeln(f, '    <card qty="' + j + '" id="' + GetCardID(line) +
+              '">' + title + '</card>');
+    end;
   end;
 
 begin
@@ -887,50 +854,14 @@ begin
     end;
     Writeln(f, '  </section>');
     Writeln(f, '  <section name="Command Deck">');
-    if StrToInt(Copy(lbxUnits.Items[0],1,1)) > 0 then
-      for i:=2 to lbxUnits.Items.Count-1 do
-      begin
-        j := Copy(lbxUnits.Items[i], 1, 1);
-        line := lbxUnits.Items[i];
-        WriteXML;
-      end;
-    if StrToInt(Copy(lbxEnhancements.Items[0],1,1)) > 0 then
-      for i:=2 to lbxEnhancements.Items.Count-1 do
-      begin
-        j := Copy(lbxEnhancements.Items[i], 1, 1);
-        line := lbxEnhancements.Items[i];
-        WriteXML;
-      end;
-    if StrToInt(Copy(lbxEvents.Items[0],1,1)) > 0 then
-      for i:=2 to lbxEvents.Items.Count-1 do
-      begin
-        j := Copy(lbxEvents.Items[i], 1, 1);
-        line := lbxEvents.Items[i];
-        WriteXML;
-      end;
-    if StrToInt(Copy(lbxFateCards.Items[0],1,1)) > 0 then
-      for i:=2 to lbxFateCards.Items.Count-1 do
-      begin
-        j := Copy(lbxFateCards.Items[i], 1, 1);
-        line := lbxFateCards.Items[i];
-        WriteXML;
-      end;
-    if StrToInt(Copy(lbxMissions.Items[0],1,1)) > 0 then
-      for i:=2 to lbxMissions.Items.Count-1 do
-      begin
-        j := Copy(lbxMissions.Items[i], 1, 1);
-        line := lbxMissions.Items[i];
-        WriteXML;
-      end;
+    if StrToInt(Copy(lbxUnits.Items[0],1,1)) > 0 then TranscribeCards(lbxUnits);
+    if StrToInt(Copy(lbxEnhancements.Items[0],1,1)) > 0 then TranscribeCards(lbxEnhancements);
+    if StrToInt(Copy(lbxEvents.Items[0],1,1)) > 0 then TranscribeCards(lbxEvents);
+    if StrToInt(Copy(lbxFateCards.Items[0],1,1)) > 0 then TranscribeCards(lbxFateCards);
+    if StrToInt(Copy(lbxMissions.Items[0],1,1)) > 0 then TranscribeCards(lbxMissions);
     Writeln(f, '  </section>');
     Writeln(f, '  <section name="Objective Deck">');
-    if StrToInt(Copy(lbxObjectives.Items[0],1,1)) > 0 then
-      for i:=2 to lbxObjectives.Items.Count-1 do
-      begin
-        j := Copy(lbxObjectives.Items[i], 1, 1);
-        line := lbxObjectives.Items[i];
-        WriteXML;
-      end;
+    if StrToInt(Copy(lbxObjectives.Items[0],1,1)) > 0 then TranscribeCards(lbxObjectives);
     Writeln(f, '  </section>');
     Writeln(f, '</deck>');
     CloseFile(f);
@@ -999,19 +930,11 @@ begin
     imgSetup5.Picture.Clear;
     imgSetup6.Picture.Clear;
     numCards:=0; numOCards:=0;
-    fac1Cnt:=0;
-    fac2Cnt:=0;
-    fac3Cnt:=0;
+    fac1Cnt:=0; fac2Cnt:=0; fac3Cnt:=0;
     neutCnt:=0;
-    fac1Name:='';
-    fac2Name:='';
-    fac3Name:='';
+    fac1Name:=''; fac2Name:=''; fac3Name:='';
     comIcons:='';
-    nUnits:=0;
-    nEnhancements:=0;
-    nEvents:=0;
-    nFates:=0;
-    nMissions:=0;
+    nUnits:=0; nEnhancements:=0; nEvents:=0; nFates:=0; nMissions:=0;
     forceIcons:=0;
     UD:=0;  OD:=0;  T:=0;  EUD:=0;  EOD:=0;  ET:=0;
     res1:=0;  res2:=0;  res3:=0;  resN:=0;
@@ -1384,7 +1307,7 @@ end;
 
 procedure TForm1.sgdCardsMouseDown(Sender: TObject; Button: TMouseButton);
 var
-  sNum, sName: String;
+  sName: String;
   i: Integer;
 begin
   selectedSet := sgdCards.Cells[4, sgdCards.Row];
@@ -1403,14 +1326,13 @@ begin
         'Scum and Villainy':   setView.Color := clSCUM;
         'Neutral':             setView.Color := clNEUTRAL;
       end; // case
-      sNum := sgdCards.Cells[4, sgdCards.Row];
       for i:=0 to Length(cardDB)-1 do
-        if (sgdCards.Cells[5, i] = '1') and (sgdCards.Cells[4, i] = sNum) then
+        if (sgdCards.Cells[5, i] = '1') and (sgdCards.Cells[4, i] = selectedSet) then
         begin
           sName := sgdCards.Cells[2, i];
           break;
         end;
-      setView.Caption:='Set ' + sNum + ' - ' + sName;
+      setView.Caption:='Set ' + selectedSet + ' - ' + sName;
       setView.Visible:=True;
       setView.Show;
     except
