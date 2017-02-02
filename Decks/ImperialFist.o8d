@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="d5cf89e5-1984-4873-8ae0-f06eea411bb3">
+  <section name="Affiliation">
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000095">Imperial Navy</card>
+  </section>
+  <section name="Command Deck">
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001010">Darth Vader</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001011">Vader's TIE Advanced</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001012">Black Squadron Fighter</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001040">Grand Admiral Thrawn</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001041">Noghri Bodyguard</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001042">Noghri Bodyguard</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001136">Colonel Yularen</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001137">Lieutenant Mithel</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001138">MSE-6 "Mouse" Droid</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001148">TIE Phantom</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001149">TIE Phantom</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000041">TIE Attack Squadron</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000042">TIE Fighter</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001013">Closed Formation</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001139">Control Room</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001150">Enhanced Laser Cannon</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001043">Chain of Command</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001151">Fighters Coming In!</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000043">Tallon Roll</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000044">Death from Above</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001014">I Have You Now</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001044">Supporting Fire</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001140">The Imperial Fist</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001152">Heat of Battle</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000045">Twist of Fate</card>
+  </section>
+  <section name="Objective Deck">
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001009">Defending the Trench</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001039">The Last Grand Admiral</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001135">Enforced Loyalty</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001147">Phantoms of Imdaar</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000040">Defense Protocol</card>
+  </section>
+</deck>

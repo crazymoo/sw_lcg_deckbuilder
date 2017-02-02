@@ -716,7 +716,10 @@ var
       copies := StrToInt(Copy(aListBox.Items[i], 1, 1));
       line := aListBox.Items[i];
       repeat
-        Writeln(f, WriteLackeyXML(line));
+        if aListBox = lbxObjectives then
+          Writeln(f, WriteLackeyXML(line, True))
+        else
+          Writeln(f, WriteLackeyXML(line));
         copies := copies - 1;
       until copies = 0;
     end;

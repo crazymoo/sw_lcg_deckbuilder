@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="d5cf89e5-1984-4873-8ae0-f06eea411bb3">
+  <section name="Affiliation">
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000143">Jedi</card>
+  </section>
+  <section name="Command Deck">
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000992">Keyan Farlander</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000993">Blue Nine</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000001232">Brainiac</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000001233">Unhinged Astromech</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000001234">Unhinged Astromech</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000150">Red Five</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000151">R2-D2</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000152">Twi'lek Loyalist</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000518">Luke Skywalker</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000519">Snowspeeder</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000520">Tauntaun</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000902">Derek "Hobbie" Klivian</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000903">Rogue Squadron X-Wing</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000904">Rogue Squadron X-Wing</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000938">Gray Squadron Gunner</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000939">Gray Squadron Y-Wing</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001058">Tycho Celchu</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001059">Wes Janson</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001060">Rogue Six</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001061">Rogue Nine</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000994">Temple Hangar</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000001235">Signal Scrambler</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000905">Pilot Ready Room</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000940">Advanced Proton Torpedoes</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000995">Reassignment</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000001236">Outwit</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000153">Double Strike</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000941">Desperation</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001062">Ready for Takeoff</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000996">Stay on Target</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000154">Target of Opportunity</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000521">Battle of Hoth</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000522">Heat of Battle</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000906">Stay on Target</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000942">Target of Opportunity</card>
+  </section>
+  <section name="Objective Deck">
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000991">The Secret of Shantipole</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000001231">Matter Under Mind</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000000149">A Journey to Dagobah</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000517">A Hero's Resolve</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000901">Rogue Squadron Assault</card>
+    <card qty="1" id="ff4fb461-8060-457a-9c16-000000000937">Called to Arms</card>
+    <card qty="2" id="ff4fb461-8060-457a-9c16-000000001057">Heroes of the Rebellion</card>
+  </section>
+</deck>
