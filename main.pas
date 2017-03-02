@@ -35,6 +35,7 @@ type
     cbxEUD: TComboBox;
     cbxFaction: TComboBox;
     cbxFilterTrait: TComboBox;
+    cbxFilterSide: TComboBox;
     cbxForcePips: TComboBox;
     cbxHealth: TComboBox;
     cbxHealth1: TComboBox;
@@ -1361,8 +1362,8 @@ var
 
   procedure ResetGrid(f: TStringList);
   var
-    i, row, numFactions, numTypes, numProducts, numTraits: Integer;
-    factions, types, products, traits: TStringList;
+    i, row, numFactions, numTypes, numProduct, numTrait, numSide: Integer;
+    factions, types, product, trait, side: TStringList;
     ch: String;
 
     function GetFactionsResult(n, x: Integer): Boolean;
@@ -1398,7 +1399,7 @@ var
         1: Result := (cardDB[x].faction = factions[0]);
         0: Result := True;
       end; //case
-    end; //inline function GetFactionsResult
+    end; //inline function
 
     function GetTypesResult(n, x: Integer): Boolean;
     begin
@@ -1426,25 +1427,33 @@ var
         1: Result := (cardDB[x].cardType = types[0]);
         0: Result := True;
       end; // case
-    end; // inline function GetTypesResult
+    end; // inline function
 
     function GetProductResult(n, x: Integer): Boolean;
     begin
       case n of
-        1: Result := (cardDB[x].product = products[0]);
+        1: Result := (cardDB[x].product = product[0]);
         0: Result := True;
       end; // case
-    end; // inline function GetSetResult
+    end; // inline function
 
-    function GetTraitsResult(n, x: Integer): Boolean;
+    function GetTraitResult(n, x: Integer): Boolean;
     begin
       case n of
-        1: Result := Pos(traits[0], cardDB[x].traits) > 0;
+        1: Result := Pos(trait[0], cardDB[x].traits) > 0;
         0: Result := True;
       end; // case
-    end; // inline function GetSetResult
+    end; // inline function
 
-  begin
+    function GetSideResult(n, x: Integer): Boolean;
+    begin
+      case n of
+        1: Result := Pos(side[0], cardDB[x].side) > 0;
+        0: Result := True;
+      end; // case
+    end; // inline function
+
+begin
     row:=0;
     sgdCards.Clear;
     sgdCards.RowCount:= recordCount + 1;
@@ -1466,8 +1475,9 @@ var
     sgdCards.Cells[15,0] := 'Ability Text';
     factions := TStringList.Create;
     types := TStringList.Create;
-    products := TStringList.Create;
-    traits := TStringList.Create;
+    product := TStringList.Create;
+    trait := TStringList.Create;
+    side := TStringList.Create;
     try
       for i:=0 to f.Count-1 do
       begin
@@ -1475,19 +1485,22 @@ var
         case ch of
           '1': factions.Add(Copy(f[i], 2, 99));
           '2': types.Add(Copy(f[i], 2, 99));
-          '3': products.Add(Copy(f[i], 2, 99));
-          '4': traits.Add(Copy(f[i], 2, 99));
+          '3': product.Add(Copy(f[i], 2, 99));
+          '4': trait.Add(Copy(f[i], 2, 99));
+          '5': side.Add(Copy(f[i], 2, 99));
         end; // case
       end; // for
       numFactions := factions.Count;
       numTypes := types.Count;
-      numProducts := products.Count;
-      numTraits := traits.Count;
+      numProduct := product.Count;
+      numTrait := trait.Count;
+      numSide := side.Count;
       for i:=0 to recordCount-1 do
         if (GetFactionsResult(numFactions, i)) and
            (GetTypesResult(numTypes, i)) and
-           (GetProductResult(numProducts, i)) and
-           (GetTraitsResult(numTraits, i)) then
+           (GetProductResult(numProduct, i)) and
+           (GetTraitResult(numTrait, i)) and
+           (GetSideResult(numSide, i)) then
         begin
           Inc(row);
           sgdCards.Cells[0,row] := cardDB[i].cardNumber;
@@ -1512,7 +1525,9 @@ var
     finally
       factions.Free;
       types.Free;
-      products.Free;
+      product.Free;
+      trait.Free;
+      side.Free;
     end; // try
   end;
 
@@ -1537,6 +1552,8 @@ begin
       filters.Add('3' + cbxFilterProduct.Items[cbxFilterProduct.ItemIndex]);
     if cbxFilterTrait.ItemIndex > 0 then
       filters.Add('4' + cbxFilterTrait.Items[cbxFilterTrait.ItemIndex]);
+    if cbxFilterSide.ItemIndex > 0 then
+      filters.Add('5' + cbxFilterSide.Items[cbxFilterSide.ItemIndex]);
     ResetGrid(filters);
   finally
     filters.Free;

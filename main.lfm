@@ -463,6 +463,24 @@ object Form1: TForm1
                 TabOrder = 15
                 Text = '- Select Trait -'
               end
+              object cbxFilterSide: TComboBox
+                Left = 488
+                Height = 23
+                Top = 58
+                Width = 187
+                AutoSize = False
+                ItemHeight = 15
+                ItemIndex = 0
+                Items.Strings = (
+                  '- Select Side (Light or Dark) -'
+                  'Light'
+                  'Dark'
+                )
+                OnChange = FilterClick
+                Style = csDropDownList
+                TabOrder = 16
+                Text = '- Select Side (Light or Dark) -'
+              end
             end
           end
         end

@@ -49,3 +49,4 @@ Temporary Items
 # Lazarus directories
 .backup
 .lib
+*.bak
