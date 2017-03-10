@@ -8,7 +8,7 @@ uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ComCtrls,
   ExtCtrls, Grids, StdCtrls, LCLType, LazLogger, TAGraph, TATools, TASeries,
   TAChartUtils, IntfGraphics, GraphType, PairSplitter, Menus,
-  Unit1;
+  Unit1, Unit2;
 
 type
 
@@ -23,6 +23,7 @@ type
     btnSaveCard: TButton;
     btnSaveCard1: TButton;
     btnClearFilters: TButton;
+    btnProducts: TButton;
     cbxAttack1: TComboBox;
     cbxCardInSet: TComboBox;
     cbxCardSet1: TComboBox;
@@ -207,6 +208,7 @@ type
     procedure btnClearFiltersClick(Sender: TObject);
     procedure btnDrawStartHandClick(Sender: TObject);
     procedure btnNewCardClick(Sender: TObject);
+    procedure btnProductsClick(Sender: TObject);
     procedure btnSaveCardClick(Sender: TObject);
     procedure btnFactionsClick(Sender: TObject);
     procedure cbxCardTypeChange(Sender: TObject);
@@ -288,11 +290,12 @@ const
 var
   Form1: TForm1;
   setView: TForm2;
+  ProdSelectView: TfrmProductsSelect;
   cardDB: array of TCard;
   recordCount: integer;
   bucket, selectedFaction, selectedSet: String;
   formerBucket: TListBox;
-  drawDeck, objDeck, reusedCards: array of String;
+  drawDeck, objDeck, reusedCards, selectedProducts, selectedTraits: array of String;
   arrOctgn: array of array[0..1] of String;
   arrCycleLookup: array of array[0..1] of String;
   addedCards, isDeckLoading: Boolean;
@@ -1601,6 +1604,13 @@ begin
   ClearTheCard();
 end;
 
+procedure TForm1.btnProductsClick(Sender: TObject);
+begin
+  ProdSelectView := TfrmProductsSelect.Create(Application);
+  ProdSelectView.ShowModal;
+  ProdSelectView.Free;
+end;
+
 procedure TForm1.btnDrawStartHandClick(Sender: TObject);
 var
   i, j, index: Integer;
@@ -2511,7 +2521,9 @@ begin
       cbxTrait2.Items.Add(cardTraits[i]);
       cbxTrait3.Items.Add(cardTraits[i]);
       cbxTrait4.Items.Add(cardTraits[i]);
-      cbxFilterTrait.Items.Add(cardTraits[i]);
+      //cbxFilterTrait.Items.Add(cardTraits[i]);
+      SetLength(selectedTraits, i+1);
+      selectedTraits[i] := cardTraits[i];
     end;
   finally
     CloseFile(F);
@@ -2529,7 +2541,9 @@ begin
     for i:=0 to cardSets.Count-1  do
     begin
       cbxProduct.Items.Add(cardSets[i]);
-      cbxFilterProduct.Items.Add(cardSets[i]);
+      //cbxFilterProduct.Items.Add(cardSets[i]);
+      SetLength(selectedProducts, i+1);
+      selectedProducts[i] := cardSets[i];
     end;
   finally
     CloseFile(F);

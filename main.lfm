@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 352
+  Left = 2231
   Height = 616
-  Top = 138
+  Top = 135
   Width = 1089
   AllowDropFiles = True
   Caption = 'Star Wars The Card Game Deck Builder'
@@ -480,6 +480,15 @@ object Form1: TForm1
                 Style = csDropDownList
                 TabOrder = 16
                 Text = '- Select Side (Light or Dark) -'
+              end
+              object btnProducts: TButton
+                Left = 8
+                Height = 25
+                Top = 56
+                Width = 75
+                Caption = 'Products'
+                OnClick = btnProductsClick
+                TabOrder = 17
               end
             end
           end

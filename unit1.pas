@@ -22,7 +22,6 @@ type
     procedure FormCreate(Sender: TObject);
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton);
     procedure FormResize(Sender: TObject);
-    procedure FormShow(Sender: TObject);
   private
     { private declarations }
   public
@@ -83,11 +82,6 @@ begin
   imgCard6.Height:=cHeight;
 
 end;
-
-procedure TForm2.FormShow(Sender: TObject);
-begin
-end;
-
 
 procedure TForm2.FormCreate(Sender: TObject);
 var
