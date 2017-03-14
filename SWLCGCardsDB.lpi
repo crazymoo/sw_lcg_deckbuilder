@@ -63,7 +63,10 @@
       <Unit3>
         <Filename Value="unit2.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmProductsSelect"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit2"/>
       </Unit3>
     </Units>
   </ProjectOptions>
@@ -84,7 +87,6 @@
     </CodeGeneration>
     <Linking>
       <Debugging>
-        <GenerateDebugInfo Value="False"/>
         <StripSymbols Value="True"/>
       </Debugging>
       <Options>

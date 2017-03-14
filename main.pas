@@ -295,9 +295,11 @@ var
   recordCount: integer;
   bucket, selectedFaction, selectedSet: String;
   formerBucket: TListBox;
-  drawDeck, objDeck, reusedCards, selectedProducts, selectedTraits: array of String;
+  drawDeck, objDeck, reusedCards: array of String;
   arrOctgn: array of array[0..1] of String;
   arrCycleLookup: array of array[0..1] of String;
+  selectedProducts: array of array[0..1] of String;
+  selectedTraits: array of array[0..1] of String;
   addedCards, isDeckLoading: Boolean;
 
 implementation
@@ -1607,6 +1609,9 @@ end;
 procedure TForm1.btnProductsClick(Sender: TObject);
 begin
   ProdSelectView := TfrmProductsSelect.Create(Application);
+  ProdSelectView.NumProducts := Length(selectedProducts)-1;
+  SetLength(ProdSelectView.productNames, Length(selectedProducts));
+  ProdSelectView.productNames := selectedProducts;
   ProdSelectView.ShowModal;
   ProdSelectView.Free;
 end;
@@ -2523,7 +2528,8 @@ begin
       cbxTrait4.Items.Add(cardTraits[i]);
       //cbxFilterTrait.Items.Add(cardTraits[i]);
       SetLength(selectedTraits, i+1);
-      selectedTraits[i] := cardTraits[i];
+      selectedTraits[i,0] := cardTraits[i];
+      selectedTraits[i,1] := '0';
     end;
   finally
     CloseFile(F);
@@ -2543,7 +2549,8 @@ begin
       cbxProduct.Items.Add(cardSets[i]);
       //cbxFilterProduct.Items.Add(cardSets[i]);
       SetLength(selectedProducts, i+1);
-      selectedProducts[i] := cardSets[i];
+      selectedProducts[i,0] := cardSets[i];
+      selectedProducts[i,1] := '0';
     end;
   finally
     CloseFile(F);
