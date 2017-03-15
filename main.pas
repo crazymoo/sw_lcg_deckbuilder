@@ -8,7 +8,7 @@ uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ComCtrls,
   ExtCtrls, Grids, StdCtrls, LCLType, LazLogger, TAGraph, TATools, TASeries,
   TAChartUtils, IntfGraphics, GraphType, PairSplitter, Menus,
-  Unit1, Unit2;
+  Unit1, Unit2, Globals;
 
 type
 
@@ -298,7 +298,6 @@ var
   drawDeck, objDeck, reusedCards: array of String;
   arrOctgn: array of array[0..1] of String;
   arrCycleLookup: array of array[0..1] of String;
-  selectedProducts: array of array[0..1] of String;
   selectedTraits: array of array[0..1] of String;
   addedCards, isDeckLoading: Boolean;
 
@@ -1364,6 +1363,7 @@ end;
 procedure TForm1.FilterClick(Sender: TObject);
 var
   filters: TStringList;
+  i: Integer;
 
   procedure ResetGrid(f: TStringList);
   var
@@ -1435,11 +1435,17 @@ var
     end; // inline function
 
     function GetProductResult(n, x: Integer): Boolean;
+    var
+      i: Integer;
+      found: Boolean;
     begin
-      case n of
-        1: Result := (cardDB[x].product = product[0]);
-        0: Result := True;
-      end; // case
+      found := False;
+      for (i:=0; i<Length(product)-1; i++) do
+        if (cardDB[x].product = product[i]) then
+          found := True;
+      if (Length(product) = 0) then
+        found := True;
+      Result := found;
     end; // inline function
 
     function GetTraitResult(n, x: Integer): Boolean;
@@ -1458,7 +1464,7 @@ var
       end; // case
     end; // inline function
 
-begin
+  begin
     row:=0;
     sgdCards.Clear;
     sgdCards.RowCount:= recordCount + 1;
@@ -1553,8 +1559,12 @@ begin
     if btnEvent.State = cbChecked then filters.Add('2Event');
     if btnFate.State = cbChecked then filters.Add('2Fate');
     if btnMission.State = cbChecked then filters.Add('2Mission');
-    if cbxFilterProduct.ItemIndex > 0 then
-      filters.Add('3' + cbxFilterProduct.Items[cbxFilterProduct.ItemIndex]);
+    // run through the selectedProducts array and add selected products
+    for (i:=0; i<Length(selectedProducts)-1; i++) do
+    begin
+      if selectedProducts[i,1] := '1' then
+        filters.Add('3' + selectedProducts[i,0]);
+    end;
     if cbxFilterTrait.ItemIndex > 0 then
       filters.Add('4' + cbxFilterTrait.Items[cbxFilterTrait.ItemIndex]);
     if cbxFilterSide.ItemIndex > 0 then
@@ -1610,10 +1620,9 @@ procedure TForm1.btnProductsClick(Sender: TObject);
 begin
   ProdSelectView := TfrmProductsSelect.Create(Application);
   ProdSelectView.NumProducts := Length(selectedProducts)-1;
-  SetLength(ProdSelectView.productNames, Length(selectedProducts));
-  ProdSelectView.productNames := selectedProducts;
   ProdSelectView.ShowModal;
   ProdSelectView.Free;
+  FilterClick(Self);
 end;
 
 procedure TForm1.btnDrawStartHandClick(Sender: TObject);

@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  ExtCtrls;
+  ExtCtrls, Globals;
 
 type
 
@@ -15,14 +15,12 @@ type
   TfrmProductsSelect = class(TForm)
     Button1: TButton;
     sbxProducts: TScrollBox;
-    procedure Button1Click(Sender: TObject);
+    procedure CheckBoxClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     function GetNumberProds: Integer;
     procedure SetNumberProds(val: Integer);
   private
     availProdsNum: Integer;
-  public
-    productNames: array of array[0..1] of String;
   published
     Property NumProducts: Integer read GetNumberProds write SetNumberProds;
   end;
@@ -37,9 +35,18 @@ implementation
 
 { TfrmProductsSelect }
 
-procedure TfrmProductsSelect.Button1Click(Sender: TObject);
+procedure TfrmProductsSelect.CheckBoxClick(Sender: TObject);
+var
+  numString: String;
+  num: Integer;
 begin
-  Close();
+  numString := TCheckBox(Sender).Name;
+  numString := Copy(numString, 4, 99);
+  num := StrToInt(numString);
+  if (TCheckbox(Sender).Checked) then
+    selectedProducts[num,1] := '1'
+  else
+    selectedProducts[num,1] := '0';
 end;
 
 procedure TfrmProductsSelect.FormShow(Sender: TObject);
@@ -57,16 +64,16 @@ begin
     cBox.Left := x;
     cBox.Top := y;
     case i+1 of
-      2..7: cBox.Caption := productNames[i,0] + ' (Hoth Cycle)';
-      10..15: cBox.Caption := productNames[i,0] + ' (Echoes of the Force Cycle)';
-      16..21: cBox.Caption := productNames[i,0] + ' (Rogue Squadron Cycle)';
-      24..29: cBox.Caption := productNames[i,0] + ' (Endor Cycle)';
-      31..36: cBox.Caption := productNames[i,0] + ' (Opposition Cycle)';
-      37..42: cBox.Caption := productNames[i,0] + ' (Alliances Cycle)';
-      else cBox.Caption := productNames[i,0];
+      2..7: cBox.Caption := selectedProducts[i,0] + ' (Hoth Cycle)';
+      10..15: cBox.Caption := selectedProducts[i,0] + ' (Echoes of the Force Cycle)';
+      16..21: cBox.Caption := selectedProducts[i,0] + ' (Rogue Squadron Cycle)';
+      24..29: cBox.Caption := selectedProducts[i,0] + ' (Endor Cycle)';
+      31..36: cBox.Caption := selectedProducts[i,0] + ' (Opposition Cycle)';
+      37..42: cBox.Caption := selectedProducts[i,0] + ' (Alliances Cycle)';
+      else cBox.Caption := selectedProducts[i,0];
     end;
-
     cBox.Name := 'chk' + num;
+    cBox.OnClick := @CheckBoxClick;
     y := y + 28;
   end;
 end;

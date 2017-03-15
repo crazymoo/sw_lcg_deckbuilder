@@ -15,7 +15,6 @@ object frmProductsSelect: TfrmProductsSelect
     Top = 392
     Width = 75
     Caption = 'Done!'
-    OnClick = Button1Click
     TabOrder = 0
   end
   object sbxProducts: TScrollBox
