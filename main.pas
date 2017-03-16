@@ -8,7 +8,7 @@ uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ComCtrls,
   ExtCtrls, Grids, StdCtrls, LCLType, LazLogger, TAGraph, TATools, TASeries,
   TAChartUtils, IntfGraphics, GraphType, PairSplitter, Menus,
-  Unit1;
+  Unit1, Unit2, Globals;
 
 type
 
@@ -23,6 +23,7 @@ type
     btnSaveCard: TButton;
     btnSaveCard1: TButton;
     btnClearFilters: TButton;
+    btnProducts: TButton;
     cbxAttack1: TComboBox;
     cbxCardInSet: TComboBox;
     cbxCardSet1: TComboBox;
@@ -61,7 +62,6 @@ type
     chartFactions: TChart;
     chartFactionsPieSeries1: TPieSeries;
     chkUnique: TCheckBox;
-    cbxFilterProduct: TComboBox;
     edtCardNumber: TEdit;
     edtCardTitle: TEdit;
     edtCardTitle1: TEdit;
@@ -207,6 +207,7 @@ type
     procedure btnClearFiltersClick(Sender: TObject);
     procedure btnDrawStartHandClick(Sender: TObject);
     procedure btnNewCardClick(Sender: TObject);
+    procedure btnProductsClick(Sender: TObject);
     procedure btnSaveCardClick(Sender: TObject);
     procedure btnFactionsClick(Sender: TObject);
     procedure cbxCardTypeChange(Sender: TObject);
@@ -288,6 +289,7 @@ const
 var
   Form1: TForm1;
   setView: TForm2;
+  ProdSelectView: TfrmProductsSelect;
   cardDB: array of TCard;
   recordCount: integer;
   bucket, selectedFaction, selectedSet: String;
@@ -295,6 +297,7 @@ var
   drawDeck, objDeck, reusedCards: array of String;
   arrOctgn: array of array[0..1] of String;
   arrCycleLookup: array of array[0..1] of String;
+  selectedTraits: array of array[0..1] of String;
   addedCards, isDeckLoading: Boolean;
 
 implementation
@@ -1359,10 +1362,11 @@ end;
 procedure TForm1.FilterClick(Sender: TObject);
 var
   filters: TStringList;
+  i: Integer;
 
   procedure ResetGrid(f: TStringList);
   var
-    i, row, numFactions, numTypes, numProduct, numTrait, numSide: Integer;
+    i, row, numFactions, numTypes, numTrait, numSide: Integer;
     factions, types, product, trait, side: TStringList;
     ch: String;
 
@@ -1429,12 +1433,18 @@ var
       end; // case
     end; // inline function
 
-    function GetProductResult(n, x: Integer): Boolean;
+    function GetProductResult(x: Integer): Boolean;
+    var
+      i: Integer;
+      found: Boolean;
     begin
-      case n of
-        1: Result := (cardDB[x].product = product[0]);
-        0: Result := True;
-      end; // case
+      found := False;
+      for i:=0 to product.Count-1 do
+        if (cardDB[x].product = product[i]) then
+          found := True;
+      if (product.Count = 0) then
+        found := True;
+      Result := found;
     end; // inline function
 
     function GetTraitResult(n, x: Integer): Boolean;
@@ -1453,7 +1463,7 @@ var
       end; // case
     end; // inline function
 
-begin
+  begin
     row:=0;
     sgdCards.Clear;
     sgdCards.RowCount:= recordCount + 1;
@@ -1492,13 +1502,12 @@ begin
       end; // for
       numFactions := factions.Count;
       numTypes := types.Count;
-      numProduct := product.Count;
       numTrait := trait.Count;
       numSide := side.Count;
       for i:=0 to recordCount-1 do
         if (GetFactionsResult(numFactions, i)) and
            (GetTypesResult(numTypes, i)) and
-           (GetProductResult(numProduct, i)) and
+           (GetProductResult(i)) and
            (GetTraitResult(numTrait, i)) and
            (GetSideResult(numSide, i)) then
         begin
@@ -1548,8 +1557,12 @@ begin
     if btnEvent.State = cbChecked then filters.Add('2Event');
     if btnFate.State = cbChecked then filters.Add('2Fate');
     if btnMission.State = cbChecked then filters.Add('2Mission');
-    if cbxFilterProduct.ItemIndex > 0 then
-      filters.Add('3' + cbxFilterProduct.Items[cbxFilterProduct.ItemIndex]);
+    // run through the selectedProducts array and add selected products
+    for i:=0 to Length(selectedProducts)-1 do
+    begin
+      if selectedProducts[i,1] = '1' then
+        filters.Add('3' + selectedProducts[i,0]);
+    end;
     if cbxFilterTrait.ItemIndex > 0 then
       filters.Add('4' + cbxFilterTrait.Items[cbxFilterTrait.ItemIndex]);
     if cbxFilterSide.ItemIndex > 0 then
@@ -1599,6 +1612,15 @@ begin
    'New Card?', MB_ICONQUESTION + MB_YESNO) = IDNO then
     Exit;
   ClearTheCard();
+end;
+
+procedure TForm1.btnProductsClick(Sender: TObject);
+begin
+  ProdSelectView := TfrmProductsSelect.Create(Application);
+  ProdSelectView.NumProducts := Length(selectedProducts)-1;
+  ProdSelectView.ShowModal;
+  ProdSelectView.Free;
+  FilterClick(Self);
 end;
 
 procedure TForm1.btnDrawStartHandClick(Sender: TObject);
@@ -1731,6 +1753,8 @@ begin
 end;
 
 procedure TForm1.btnClearFiltersClick(Sender: TObject);
+var
+  i: Integer;
 begin
   btnJedi.State:=cbUnchecked;
   btnRebels.State:=cbUnchecked;
@@ -1744,8 +1768,10 @@ begin
   btnEvent.State:=cbUnchecked;
   btnFate.State:=cbUnchecked;
   btnMission.State:=cbUnchecked;
-  cbxFilterProduct.ItemIndex := 0;
   cbxFilterTrait.ItemIndex := 0;
+  cbxFilterSide.ItemIndex := 0;
+  for i:=0 to Length(selectedProducts)-1 do
+    selectedProducts[i,1] := '0';
   SetStringGrid;
 end;
 
@@ -2511,7 +2537,10 @@ begin
       cbxTrait2.Items.Add(cardTraits[i]);
       cbxTrait3.Items.Add(cardTraits[i]);
       cbxTrait4.Items.Add(cardTraits[i]);
-      cbxFilterTrait.Items.Add(cardTraits[i]);
+      //cbxFilterTrait.Items.Add(cardTraits[i]);
+      SetLength(selectedTraits, i+1);
+      selectedTraits[i,0] := cardTraits[i];
+      selectedTraits[i,1] := '0';
     end;
   finally
     CloseFile(F);
@@ -2529,7 +2558,10 @@ begin
     for i:=0 to cardSets.Count-1  do
     begin
       cbxProduct.Items.Add(cardSets[i]);
-      cbxFilterProduct.Items.Add(cardSets[i]);
+      //cbxFilterProduct.Items.Add(cardSets[i]);
+      SetLength(selectedProducts, i+1);
+      selectedProducts[i,0] := cardSets[i];
+      selectedProducts[i,1] := '0';
     end;
   finally
     CloseFile(F);
