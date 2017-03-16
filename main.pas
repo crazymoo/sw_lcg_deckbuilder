@@ -62,7 +62,6 @@ type
     chartFactions: TChart;
     chartFactionsPieSeries1: TPieSeries;
     chkUnique: TCheckBox;
-    cbxFilterProduct: TComboBox;
     edtCardNumber: TEdit;
     edtCardTitle: TEdit;
     edtCardTitle1: TEdit;
@@ -1367,7 +1366,7 @@ var
 
   procedure ResetGrid(f: TStringList);
   var
-    i, row, numFactions, numTypes, numProduct, numTrait, numSide: Integer;
+    i, row, numFactions, numTypes, numTrait, numSide: Integer;
     factions, types, product, trait, side: TStringList;
     ch: String;
 
@@ -1434,16 +1433,16 @@ var
       end; // case
     end; // inline function
 
-    function GetProductResult(n, x: Integer): Boolean;
+    function GetProductResult(x: Integer): Boolean;
     var
       i: Integer;
       found: Boolean;
     begin
       found := False;
-      for (i:=0; i<Length(product)-1; i++) do
+      for i:=0 to product.Count-1 do
         if (cardDB[x].product = product[i]) then
           found := True;
-      if (Length(product) = 0) then
+      if (product.Count = 0) then
         found := True;
       Result := found;
     end; // inline function
@@ -1503,13 +1502,12 @@ var
       end; // for
       numFactions := factions.Count;
       numTypes := types.Count;
-      numProduct := product.Count;
       numTrait := trait.Count;
       numSide := side.Count;
       for i:=0 to recordCount-1 do
         if (GetFactionsResult(numFactions, i)) and
            (GetTypesResult(numTypes, i)) and
-           (GetProductResult(numProduct, i)) and
+           (GetProductResult(i)) and
            (GetTraitResult(numTrait, i)) and
            (GetSideResult(numSide, i)) then
         begin
@@ -1560,9 +1558,9 @@ begin
     if btnFate.State = cbChecked then filters.Add('2Fate');
     if btnMission.State = cbChecked then filters.Add('2Mission');
     // run through the selectedProducts array and add selected products
-    for (i:=0; i<Length(selectedProducts)-1; i++) do
+    for i:=0 to Length(selectedProducts)-1 do
     begin
-      if selectedProducts[i,1] := '1' then
+      if selectedProducts[i,1] = '1' then
         filters.Add('3' + selectedProducts[i,0]);
     end;
     if cbxFilterTrait.ItemIndex > 0 then
@@ -1755,6 +1753,8 @@ begin
 end;
 
 procedure TForm1.btnClearFiltersClick(Sender: TObject);
+var
+  i: Integer;
 begin
   btnJedi.State:=cbUnchecked;
   btnRebels.State:=cbUnchecked;
@@ -1768,8 +1768,10 @@ begin
   btnEvent.State:=cbUnchecked;
   btnFate.State:=cbUnchecked;
   btnMission.State:=cbUnchecked;
-  cbxFilterProduct.ItemIndex := 0;
   cbxFilterTrait.ItemIndex := 0;
+  cbxFilterSide.ItemIndex := 0;
+  for i:=0 to Length(selectedProducts)-1 do
+    selectedProducts[i,1] := '0';
   SetStringGrid;
 end;
 

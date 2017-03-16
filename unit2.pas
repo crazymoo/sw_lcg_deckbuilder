@@ -74,6 +74,8 @@ begin
     end;
     cBox.Name := 'chk' + num;
     cBox.OnClick := @CheckBoxClick;
+    if selectedProducts[i,1] = '1' then
+      cBox.State := cbChecked;
     y := y + 28;
   end;
 end;

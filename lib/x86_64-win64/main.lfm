@@ -431,22 +431,6 @@ object Form1: TForm1
                 OnClick = FilterClick
                 TabOrder = 13
               end
-              object cbxFilterProduct: TComboBox
-                Left = 100
-                Height = 23
-                Top = 58
-                Width = 187
-                AutoSize = False
-                ItemHeight = 15
-                ItemIndex = 0
-                Items.Strings = (
-                  '- Select Product -'
-                )
-                OnChange = FilterClick
-                Style = csDropDownList
-                TabOrder = 14
-                Text = '- Select Product -'
-              end
               object cbxFilterTrait: TComboBox
                 Left = 294
                 Height = 23
@@ -460,7 +444,7 @@ object Form1: TForm1
                 )
                 OnChange = FilterClick
                 Style = csDropDownList
-                TabOrder = 15
+                TabOrder = 14
                 Text = '- Select Trait -'
               end
               object cbxFilterSide: TComboBox
@@ -478,17 +462,17 @@ object Form1: TForm1
                 )
                 OnChange = FilterClick
                 Style = csDropDownList
-                TabOrder = 16
+                TabOrder = 15
                 Text = '- Select Side (Light or Dark) -'
               end
               object btnProducts: TButton
-                Left = 8
-                Height = 25
-                Top = 56
-                Width = 75
-                Caption = 'Products'
+                Left = 100
+                Height = 23
+                Top = 58
+                Width = 187
+                Caption = 'Select Product(s)'
                 OnClick = btnProductsClick
-                TabOrder = 17
+                TabOrder = 16
               end
             end
           end
