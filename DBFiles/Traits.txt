@@ -9,6 +9,7 @@ Armor.
 Assassin.
 Base.
 Bellassa.
+Bespin.
 Black Squadron.
 Black Sun.
 Bothan.
@@ -61,6 +62,7 @@ Gand.
 Gnarltree.
 Grand Vizier.
 Gunner.
+Helmet.
 Home One.
 Hoth.
 Hutt.
@@ -92,6 +94,7 @@ Moraband.
 Myrkr.
 Nar Shaddaa.
 Night.
+Obsidian Squadron.
 Officer.
 Operation.
 Ord Mantell.

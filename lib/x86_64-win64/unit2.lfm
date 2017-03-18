@@ -1,7 +1,7 @@
 object frmProductsSelect: TfrmProductsSelect
-  Left = 2675
+  Left = 546
   Height = 420
-  Top = 250
+  Top = 212
   Width = 402
   BorderIcons = [biSystemMenu]
   Caption = 'Select the products to filter by:'
