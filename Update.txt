@@ -1,3 +1,7 @@
+Update - (03/16/2017)
+- Added Power of the Force Force Pack
+- Modified the Select Products grid button to allow users to select multiple products to filter by.
+
 Update - (1/12/2017)
 - Added Scrap Metal Force Pack
 

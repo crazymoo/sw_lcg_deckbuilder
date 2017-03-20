@@ -2537,7 +2537,7 @@ begin
       cbxTrait2.Items.Add(cardTraits[i]);
       cbxTrait3.Items.Add(cardTraits[i]);
       cbxTrait4.Items.Add(cardTraits[i]);
-      //cbxFilterTrait.Items.Add(cardTraits[i]);
+      cbxFilterTrait.Items.Add(cardTraits[i]);
       SetLength(selectedTraits, i+1);
       selectedTraits[i,0] := cardTraits[i];
       selectedTraits[i,1] := '0';
