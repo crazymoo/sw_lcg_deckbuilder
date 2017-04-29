@@ -34,3 +34,5 @@
 34-Scrap Metal/OC
 35-Power of the Force/OC
 36-Technological Terror/OC
+37-Allies of Necessity/AC
+38-Aggressive Negotiations/AC

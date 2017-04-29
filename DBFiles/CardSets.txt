@@ -34,3 +34,5 @@
 34-Scrap Metal
 35-Power of the Force
 36-Technological Terror
+37-Allies of Necessity
+38-Aggressive Negotiations
