@@ -84,7 +84,7 @@ type
     Image7: TImage;
     Image8: TImage;
     Image9: TImage;
-    imgCardImage: TImage;
+    cardImage: TImage;
     imgNewCard: TImage;
     imgNewCard1: TImage;
     imgRes1: TImage;
@@ -313,6 +313,7 @@ begin
   formerBucket := TListBox.Create(nil);
   recordCount := 0;
   LoadInData;
+  sgdCardsClick(Sender);
 end;
 
 procedure TForm1.FormDestroy(Sender: TObject);
@@ -324,47 +325,44 @@ procedure TForm1.FormDropFiles(Sender: TObject; const FileNames: array of String
 var
   aPic: TPicture;
   aFile: string;
-  i, dbRow: integer;
+  dbRow: integer;
+
+  function GetShortFileName(s: string): string;
+  var
+    i: integer;
+  begin
+    result := '';
+    for i:=Length(s) downto 0 do
+      if s[i] = '\' then break;
+    result := Copy(s, i+1, Length(s)-i);
+  end;
+
 begin
   aFile := FileNames[0];
-  if PageControl1.ActivePage = tabAddCards then
-  begin
-    aPic := TPicture.Create;
+  aPic := TPicture.Create;
+  try
     try
-      try
-        aPic.LoadFromFile(aFile);
+      aPic.LoadFromFile(aFile);
+      if PageControl1.ActivePage = tabAddCards then
+      begin
         imgNewCard.Picture := aPic;
-        imgNewCard.Visible:=true;
-        for i:=Length(aFile) downto 0 do
-          if aFile[i] = '\' then break;
-        aFile := Copy(aFile, i+1, Length(aFile)-i);
-        lblFileName.Caption := aFile;
-      except
-        imgNewCard.Visible:=false;
-      end;
-    finally
-      aPic.Free;
-    end;
-  end
-  else
-  if PageControl1.ActivePage = tabEditor then
-  begin
-    aPic := TPicture.Create;
-    try
-      try
-        aPic.LoadFromFile(aFile);
-        imgCardImage.Picture := aPic;
-        imgCardImage.Visible:=true;
+        imgNewCard.Visible := true;
+        lblFileName.Caption := GetShortFileName(aFile)
+      end
+      else
+      begin
+        cardImage.Picture := aPic;
+        cardImage.Visible := true;
         dbRow := sgdCards.Row - 1;
-        cardDB[dbRow].cardPic := aFile;
+        cardDB[dbRow].cardPic := GetShortFileName(aFile);
         addedCards := True;
-      except
-        imgCardImage.Visible:=false;
       end;
-    finally
-      aPic.Free;
+    except
+      imgNewCard.Visible:=false;
     end;
-  end
+  finally
+    aPic.Free;
+  end;
 end;
 
 procedure TForm1.FormMouseDown(Sender: TObject; Button: TMouseButton);
@@ -2032,13 +2030,13 @@ begin
       for i:=0 to Length(cardDB)-1 do
         if (cardDB[i].setNumber = selectedSet) and (cardDB[i].cardInSet = cardNum) then
         begin
-          aPic.LoadFromFile(cardDB[i].cardPic);
-          imgCardImage.Picture := aPic;
-          imgCardImage.Visible:=true;
-          imgCardImage.Stretch := true;
+          aPic.LoadFromFile('./DBFiles/images/' + cardDB[i].cardPic);
+          cardImage.Picture := aPic;
+          cardImage.Visible:=true;
+          cardImage.Stretch := true;
         end;
     except
-      imgCardImage.Visible:=false;
+      cardImage.Visible:=false;
     end;
   finally
     aPic.Free;

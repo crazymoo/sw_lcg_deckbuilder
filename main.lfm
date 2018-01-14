@@ -74,7 +74,7 @@ object Form1: TForm1
                 Color = clBlack
                 ParentColor = False
                 TabOrder = 0
-                object imgCardImage: TImage
+                object cardImage: TImage
                   Left = 1
                   Height = 390
                   Top = 1

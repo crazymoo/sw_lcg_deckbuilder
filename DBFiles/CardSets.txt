@@ -36,3 +36,7 @@
 36-Technological Terror
 37-Allies of Necessity
 38-Aggressive Negotiations
+39-Desperate Circumstances
+40-Swayed by the Dark Side
+41-Trust in the Force
+42-Promise of Power

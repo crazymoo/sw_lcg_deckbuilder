@@ -23,6 +23,7 @@ Civilian.
 Classified.
 Cloud City.
 Condition.
+Connection.
 Control.
 Corellia.
 Coruscant.
@@ -59,6 +60,7 @@ Gamble.
 Gambler.
 Gamor.
 Gand.
+Geonosis.
 Gnarltree.
 Grand Vizier.
 Gunner.
@@ -108,9 +110,12 @@ Renegade Squadron.
 Roche.
 Rogue.
 Ruusan.
+Scarif.
 Scavenger.
 Scoundrel.
+Scout.
 Scum.
+Seelos.
 Sense.
 Shelkonwa.
 Sithspawn.

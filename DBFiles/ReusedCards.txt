@@ -8,6 +8,7 @@ Advisor to the Emperor
 Advozse Mercenary*
 Agent of the Hand*
 Alliance B-Wing*
+Allies of Necessity
 Ancient Rivals*
 A New Hope
 Aqualish Thug*
@@ -19,6 +20,7 @@ AT-ST*
 'Backstabber'
 Battle of Endor
 Battle of Hoth
+Battlefield Engineers
 Believer Initiate*
 Believer in the Old Ways
 Black Squadron Fighter*
@@ -40,6 +42,7 @@ Cloud City Technician*
 Cloud City Wing Guard*
 Contract Hunter*
 Control Room
+Coordinated Strike
 Corellian Corvette*
 Corrupt Official*
 Dagobah Training Grounds
@@ -53,6 +56,7 @@ Daughters of Allya*
 Death from Above
 Death Squadron Star Destroyer*
 Death Star Trooper*
+Death Trooper*
 Debt Collector
 Dengar
 Don't Get Cocky
@@ -67,6 +71,7 @@ Energy Spider*
 Entangled
 Espo Trooper*
 ET-74 Communications Droid*
+Ewok Ally*
 Ewok Ambusher*
 Ewok Horde*
 Ewok Hunter*
@@ -96,6 +101,7 @@ Heavy Stormtrooper Squad*
 Hidden Grove*
 Hidden in the Shadows*
 Hidden Outpost
+Hidden Vibroknife
 Hired Hands*
 Holding All the Cards*
 Homeland Defender*
@@ -139,7 +145,9 @@ Moisture Farmer*
 Mon Mothma
 MTV-7*
 Navigation Droid*
+Necessary Alliances
 Nightsister*
+Nightsister Warrior*
 Niman Training*
 Noghri Bodyguard*
 Novice Starship Thief*
@@ -164,6 +172,7 @@ R2-D2
 Racing Swoop*
 Rebel Assault
 Rebel Commando*
+Rebel Saboteur*
 Rebel Sympathizer*
 Rebel Tactician*
 Red Five
@@ -179,7 +188,9 @@ Ruusan Colonist*
 Scout Trooper*
 Secret Informant*
 Secret Objective
+Security Protocols
 Security Task Force*
+Security Trooper*
 Seeds of Decay
 Shadow Operative*
 Shistavanen Wolfman*
@@ -232,6 +243,7 @@ Well Equipped
 Well Paid*
 Whiphid Enforcer*
 Wilderness Fighters*
+Wolfman Scout*
 Wookie Warrior*
 X-Wing
 Yoda
