@@ -47,6 +47,6 @@ Temporary Items
 .apdisk
 
 # Lazarus directories
-.backup
-.lib
+\backup
+\lib
 *.bak

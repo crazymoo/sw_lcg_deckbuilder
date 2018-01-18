@@ -1657,7 +1657,7 @@ begin
              (Pos(cardDB[j].setNumber, shuffledDeck[i]) > 0) then
           begin
             img.Clear;
-            img.LoadFromFile(cardDB[j].cardPic);
+            img.LoadFromFile('./DBFiles/images/' + cardDB[j].cardPic);
             case i of
               0: begin
                    imgSetup1.Picture.Assign(img);
@@ -1716,7 +1716,7 @@ begin
              (Pos(cardDB[j].setNumber, shuffledDeck[i]) > 0) then
           begin
             img.Clear;
-            img.LoadFromFile(cardDB[j].cardPic);
+            img.LoadFromFile('./DBFiles/images/' + cardDB[j].cardPic);
             case i of
               0: begin
                    imgObj1.Picture.Assign(img);
