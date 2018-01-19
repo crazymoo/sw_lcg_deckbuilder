@@ -486,8 +486,10 @@ end;
 
 procedure TForm1.mniNewDeckClick(Sender: TObject);
 begin
-  if Application.MessageBox(PChar('All work on the current deck will be lost (if not saved). Are you sure you want to make a new deck?'),
-   PChar('Create New Deck'), mb_OKCANCEL+mb_ICONQUESTION) = mrOK then
+  if Application.MessageBox(PChar(
+    'All work on the current deck will be lost (if not saved). ' +
+    'Are you sure you want to make a new deck?'),
+    PChar('Create New Deck'), mb_OKCANCEL+mb_ICONQUESTION) = mrOK then
   begin
     SetLength(drawDeck, 0);
     RefreshBuckets;
