@@ -4,6 +4,18 @@
 000-4/01-Core/Sith/ /0/4/Sith/Dark/Faction/ / /1/ / // /01-000-4.jpg
 000-5/01-Core/Imperial Navy/ /0/5/Imperial Navy/Dark/Faction/ / /1/ / // /01-000-5.jpg
 000-6/01-Core/Scum and Villainy/ /0/6/Scum and Villainy/Dark/Faction/ / /1/ / // /01-000-6.jpg
+000-7/37-Allies of Necessity/Guardians of Justice/ /0/7/Jedi/Light/Faction/ / /1/ / //Your objective deck must contain exactly 6 Jedi objectives and exactly 6 Rebel Alliance and/Card-Back-LS.jpg
+000-8/37-Allies of Necessity/No Questions Asked/ /0/8/Jedi/Light/Faction/ / /2/ / //Your objective deck must contain exactly 5 Jedi objectives and exactly 5 Smugglers and Spies and/Card-Back-LS.jpg
+000-9/37-Allies of Necessity/Fighters for Freedom/ /0/9/Rebel Alliance/Light/Faction/ / /1/ / //Your objective deck must contain exactly 5 Rebel Alliance objectives and exactly 5 Jedi and/Card-Back-LS.jpg
+000-10/37-Allies of Necessity/Information Network/ /0/10/Rebel Alliance/Light/Faction/ / /2/ / //Your objective deck must contain exactly 5 Rebel Alliance objectives and exactly 5 Smugglers and Spies and/Card-Back-LS.jpg
+000-11/37-Allies of Necessity/Desperate Allies/ /0/11/Smugglers and Spies/Light/Faction/ / /1/ / //Your objective deck must contain exactly 5 Smugglers and Spies objectives and exactly 5 Jedi and/Card-Back-LS.jpg
+000-12/37-Allies of Necessity/Mercenary Contacts/ /0/12/Smugglers and Spies/Light/Faction/ / /1/ / //Your objective deck must contain exactly 6 Smugglers and Spies objectives and exactly 6 Rebel Alliance and/Card-Back-LS.jpg
+000-13/37-Allies of Necessity/Galactic Enforcers/ /0/13/Sith/Dark/Faction/ / /1/ / //Your objective deck must contain exactly 6 Sith objectives and exactly 6 Imperial Navy and/Card-Back-DS.jpg
+000-14/37-Allies of Necessity/Expendable Allies/ /0/14/Sith/Dark/Faction/ / /2/ / //Your objective deck must contain exactly 5 Sith objectives and exactly 5 Scum and Villainy and/Card-Back-DS.jpg
+000-15/37-Allies of Necessity/Dark Masters/ /0/15/Imperial Navy/Dark/Faction/ / /1/ / //Your objective deck must contain exactly 5 Imperial Navy objectives and exactly 5 Sith and/Card-Back-DS.jpg
+000-16/37-Allies of Necessity/Any Methods Necessary/ /0/16/Imperial Navy/Dark/Faction/ / /2/ / //Your objective deck must contain exactly 5 Imperial Navy objectives and exactly 5 Scum and Villainy and/Card-Back-DS.jpg
+000-17/37-Allies of Necessity/Promise of Power/ /0/17/Scum and Villainy/Dark/Faction/ / /1/ / //Your objective deck must contain exactly 5 Scum and Villainy objectives and exactly 5 Sith and/Card-Back-DS.jpg
+000-18/37-Allies of Necessity/Imperial Contractors/ /0/18/Scum and Villainy/Dark/Faction/ / /1/ / //Your objective deck must contain exactly 6 Scum and Villainy objectives and exactly 6 Imperial Navy and/Card-Back-DS.jpg
 001-1/01-Core/A Hero's Journey/ /1/1/Jedi/Light/Objective/ / /2/4/ /Tatooine./ /01-001-1.jpg
 001-2/01-Core/Luke Skywalker/X/1/2/Jedi/Light/Unit/4/3/ /3/2:UD, 1:OD, 1:EOD/Character. Force User./Targeted Strike. (When attacking, this unit may instead damage a target enemy unit not participating in the engagement.)  Reaction: After your opponent's turn begins, remove 1 focus token from this unit./01-001-2.jpg
 001-3/01-Core/Twi'lek Loyalist/ /1/3/Jedi/Light/Unit/1/1/ /1/1:EUD, 1:ET/Character./ /01-001-3.jpg
@@ -1678,3 +1690,4 @@
 279-4/40-Swayed by the Dark Side/Underworld Contact/ /279/4/Neutral/Dark/Unit/2/1/1/2/1:EUD/Character. Mercenary./Influence./40-279-4.jpg
 279-5/40-Swayed by the Dark Side/Alliance of Evil/ /279/5/Scum and Villainy/Dark/Event/0/2/ / / //Action: Target 2 units you control that do not share an affiliation. Until the end of the phase, one of those units gains shielding and the other gains edge(1)./40-279-5.jpg
 279-6/40-Swayed by the Dark Side/Allies of Necessity/ /279/6/Neutral/Dark/Fate/ /2/ / / //You may target 2 participating units you control that do not share an affiliation. If you do, one targeted unit gains UD and the other gains OD until the end of the engagement.  FATE:6/40-279-6.jpg
+////////////////

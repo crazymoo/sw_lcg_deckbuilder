@@ -1,3 +1,11 @@
+Update - (01/19/2017)
+- Added Swayed by the Dark Side Force Pack
+- Added Deperate Circumstances Force Pack
+- Added Aggressive Negotiations Force Pack
+- Added Allies of Necessity Force Pack(missing Faction card images)
+- NOTE: Using FFG watermarked images for these packs until I can get a 
+        new scanner and scan in my own card images.
+
 Update - (03/16/2017)
 - Added Power of the Force Force Pack
 - Modified the Select Products grid button to allow users to select multiple products to filter by.
