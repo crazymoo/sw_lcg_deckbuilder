@@ -2083,7 +2083,11 @@ begin
   setNum := sgdCards.Cells[4, sgdCards.Row];
   if setNum = '0' then
   begin
-    lbxFaction.Items[0] := 'Faction - ' + sgdCards.Cells[6, sgdCards.Row];
+    if sgdCards.Cells[6, sgdCards.Row] = sgdCards.Cells[2, sgdCards.Row] then
+      lbxFaction.Items[0] := 'Faction - ' + sgdCards.Cells[6, sgdCards.Row]
+    else
+      lbxFaction.Items[0] := 'Faction - ' + sgdCards.Cells[6, sgdCards.Row] +
+        ' (' + sgdCards.Cells[2, sgdCards.Row] + ')';
     Exit;
   end;
   // if a faction has not been chosen, then you are not allowed to add sets...
