@@ -1334,9 +1334,9 @@ begin
         'Neutral':             setView.Color := clNEUTRAL;
       end; // case
       for i:=0 to Length(cardDB)-1 do
-        if (sgdCards.Cells[5, i] = '1') and (sgdCards.Cells[4, i] = selectedSet) then
+        if (cardDB[i].cardInSet = '1') and (cardDB[i].setNumber = selectedSet) then
         begin
-          sName := sgdCards.Cells[2, i];
+          sName := cardDB[i].cardTitle;
           break;
         end;
       setView.Caption:='Set ' + selectedSet + ' - ' + sName;

@@ -1,7 +1,7 @@
 object Form2: TForm2
-  Left = 322
+  Left = 2366
   Height = 534
-  Top = 177
+  Top = 272
   Width = 1050
   Caption = 'Set View'
   ClientHeight = 534
@@ -11,7 +11,8 @@ object Form2: TForm2
   OnCreate = FormCreate
   OnMouseDown = FormMouseDown
   OnResize = FormResize
-  LCLVersion = '1.6.0.4'
+  Position = poMainFormCenter
+  LCLVersion = '1.8.0.6'
   object imgCard1: TImage
     Left = 376
     Height = 200
