@@ -1,3 +1,6 @@
+Update - (01/24/2018)
+- Fixed the set view window to display the proper set now when grid filters are on.
+
 Update - (01/19/2017)
 - Added Swayed by the Dark Side Force Pack
 - Added Deperate Circumstances Force Pack
