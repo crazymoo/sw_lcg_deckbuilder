@@ -558,6 +558,19 @@ procedure TForm1.mniSaveDeckClick(Sender: TObject);
 var
   f: TextFile;
   i: Integer;
+
+  procedure WriteCards(listBox: TListBox, extraLine: Boolean);
+  begin
+    for i:=0 to listBox.Items.Count -1 do
+      if i > 1 then
+        Writeln(f, Format('%-30s %s',[Trim(Copy(listBox.Items[i],1,
+         Pos('(', listBox.Items[i])-1)), Copy(listBox.Items[i],
+         Pos('(', listBox.Items[i]),99)]))
+      else
+        Writeln(f, listBox.Items[i]);
+    if extraLine then Writeln(f, '');
+  end;
+
 begin
   SaveDialog1.InitialDir := '.\Decks';
   SaveDialog1.Filter := 'Text File|*.txt';
@@ -570,53 +583,12 @@ begin
     Writeln(f, '');
     Writeln(f, lbxFaction.Items[0]);
     Writeln(f, '');
-    for i:=0 to lbxObjectives.Items.Count -1 do
-      if i > 1 then
-        Writeln(f, Format('%-30s %s',[Trim(Copy(lbxObjectives.Items[i],1,
-         Pos('(', lbxObjectives.Items[i])-1)), Copy(lbxObjectives.Items[i],
-         Pos('(', lbxObjectives.Items[i]),99)]))
-      else
-        Writeln(f, lbxObjectives.Items[i]);
-    Writeln(f, '');
-    for i:=0 to lbxUnits.Items.Count -1 do
-      if i > 1 then
-        Writeln(f, Format('%-30s %s',[Trim(Copy(lbxUnits.Items[i],1,
-         Pos('(', lbxUnits.Items[i])-1)), Copy(lbxUnits.Items[i],
-         Pos('(', lbxUnits.Items[i]),99)]))
-      else
-        Writeln(f, lbxUnits.Items[i]);
-    Writeln(f, '');
-    for i:=0 to lbxEnhancements.Items.Count -1 do
-      if i > 1 then
-        Writeln(f, Format('%-30s %s',[Trim(Copy(lbxEnhancements.Items[i],1,
-         Pos('(', lbxEnhancements.Items[i])-1)), Copy(lbxEnhancements.Items[i],
-         Pos('(', lbxEnhancements.Items[i]),99)]))
-      else
-        Writeln(f, lbxEnhancements.Items[i]);
-    Writeln(f, '');
-    for i:=0 to lbxEvents.Items.Count -1 do
-      if i > 1 then
-        Writeln(f, Format('%-30s %s',[Trim(Copy(lbxEvents.Items[i],1,
-         Pos('(', lbxEvents.Items[i])-1)), Copy(lbxEvents.Items[i],
-         Pos('(', lbxEvents.Items[i]),99)]))
-      else
-        Writeln(f, lbxEvents.Items[i]);
-    Writeln(f, '');
-    for i:=0 to lbxFateCards.Items.Count -1 do
-      if i > 1 then
-        Writeln(f, Format('%-30s %s',[Trim(Copy(lbxFateCards.Items[i],1,
-         Pos('(', lbxFateCards.Items[i])-1)), Copy(lbxFateCards.Items[i],
-         Pos('(', lbxFateCards.Items[i]),99)]))
-      else
-        Writeln(f, lbxFateCards.Items[i]);
-    Writeln(f, '');
-    for i:=0 to lbxMissions.Items.Count -1 do
-      if i > 1 then
-        Writeln(f, Format('%-30s %s',[Trim(Copy(lbxMissions.Items[i],1,
-         Pos('(', lbxMissions.Items[i])-1)), Copy(lbxMissions.Items[i],
-         Pos('(', lbxMissions.Items[i]),99)]))
-      else
-        Writeln(f, lbxMissions.Items[i]);
+    WriteCards(lbxObjectives, True);
+    WriteCards(lbxUnits, True);
+    WriteCards(lbxEnhancements, True);
+    WriteCards(lbxEvents, True);
+    WriteCards(lbxFateCards, True);
+    WriteCards(lbxMissions, False);
     CloseFile(f);
   end;
 end;
