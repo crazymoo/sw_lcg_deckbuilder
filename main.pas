@@ -2180,7 +2180,7 @@ begin
             ResizeBucket(lbxMissions);
         end;
     end;
-  SetBuckets;
+  //SetBuckets;
 end;
 
 

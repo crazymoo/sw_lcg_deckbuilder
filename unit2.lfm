@@ -1,7 +1,7 @@
 object frmProductsSelect: TfrmProductsSelect
-  Left = 2640
+  Left = 544
   Height = 420
-  Top = 349
+  Top = 244
   Width = 402
   BorderIcons = [biSystemMenu]
   Caption = 'Select the products to filter by:'
@@ -9,7 +9,7 @@ object frmProductsSelect: TfrmProductsSelect
   ClientWidth = 402
   OnShow = FormShow
   Position = poMainFormCenter
-  LCLVersion = '1.8.0.6'
+  LCLVersion = '1.6.0.4'
   object Button1: TButton
     Left = 840
     Height = 25
