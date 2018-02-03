@@ -1,0 +1,76 @@
+object Form2: TForm2
+  Left = 2291
+  Height = 534
+  Top = 377
+  Width = 1050
+  Caption = 'Set View'
+  ClientHeight = 534
+  ClientWidth = 1050
+  Constraints.MinHeight = 534
+  Constraints.MinWidth = 1050
+  OnCreate = FormCreate
+  OnMouseDown = FormMouseDown
+  OnResize = FormResize
+  Position = poMainFormCenter
+  LCLVersion = '1.8.0.6'
+  object imgCard1: TImage
+    Left = 376
+    Height = 200
+    Top = 4
+    Width = 275
+    AntialiasingMode = amOn
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Proportional = True
+    Stretch = True
+  end
+  object imgCard2: TImage
+    Left = 5
+    Height = 275
+    Top = 248
+    Width = 200
+    AntialiasingMode = amOn
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Proportional = True
+    Stretch = True
+  end
+  object imgCard3: TImage
+    Left = 214
+    Height = 275
+    Top = 248
+    Width = 200
+    AntialiasingMode = amOn
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Proportional = True
+    Stretch = True
+  end
+  object imgCard4: TImage
+    Left = 423
+    Height = 275
+    Top = 248
+    Width = 200
+    AntialiasingMode = amOn
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Proportional = True
+    Stretch = True
+  end
+  object imgCard5: TImage
+    Left = 632
+    Height = 275
+    Top = 248
+    Width = 200
+    AntialiasingMode = amOn
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Proportional = True
+    Stretch = True
+  end
+  object imgCard6: TImage
+    Left = 841
+    Height = 275
+    Top = 248
+    Width = 200
+    AntialiasingMode = amOn
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Proportional = True
+    Stretch = True
+  end
+end
