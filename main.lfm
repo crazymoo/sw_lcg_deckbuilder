@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 2300
+  Left = 325
   Height = 616
-  Top = 258
+  Top = 179
   Width = 1089
   AllowDropFiles = True
   Caption = 'Star Wars The Card Game Deck Builder'

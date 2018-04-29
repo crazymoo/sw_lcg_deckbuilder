@@ -1,3 +1,8 @@
+Update - (04/28/2018)
+- Added Trust in the Force Force Pack
+- Added Promise of Power Force Pack
+= All of the Alliances Cycle has now been scanned in.
+
 Update - (01/24/2018)
 - Fixed the set view window to display the proper set now when grid filters are on.
 

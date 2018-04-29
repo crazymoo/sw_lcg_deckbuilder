@@ -33,6 +33,7 @@ Bounty
 B-Wing*
 C-3P0
 Captured
+Chain Reaction
 Chewbacca
 Children of the Force*
 Cloud City Casino
@@ -79,6 +80,7 @@ Ewok Lookout*
 Ewok Scout*
 Executor
 Expendable Scout
+Ezra Bridger
 Force Choke
 Force Rejuvenation
 Force Stasis
@@ -87,6 +89,7 @@ Forward Command Post*
 Freelance Hunter
 Fringer Captain*
 Galactic Scum*
+Gamma Squadron TIE Bomber*
 Gamorrean Guard
 Give in to Your Anger*
 Gladiator-class Star Destroyer*
@@ -109,6 +112,7 @@ Home One
 Hoth Rearguard*
 Human Replica Droid*
 Icetromper*
+IG-RM Bodyguard Droid*
 I Have You Now
 Imperial Enforcers*
 Imperial I-class Star Destroyer*
@@ -122,6 +126,7 @@ Ithorian Junk Dealer*
 Jabba the Hutt
 Jawa Scavenger*
 Jawa Scrap Dealers*
+Jawa Warrior*
 Jedi in Hiding
 Jedi Mind Trick
 Join Me
@@ -217,6 +222,7 @@ Target of Opportunity
 Tauntaun
 Terentatek*
 TIE Advanced
+TIE Escort*
 TIE Fighter
 TIE Fighter Patrol*
 TIE Phantom*
