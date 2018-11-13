@@ -5,9 +5,10 @@ object Form1: TForm1
   Width = 1089
   AllowDropFiles = True
   Caption = 'Star Wars The Card Game Deck Builder'
-  ClientHeight = 596
+  ClientHeight = 591
   ClientWidth = 1089
   Color = 9018178
+  DesignTimePPI = 120
   Menu = MainMenu1
   OnCloseQuery = FormCloseQuery
   OnCreate = FormCreate
@@ -15,10 +16,10 @@ object Form1: TForm1
   OnDropFiles = FormDropFiles
   OnMouseDown = FormMouseDown
   Position = poScreenCenter
-  LCLVersion = '1.8.0.6'
+  LCLVersion = '1.8.2.0'
   object PageControl1: TPageControl
     Left = 0
-    Height = 596
+    Height = 591
     Top = 0
     Width = 1089
     ActivePage = tabEditor
@@ -29,11 +30,11 @@ object Form1: TForm1
     OnChange = PageControl1Change
     object tabEditor: TTabSheet
       Caption = 'Deck Editor'
-      ClientHeight = 568
+      ClientHeight = 558
       ClientWidth = 1081
       object PairSplitter1: TPairSplitter
         Left = 0
-        Height = 568
+        Height = 558
         Top = 0
         Width = 1081
         Align = alClient
@@ -41,15 +42,15 @@ object Form1: TForm1
         object PairSplitterSide1: TPairSplitterSide
           Cursor = crArrow
           Left = 0
-          Height = 568
+          Height = 558
           Top = 0
           Width = 285
           ClientWidth = 285
-          ClientHeight = 568
+          ClientHeight = 558
           object PairSplitter2: TPairSplitter
             Cursor = crVSplit
             Left = 0
-            Height = 568
+            Height = 558
             Top = 0
             Width = 285
             Align = alClient
@@ -90,32 +91,32 @@ object Form1: TForm1
             object PairSplitterSide4: TPairSplitterSide
               Cursor = crArrow
               Left = 0
-              Height = 171
+              Height = 161
               Top = 397
               Width = 285
               ClientWidth = 285
-              ClientHeight = 171
+              ClientHeight = 161
               object Panel2: TPanel
                 Left = 0
-                Height = 171
+                Height = 161
                 Top = 0
                 Width = 285
                 Align = alClient
-                ClientHeight = 171
+                ClientHeight = 161
                 ClientWidth = 285
                 Color = 9018178
                 ParentColor = False
                 TabOrder = 0
                 object ScrollBox1: TScrollBox
                   Left = 1
-                  Height = 169
+                  Height = 159
                   Top = 1
                   Width = 283
                   HorzScrollBar.Page = 100
-                  VertScrollBar.Page = 165
+                  VertScrollBar.Page = 155
                   Align = alClient
-                  ClientHeight = 165
-                  ClientWidth = 279
+                  ClientHeight = 155
+                  ClientWidth = 258
                   Color = clDefault
                   ParentColor = False
                   TabOrder = 0
@@ -123,7 +124,7 @@ object Form1: TForm1
                     Left = 0
                     Height = 24
                     Top = 21
-                    Width = 279
+                    Width = 258
                     Align = alTop
                     ClickOnSelChange = False
                     ExtendedSelect = False
@@ -131,7 +132,7 @@ object Form1: TForm1
                       '0 - Objectives'
                       '================================'
                     )
-                    ItemHeight = 15
+                    ItemHeight = 20
                     OnClick = BucketClick
                     OnDblClick = BucketDblClick
                     OnExit = BucketExit
@@ -142,14 +143,14 @@ object Form1: TForm1
                     Left = 0
                     Height = 21
                     Top = 0
-                    Width = 279
+                    Width = 258
                     Align = alTop
                     ClickOnSelChange = False
                     ExtendedSelect = False
                     Items.Strings = (
                       'Faction - <none selected>'
                     )
-                    ItemHeight = 15
+                    ItemHeight = 20
                     OnClick = BucketClick
                     OnDblClick = BucketDblClick
                     OnExit = BucketExit
@@ -160,7 +161,7 @@ object Form1: TForm1
                     Left = 0
                     Height = 24
                     Top = 45
-                    Width = 279
+                    Width = 258
                     Align = alTop
                     ClickOnSelChange = False
                     ExtendedSelect = False
@@ -168,7 +169,7 @@ object Form1: TForm1
                       '0 - Units'
                       '================================'
                     )
-                    ItemHeight = 15
+                    ItemHeight = 20
                     OnClick = BucketClick
                     OnDblClick = BucketDblClick
                     OnExit = BucketExit
@@ -179,7 +180,7 @@ object Form1: TForm1
                     Left = 0
                     Height = 24
                     Top = 93
-                    Width = 279
+                    Width = 258
                     Align = alTop
                     ClickOnSelChange = False
                     ExtendedSelect = False
@@ -187,7 +188,7 @@ object Form1: TForm1
                       '0 - Events'
                       '================================'
                     )
-                    ItemHeight = 15
+                    ItemHeight = 20
                     OnClick = BucketClick
                     OnDblClick = BucketDblClick
                     OnExit = BucketExit
@@ -198,7 +199,7 @@ object Form1: TForm1
                     Left = 0
                     Height = 24
                     Top = 69
-                    Width = 279
+                    Width = 258
                     Align = alTop
                     ClickOnSelChange = False
                     ExtendedSelect = False
@@ -206,7 +207,7 @@ object Form1: TForm1
                       '0 - Enhancements'
                       '================================'
                     )
-                    ItemHeight = 15
+                    ItemHeight = 20
                     OnClick = BucketClick
                     OnDblClick = BucketDblClick
                     OnExit = BucketExit
@@ -217,7 +218,7 @@ object Form1: TForm1
                     Left = 0
                     Height = 24
                     Top = 117
-                    Width = 279
+                    Width = 258
                     Align = alTop
                     ClickOnSelChange = False
                     ExtendedSelect = False
@@ -225,7 +226,7 @@ object Form1: TForm1
                       '0 - Fate Cards'
                       '================================'
                     )
-                    ItemHeight = 15
+                    ItemHeight = 20
                     OnClick = BucketClick
                     OnDblClick = BucketDblClick
                     OnExit = BucketExit
@@ -236,7 +237,7 @@ object Form1: TForm1
                     Left = 0
                     Height = 24
                     Top = 141
-                    Width = 279
+                    Width = 258
                     Align = alTop
                     ClickOnSelChange = False
                     ExtendedSelect = False
@@ -244,7 +245,7 @@ object Form1: TForm1
                       '0 - Missions'
                       '================================'
                     )
-                    ItemHeight = 15
+                    ItemHeight = 20
                     OnClick = BucketClick
                     OnDblClick = BucketDblClick
                     OnExit = BucketExit
@@ -259,14 +260,14 @@ object Form1: TForm1
         object PairSplitterSide2: TPairSplitterSide
           Cursor = crArrow
           Left = 290
-          Height = 568
+          Height = 558
           Top = 0
           Width = 791
           ClientWidth = 791
-          ClientHeight = 568
+          ClientHeight = 558
           object sgdCards: TStringGrid
             Left = 0
-            Height = 453
+            Height = 443
             Top = 115
             Width = 791
             Align = alClient
@@ -301,7 +302,7 @@ object Form1: TForm1
               Width = 783
               Anchors = [akTop, akLeft, akRight, akBottom]
               Caption = 'Grid Filters:'
-              ClientHeight = 87
+              ClientHeight = 82
               ClientWidth = 779
               Color = 14410428
               ParentColor = False
@@ -434,11 +435,11 @@ object Form1: TForm1
               end
               object cbxFilterTrait: TComboBox
                 Left = 294
-                Height = 23
+                Height = 28
                 Top = 58
                 Width = 187
                 AutoSize = False
-                ItemHeight = 15
+                ItemHeight = 20
                 ItemIndex = 0
                 Items.Strings = (
                   '- Select Trait -'
@@ -450,11 +451,11 @@ object Form1: TForm1
               end
               object cbxFilterSide: TComboBox
                 Left = 488
-                Height = 23
+                Height = 28
                 Top = 58
                 Width = 187
                 AutoSize = False
-                ItemHeight = 15
+                ItemHeight = 20
                 ItemIndex = 0
                 Items.Strings = (
                   '- Select Side (Light or Dark) -'
@@ -489,11 +490,11 @@ object Form1: TForm1
         Height = 568
         Top = 0
         Width = 1081
-        HorzScrollBar.Page = 1060
-        VertScrollBar.Page = 564
+        HorzScrollBar.Page = 1056
+        VertScrollBar.Page = 543
         Align = alClient
-        ClientHeight = 564
-        ClientWidth = 1060
+        ClientHeight = 543
+        ClientWidth = 1056
         Color = clBlack
         ParentColor = False
         TabOrder = 0
@@ -525,12 +526,16 @@ object Form1: TForm1
               AntialiasingMode = amOn
               AxisList = <              
                 item
+                  Marks.LabelBrush.Style = bsClear
                   Minors = <>
                   Title.LabelFont.Orientation = 900
+                  Title.LabelBrush.Style = bsClear
                 end              
                 item
                   Alignment = calBottom
+                  Marks.LabelBrush.Style = bsClear
                   Minors = <>
+                  Title.LabelBrush.Style = bsClear
                 end>
               AxisVisible = False
               BackColor = clGray
@@ -560,17 +565,21 @@ object Form1: TForm1
                   Intervals.MinLength = 1
                   Intervals.NiceSteps = '1'
                   Intervals.Options = [aipGraphCoords, aipUseCount, aipUseMaxLength, aipUseMinLength, aipUseNiceSteps]
+                  Marks.LabelBrush.Style = bsClear
                   Minors = <>
                   Title.LabelFont.Orientation = 900
                   Title.Visible = True
+                  Title.LabelBrush.Style = bsClear
                   Title.PositionOnMarks = True
                 end              
                 item
                   Intervals.NiceSteps = '1'
                   Intervals.Options = [aipGraphCoords, aipUseCount, aipUseNiceSteps]
                   Alignment = calBottom
+                  Marks.LabelBrush.Style = bsClear
                   Minors = <>
                   Title.Visible = True
+                  Title.LabelBrush.Style = bsClear
                 end>
               Foot.Brush.Color = clBtnFace
               Foot.Font.Color = clBlue
@@ -878,12 +887,16 @@ object Form1: TForm1
               AntialiasingMode = amOn
               AxisList = <              
                 item
+                  Marks.LabelBrush.Style = bsClear
                   Minors = <>
                   Title.LabelFont.Orientation = 900
+                  Title.LabelBrush.Style = bsClear
                 end              
                 item
                   Alignment = calBottom
+                  Marks.LabelBrush.Style = bsClear
                   Minors = <>
+                  Title.LabelBrush.Style = bsClear
                 end>
               AxisVisible = False
               BackColor = clGray
@@ -5596,29 +5609,29 @@ object Form1: TForm1
         end
         object cbxProduct: TComboBox
           Left = 76
-          Height = 23
+          Height = 28
           Top = 29
           Width = 204
-          ItemHeight = 15
+          ItemHeight = 20
           Style = csDropDownList
           TabOrder = 1
         end
         object cbxCardType: TComboBox
           Left = 76
-          Height = 23
+          Height = 28
           Top = 112
           Width = 143
-          ItemHeight = 15
+          ItemHeight = 20
           OnChange = cbxCardTypeChange
           Style = csDropDownList
           TabOrder = 7
         end
         object cbxFaction: TComboBox
           Left = 283
-          Height = 23
+          Height = 28
           Top = 84
           Width = 149
-          ItemHeight = 15
+          ItemHeight = 20
           ParentShowHint = False
           Style = csDropDownList
           TabOrder = 6
@@ -5629,45 +5642,45 @@ object Form1: TForm1
           Top = 280
           Width = 352
           Caption = 'Card Traits'
-          ClientHeight = 68
+          ClientHeight = 63
           ClientWidth = 348
           TabOrder = 14
           object cbxTrait1: TComboBox
             Left = 16
-            Height = 23
+            Height = 28
             Top = 6
             Width = 148
-            ItemHeight = 15
+            ItemHeight = 20
             OnExit = cbxTrait1Exit
             TabOrder = 0
           end
           object cbxTrait2: TComboBox
             Left = 16
-            Height = 23
+            Height = 28
             Top = 38
             Width = 148
             Enabled = False
-            ItemHeight = 15
+            ItemHeight = 20
             OnExit = cbxTrait2Exit
             TabOrder = 1
           end
           object cbxTrait3: TComboBox
             Left = 184
-            Height = 23
+            Height = 28
             Top = 6
             Width = 148
             Enabled = False
-            ItemHeight = 15
+            ItemHeight = 20
             OnExit = cbxTrait3Exit
             TabOrder = 2
           end
           object cbxTrait4: TComboBox
             Left = 184
-            Height = 23
+            Height = 28
             Top = 38
             Width = 148
             Enabled = False
-            ItemHeight = 15
+            ItemHeight = 20
             TabOrder = 3
           end
         end
@@ -5773,10 +5786,10 @@ object Form1: TForm1
         end
         object cbxCost: TComboBox
           Left = 76
-          Height = 23
+          Height = 28
           Top = 149
           Width = 44
-          ItemHeight = 15
+          ItemHeight = 20
           Items.Strings = (
             'X'
             '0'
@@ -5799,15 +5812,15 @@ object Form1: TForm1
           Top = 140
           Width = 202
           Caption = 'Combat Icons'
-          ClientHeight = 119
+          ClientHeight = 114
           ClientWidth = 198
           TabOrder = 13
           object cbxUD: TComboBox
             Left = 52
-            Height = 23
+            Height = 28
             Top = 8
             Width = 44
-            ItemHeight = 15
+            ItemHeight = 20
             Items.Strings = (
               '1'
               '2'
@@ -5820,10 +5833,10 @@ object Form1: TForm1
           end
           object cbxT: TComboBox
             Left = 52
-            Height = 23
+            Height = 28
             Top = 85
             Width = 44
-            ItemHeight = 15
+            ItemHeight = 20
             Items.Strings = (
               '1'
               '2'
@@ -5836,10 +5849,10 @@ object Form1: TForm1
           end
           object cbxOD: TComboBox
             Left = 52
-            Height = 23
+            Height = 28
             Top = 48
             Width = 44
-            ItemHeight = 15
+            ItemHeight = 20
             Items.Strings = (
               '1'
               '2'
@@ -5852,10 +5865,10 @@ object Form1: TForm1
           end
           object cbxET: TComboBox
             Left = 143
-            Height = 23
+            Height = 28
             Top = 85
             Width = 44
-            ItemHeight = 15
+            ItemHeight = 20
             Items.Strings = (
               '1'
               '2'
@@ -5868,10 +5881,10 @@ object Form1: TForm1
           end
           object cbxEOD: TComboBox
             Left = 143
-            Height = 23
+            Height = 28
             Top = 48
             Width = 44
-            ItemHeight = 15
+            ItemHeight = 20
             Items.Strings = (
               '1'
               '2'
@@ -5884,10 +5897,10 @@ object Form1: TForm1
           end
           object cbxEUD: TComboBox
             Left = 143
-            Height = 23
+            Height = 28
             Top = 8
             Width = 44
-            ItemHeight = 15
+            ItemHeight = 20
             Items.Strings = (
               '1'
               '2'
@@ -7360,10 +7373,10 @@ object Form1: TForm1
         end
         object cbxHealth: TComboBox
           Left = 76
-          Height = 23
+          Height = 28
           Top = 251
           Width = 44
-          ItemHeight = 15
+          ItemHeight = 20
           Items.Strings = (
             ' '
             '1'
@@ -7405,10 +7418,10 @@ object Form1: TForm1
         end
         object cbxCardInSet: TComboBox
           Left = 197
-          Height = 23
+          Height = 28
           Top = 84
           Width = 36
-          ItemHeight = 15
+          ItemHeight = 20
           Items.Strings = (
             '1'
             '2'
@@ -7421,10 +7434,10 @@ object Form1: TForm1
         end
         object cbxForcePips: TComboBox
           Left = 76
-          Height = 23
+          Height = 28
           Top = 183
           Width = 44
-          ItemHeight = 15
+          ItemHeight = 20
           Items.Strings = (
             ''
             '1'
@@ -7446,10 +7459,10 @@ object Form1: TForm1
         end
         object cbxResources: TComboBox
           Left = 76
-          Height = 23
+          Height = 28
           Top = 217
           Width = 44
-          ItemHeight = 15
+          ItemHeight = 20
           Items.Strings = (
             ''
             'X'
@@ -7477,10 +7490,10 @@ object Form1: TForm1
         end
         object cbxSide: TComboBox
           Left = 283
-          Height = 23
+          Height = 28
           Top = 111
           Width = 85
-          ItemHeight = 15
+          ItemHeight = 20
           Items.Strings = (
             'Dark'
             'Light'

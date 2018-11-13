@@ -642,7 +642,9 @@ begin
   for x:=0 to Length(reusedCards)-1 do
   begin
     found:=false;
-    if Pos(searchStr, reusedCards[x]) > 0 then
+    if (Pos(searchStr, reusedCards[x]) > 0)
+      and ((searchStr = reusedCards[x])
+        or (searchStr + '*' = Copy(reusedCards[x], 1, Length(searchStr)+1)))then
     begin
       tmpStr:=reusedCards[x];
       found:=true;
@@ -755,37 +757,67 @@ begin
     Writeln(f, '<superzone name="Force">');
     if Pos('Jedi', lbxFaction.Items[0]) > 0 then
     begin
-      Writeln(f, '<card><name id="Jedi">Jedi</name><set>Core</set></card>');
+      if Pos('Guardians of Justice', lbxFaction.Items[0]) > 0 then
+        Writeln(f, '<card><name id="GuaJus">Guardians of Justice</name><set>Ally</set></card>')
+      else if Pos('No Questions Asked', lbxFaction.Items[0]) > 0 then
+        Writeln(f, '<card><name id="NQA">No Questions Asked</name><set>Ally</set></card>')
+      else
+        Writeln(f, '<card><name id="Jedi">Jedi</name><set>Core</set></card>');
       isLight:=true;
     end
     else
     if Pos('Rebel Alliance', lbxFaction.Items[0]) > 0 then
     begin
-      Writeln(f, '<card><name id="Rebel Alliance">Rebel Alliance</name><set>Core</set></card>');
+      if Pos('Fighters for Freedom', lbxFaction.Items[0]) > 0 then
+        Writeln(f, '<card><name id="FigFre">Fighters for Freedom</name><set>Ally</set></card>')
+      else if Pos('Information Network', lbxFaction.Items[0]) > 0 then
+        Writeln(f, '<card><name id="InfoNet">Information Network</name><set>Ally</set></card>')
+      else
+        Writeln(f, '<card><name id="Rebel Alliance">Rebel Alliance</name><set>Core</set></card>');
       isLight:=true;
     end
     else
     if Pos('Smugglers and Spies', lbxFaction.Items[0]) > 0 then
     begin
-      Writeln(f, '<card><name id="Smugglers and Spies">Smugglers and Spies</name><set>Core</set></card>');
+      if Pos('Desperate Allies', lbxFaction.Items[0]) > 0 then
+        Writeln(f, '<card><name id="DesAlly">Desperate Allies</name><set>Ally</set></card>')
+      else if Pos('Mercenary Contacts', lbxFaction.Items[0]) > 0 then
+        Writeln(f, '<card><name id="MerCon">Mercenary Contacts</name><set>Ally</set></card>')
+      else
+        Writeln(f, '<card><name id="Smugglers and Spies">Smugglers and Spies</name><set>Core</set></card>');
       isLight:=true;
     end
     else
     if Pos('Sith', lbxFaction.Items[0]) > 0 then
     begin
-      Writeln(f, '<card><name id="Sith">Sith</name><set>Core</set></card>');
+      if Pos('Galactic Enforcers', lbxFaction.Items[0]) > 0 then
+        Writeln(f, '<card><name id="GalEnf">Galactic Enforcers</name><set>Ally</set></card>')
+      else if Pos('Expendable Allies', lbxFaction.Items[0]) > 0 then
+        Writeln(f, '<card><name id="ExpAlly">Expendable Allies</name><set>Ally</set></card>')
+      else
+        Writeln(f, '<card><name id="Sith">Sith</name><set>Core</set></card>');
       isLight:=false;
     end
     else
     if Pos('Imperial Navy', lbxFaction.Items[0]) > 0 then
     begin
-      Writeln(f, '<card><name id="Imperial Navy">Imperial Navy</name><set>Core</set></card>');
+      if Pos('Dark Masters', lbxFaction.Items[0]) > 0 then
+        Writeln(f, '<card><name id="DarkMas">Dark Masters</name><set>Ally</set></card>')
+      else if Pos('Any Methods Necessary', lbxFaction.Items[0]) > 0 then
+        Writeln(f, '<card><name id="AMN">Any Methods Necessary</name><set>Ally</set></card>')
+      else
+        Writeln(f, '<card><name id="Imperial Navy">Imperial Navy</name><set>Core</set></card>');
       isLight:=false;
     end
     else
     if Pos('Scum and Villainy', lbxFaction.Items[0]) > 0 then
     begin
-      Writeln(f, '<card><name id="Scum and Villainy">Scum and Villainy</name><set>Core</set></card>');
+      if Pos('Promise of Power', lbxFaction.Items[0]) > 0 then
+        Writeln(f, '<card><name id="ProPow">Promise of Power</name><set>Ally</set></card>')
+      else if Pos('Imperial Contractors', lbxFaction.Items[0]) > 0 then
+        Writeln(f, '<card><name id="ImpCon">Imperial Contractors</name><set>Ally</set></card>')
+      else
+        Writeln(f, '<card><name id="Scum and Villainy">Scum and Villainy</name><set>Core</set></card>');
       isLight:=false;
     end;
     if isLight then
