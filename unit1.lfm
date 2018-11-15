@@ -12,7 +12,7 @@ object Form2: TForm2
   OnMouseDown = FormMouseDown
   OnResize = FormResize
   Position = poMainFormCenter
-  LCLVersion = '1.8.0.6'
+  LCLVersion = '1.8.4.0'
   object imgCard1: TImage
     Left = 376
     Height = 200

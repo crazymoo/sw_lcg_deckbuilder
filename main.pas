@@ -24,6 +24,7 @@ type
     btnSaveCard1: TButton;
     btnClearFilters: TButton;
     btnProducts: TButton;
+    Button1: TButton;
     cbxAttack1: TComboBox;
     cbxCardInSet: TComboBox;
     cbxCardSet1: TComboBox;
@@ -144,7 +145,9 @@ type
     lbxMissions: TListBox;
     lbxObjectives: TListBox;
     lbxUnits: TListBox;
+    lbxSet: TListBox;
     MainMenu1: TMainMenu;
+    Memo1: TMemo;
     mniSaveLackey: TMenuItem;
     mniLoadLackey: TMenuItem;
     mniOctgnDecks: TMenuItem;
@@ -210,6 +213,7 @@ type
     procedure btnProductsClick(Sender: TObject);
     procedure btnSaveCardClick(Sender: TObject);
     procedure btnFactionsClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
     procedure cbxCardTypeChange(Sender: TObject);
     procedure cbxTrait1Exit(Sender: TObject);
     procedure cbxTrait2Exit(Sender: TObject);
@@ -1991,6 +1995,38 @@ begin
     chartFactionsPieSeries1.Marks.Style:=smsLabelPercent;
 end;
 
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  f: TextFile;
+  tmpStr, cardID, : String;
+  i, cnt: Integer;
+begin
+  OpenDialog1.Filter := 'XML files|*.xml';
+  if OpenDialog1.Execute then
+  begin
+    try
+      Memo1.Clear;
+      cnt := 0;
+      AssignFile(f, OpenDialog1.FileName);
+      Reset(f);
+      while not EoF(f) do
+      begin
+        Readln(f, tmpStr);
+        Memo1.Lines.Add(tmpStr);
+        Inc(cnt);
+      end;
+    finally
+      CloseFile(f);
+    end;
+    for i:=0 to cnt do
+    begin
+      // This is where we read from the memo and construct our DB records from
+      // scraping the card info out of the XML data
+
+    end;
+    PageControl1Change(Sender);
+  end;                end;
+
 procedure TForm1.cbxCardTypeChange(Sender: TObject);
 begin
   if (cbxCardType.Text = 'Objective') or (cbxCardType.Text = 'Mission') then
@@ -2594,6 +2630,7 @@ begin
     for i:=0 to cardSets.Count-1  do
     begin
       cbxProduct.Items.Add(cardSets[i]);
+      lbxSet.Items.add(cardSets[i]);
       //cbxFilterProduct.Items.Add(cardSets[i]);
       SetLength(selectedProducts, i+1);
       selectedProducts[i,0] := cardSets[i];
