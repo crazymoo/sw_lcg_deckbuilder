@@ -1,13 +1,14 @@
 object Form1: TForm1
-  Left = 1084
+  Left = 357
   Height = 649
-  Top = 574
+  Top = 257
   Width = 1089
   AllowDropFiles = True
   Caption = 'Star Wars The Card Game Deck Builder'
-  ClientHeight = 629
+  ClientHeight = 624
   ClientWidth = 1089
   Color = 9018178
+  DesignTimePPI = 120
   Menu = MainMenu1
   OnCloseQuery = FormCloseQuery
   OnCreate = FormCreate
@@ -15,10 +16,10 @@ object Form1: TForm1
   OnDropFiles = FormDropFiles
   OnMouseDown = FormMouseDown
   Position = poScreenCenter
-  LCLVersion = '1.8.4.0'
+  LCLVersion = '1.8.2.0'
   object PageControl1: TPageControl
     Left = 0
-    Height = 629
+    Height = 624
     Top = 0
     Width = 1089
     ActivePage = tabAddCards
@@ -131,7 +132,7 @@ object Form1: TForm1
                       '0 - Objectives'
                       '================================'
                     )
-                    ItemHeight = 15
+                    ItemHeight = 20
                     OnClick = BucketClick
                     OnDblClick = BucketDblClick
                     OnExit = BucketExit
@@ -149,7 +150,7 @@ object Form1: TForm1
                     Items.Strings = (
                       'Faction - <none selected>'
                     )
-                    ItemHeight = 15
+                    ItemHeight = 20
                     OnClick = BucketClick
                     OnDblClick = BucketDblClick
                     OnExit = BucketExit
@@ -168,7 +169,7 @@ object Form1: TForm1
                       '0 - Units'
                       '================================'
                     )
-                    ItemHeight = 15
+                    ItemHeight = 20
                     OnClick = BucketClick
                     OnDblClick = BucketDblClick
                     OnExit = BucketExit
@@ -187,7 +188,7 @@ object Form1: TForm1
                       '0 - Events'
                       '================================'
                     )
-                    ItemHeight = 15
+                    ItemHeight = 20
                     OnClick = BucketClick
                     OnDblClick = BucketDblClick
                     OnExit = BucketExit
@@ -206,7 +207,7 @@ object Form1: TForm1
                       '0 - Enhancements'
                       '================================'
                     )
-                    ItemHeight = 15
+                    ItemHeight = 20
                     OnClick = BucketClick
                     OnDblClick = BucketDblClick
                     OnExit = BucketExit
@@ -225,7 +226,7 @@ object Form1: TForm1
                       '0 - Fate Cards'
                       '================================'
                     )
-                    ItemHeight = 15
+                    ItemHeight = 20
                     OnClick = BucketClick
                     OnDblClick = BucketDblClick
                     OnExit = BucketExit
@@ -244,7 +245,7 @@ object Form1: TForm1
                       '0 - Missions'
                       '================================'
                     )
-                    ItemHeight = 15
+                    ItemHeight = 20
                     OnClick = BucketClick
                     OnDblClick = BucketDblClick
                     OnExit = BucketExit
@@ -301,7 +302,7 @@ object Form1: TForm1
               Width = 783
               Anchors = [akTop, akLeft, akRight, akBottom]
               Caption = 'Grid Filters:'
-              ClientHeight = 87
+              ClientHeight = 82
               ClientWidth = 779
               Color = 14410428
               ParentColor = False
@@ -434,11 +435,11 @@ object Form1: TForm1
               end
               object cbxFilterTrait: TComboBox
                 Left = 294
-                Height = 23
+                Height = 28
                 Top = 58
                 Width = 187
                 AutoSize = False
-                ItemHeight = 15
+                ItemHeight = 20
                 ItemIndex = 0
                 Items.Strings = (
                   '- Select Trait -'
@@ -450,11 +451,11 @@ object Form1: TForm1
               end
               object cbxFilterSide: TComboBox
                 Left = 488
-                Height = 23
+                Height = 28
                 Top = 58
                 Width = 187
                 AutoSize = False
-                ItemHeight = 15
+                ItemHeight = 20
                 ItemIndex = 0
                 Items.Strings = (
                   '- Select Side (Light or Dark) -'
@@ -489,11 +490,11 @@ object Form1: TForm1
         Height = 568
         Top = 0
         Width = 1081
-        HorzScrollBar.Page = 1060
-        VertScrollBar.Page = 564
+        HorzScrollBar.Page = 1056
+        VertScrollBar.Page = 543
         Align = alClient
-        ClientHeight = 564
-        ClientWidth = 1060
+        ClientHeight = 543
+        ClientWidth = 1056
         Color = clBlack
         ParentColor = False
         TabOrder = 0
@@ -5559,7 +5560,7 @@ object Form1: TForm1
     end
     object tabAddCards: TTabSheet
       Caption = 'Add Cards to Database'
-      ClientHeight = 601
+      ClientHeight = 591
       ClientWidth = 1081
       TabVisible = False
       object Panel3: TPanel
@@ -5593,7 +5594,7 @@ object Form1: TForm1
         end
         object edtCardNumber: TEdit
           Left = 76
-          Height = 23
+          Height = 28
           Top = 2
           Width = 52
           MaxLength = 6
@@ -5601,36 +5602,36 @@ object Form1: TForm1
         end
         object edtCardTitle: TEdit
           Left = 76
-          Height = 23
+          Height = 28
           Top = 56
           Width = 220
           TabOrder = 2
         end
         object cbxProduct: TComboBox
           Left = 76
-          Height = 23
+          Height = 28
           Top = 29
           Width = 204
-          ItemHeight = 15
+          ItemHeight = 20
           Style = csDropDownList
           TabOrder = 1
         end
         object cbxCardType: TComboBox
           Left = 76
-          Height = 23
+          Height = 28
           Top = 112
           Width = 143
-          ItemHeight = 15
+          ItemHeight = 20
           OnChange = cbxCardTypeChange
           Style = csDropDownList
           TabOrder = 7
         end
         object cbxFaction: TComboBox
           Left = 283
-          Height = 23
+          Height = 28
           Top = 84
           Width = 149
-          ItemHeight = 15
+          ItemHeight = 20
           ParentShowHint = False
           Style = csDropDownList
           TabOrder = 6
@@ -5641,45 +5642,45 @@ object Form1: TForm1
           Top = 280
           Width = 352
           Caption = 'Card Traits'
-          ClientHeight = 68
+          ClientHeight = 63
           ClientWidth = 348
           TabOrder = 14
           object cbxTrait1: TComboBox
             Left = 16
-            Height = 23
+            Height = 28
             Top = 6
             Width = 148
-            ItemHeight = 15
+            ItemHeight = 20
             OnExit = cbxTrait1Exit
             TabOrder = 0
           end
           object cbxTrait2: TComboBox
             Left = 16
-            Height = 23
+            Height = 28
             Top = 38
             Width = 148
             Enabled = False
-            ItemHeight = 15
+            ItemHeight = 20
             OnExit = cbxTrait2Exit
             TabOrder = 1
           end
           object cbxTrait3: TComboBox
             Left = 184
-            Height = 23
+            Height = 28
             Top = 6
             Width = 148
             Enabled = False
-            ItemHeight = 15
+            ItemHeight = 20
             OnExit = cbxTrait3Exit
             TabOrder = 2
           end
           object cbxTrait4: TComboBox
             Left = 184
-            Height = 23
+            Height = 28
             Top = 38
             Width = 148
             Enabled = False
-            ItemHeight = 15
+            ItemHeight = 20
             TabOrder = 3
           end
         end
@@ -5721,74 +5722,74 @@ object Form1: TForm1
         end
         object lblCardNumber: TLabel
           Left = 36
-          Height = 15
+          Height = 20
           Top = 7
-          Width = 35
+          Width = 44
           Caption = 'Card #'
           ParentColor = False
         end
         object Label1: TLabel
           Left = 239
-          Height = 15
+          Height = 20
           Top = 89
-          Width = 42
+          Width = 50
           Caption = 'Faction:'
           ParentColor = False
         end
         object Label2: TLabel
           Left = 29
-          Height = 15
+          Height = 20
           Top = 34
-          Width = 42
+          Width = 51
           Caption = 'Product'
           ParentColor = False
         end
         object Label3: TLabel
           Left = 17
-          Height = 15
+          Height = 20
           Top = 116
-          Width = 53
+          Width = 66
           Caption = 'Card Type'
           ParentColor = False
         end
         object Label4: TLabel
           Left = 20
-          Height = 15
+          Height = 20
           Top = 61
-          Width = 51
+          Width = 64
           Caption = 'Card Title'
           ParentColor = False
         end
         object chkUnique: TCheckBox
           Left = 308
-          Height = 19
+          Height = 24
           Top = 59
-          Width = 58
+          Width = 71
           Caption = 'Unique'
           TabOrder = 3
         end
         object Label5: TLabel
           Left = 16
-          Height = 15
+          Height = 20
           Top = 376
-          Width = 58
+          Width = 74
           Caption = 'Ability Text'
           ParentColor = False
         end
         object Label6: TLabel
           Left = 47
-          Height = 15
+          Height = 20
           Top = 154
-          Width = 24
+          Width = 29
           Caption = 'Cost'
           ParentColor = False
         end
         object cbxCost: TComboBox
           Left = 76
-          Height = 23
+          Height = 28
           Top = 149
           Width = 44
-          ItemHeight = 15
+          ItemHeight = 20
           Items.Strings = (
             'X'
             '0'
@@ -5811,15 +5812,15 @@ object Form1: TForm1
           Top = 140
           Width = 202
           Caption = 'Combat Icons'
-          ClientHeight = 119
+          ClientHeight = 114
           ClientWidth = 198
           TabOrder = 13
           object cbxUD: TComboBox
             Left = 52
-            Height = 23
+            Height = 28
             Top = 8
             Width = 44
-            ItemHeight = 15
+            ItemHeight = 20
             Items.Strings = (
               '1'
               '2'
@@ -5832,10 +5833,10 @@ object Form1: TForm1
           end
           object cbxT: TComboBox
             Left = 52
-            Height = 23
+            Height = 28
             Top = 85
             Width = 44
-            ItemHeight = 15
+            ItemHeight = 20
             Items.Strings = (
               '1'
               '2'
@@ -5848,10 +5849,10 @@ object Form1: TForm1
           end
           object cbxOD: TComboBox
             Left = 52
-            Height = 23
+            Height = 28
             Top = 48
             Width = 44
-            ItemHeight = 15
+            ItemHeight = 20
             Items.Strings = (
               '1'
               '2'
@@ -5864,10 +5865,10 @@ object Form1: TForm1
           end
           object cbxET: TComboBox
             Left = 143
-            Height = 23
+            Height = 28
             Top = 85
             Width = 44
-            ItemHeight = 15
+            ItemHeight = 20
             Items.Strings = (
               '1'
               '2'
@@ -5880,10 +5881,10 @@ object Form1: TForm1
           end
           object cbxEOD: TComboBox
             Left = 143
-            Height = 23
+            Height = 28
             Top = 48
             Width = 44
-            ItemHeight = 15
+            ItemHeight = 20
             Items.Strings = (
               '1'
               '2'
@@ -5896,10 +5897,10 @@ object Form1: TForm1
           end
           object cbxEUD: TComboBox
             Left = 143
-            Height = 23
+            Height = 28
             Top = 8
             Width = 44
-            ItemHeight = 15
+            ItemHeight = 20
             Items.Strings = (
               '1'
               '2'
@@ -7364,18 +7365,18 @@ object Form1: TForm1
         end
         object Label9: TLabel
           Left = 36
-          Height = 15
+          Height = 20
           Top = 256
-          Width = 35
+          Width = 44
           Caption = 'Health'
           ParentColor = False
         end
         object cbxHealth: TComboBox
           Left = 76
-          Height = 23
+          Height = 28
           Top = 251
           Width = 44
-          ItemHeight = 15
+          ItemHeight = 20
           Items.Strings = (
             ' '
             '1'
@@ -7393,15 +7394,15 @@ object Form1: TForm1
         end
         object lblSetNumber: TLabel
           Left = 45
-          Height = 15
+          Height = 20
           Top = 89
-          Width = 26
+          Width = 34
           Caption = 'Set #'
           ParentColor = False
         end
         object edtSetNumber: TEdit
           Left = 76
-          Height = 23
+          Height = 28
           Top = 84
           Width = 52
           MaxLength = 4
@@ -7409,18 +7410,18 @@ object Form1: TForm1
         end
         object lblCardInSet: TLabel
           Left = 134
-          Height = 15
+          Height = 20
           Top = 89
-          Width = 60
+          Width = 75
           Caption = 'Card in Set:'
           ParentColor = False
         end
         object cbxCardInSet: TComboBox
           Left = 197
-          Height = 23
+          Height = 28
           Top = 84
           Width = 36
-          ItemHeight = 15
+          ItemHeight = 20
           Items.Strings = (
             '1'
             '2'
@@ -7433,10 +7434,10 @@ object Form1: TForm1
         end
         object cbxForcePips: TComboBox
           Left = 76
-          Height = 23
+          Height = 28
           Top = 183
           Width = 44
-          ItemHeight = 15
+          ItemHeight = 20
           Items.Strings = (
             ''
             '1'
@@ -7450,18 +7451,18 @@ object Form1: TForm1
         end
         object Label11: TLabel
           Left = 17
-          Height = 15
+          Height = 20
           Top = 187
-          Width = 54
+          Width = 67
           Caption = 'Force Pips'
           ParentColor = False
         end
         object cbxResources: TComboBox
           Left = 76
-          Height = 23
+          Height = 28
           Top = 217
           Width = 44
-          ItemHeight = 15
+          ItemHeight = 20
           Items.Strings = (
             ''
             'X'
@@ -7473,26 +7474,26 @@ object Form1: TForm1
         end
         object Label8: TLabel
           Left = 18
-          Height = 15
+          Height = 20
           Top = 221
-          Width = 53
+          Width = 66
           Caption = 'Resources'
           ParentColor = False
         end
         object Label7: TLabel
           Left = 255
-          Height = 15
+          Height = 20
           Top = 117
-          Width = 25
+          Width = 32
           Caption = 'Side:'
           ParentColor = False
         end
         object cbxSide: TComboBox
           Left = 283
-          Height = 23
+          Height = 28
           Top = 111
           Width = 85
-          ItemHeight = 15
+          ItemHeight = 20
           Items.Strings = (
             'Dark'
             'Light'
@@ -7519,14 +7520,6 @@ object Form1: TForm1
           OnClick = Button1Click
           TabOrder = 20
         end
-        object lbxSet: TListBox
-          Left = 80
-          Height = 185
-          Top = 368
-          Width = 296
-          ItemHeight = 0
-          TabOrder = 21
-        end
       end
     end
   end
@@ -7537,7 +7530,6 @@ object Form1: TForm1
       Caption = '&File'
       object mniNewDeck: TMenuItem
         Caption = '&Create New Deck'
-        OnClick = mniNewDeckClick
       end
       object mniLoadDeck: TMenuItem
         Caption = '&Load Text Deck (*.txt)'

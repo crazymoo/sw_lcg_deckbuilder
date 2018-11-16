@@ -145,7 +145,6 @@ type
     lbxMissions: TListBox;
     lbxObjectives: TListBox;
     lbxUnits: TListBox;
-    lbxSet: TListBox;
     MainMenu1: TMainMenu;
     Memo1: TMemo;
     mniSaveLackey: TMenuItem;
@@ -1998,21 +1997,40 @@ end;
 procedure TForm1.Button1Click(Sender: TObject);
 var
   f: TextFile;
-  tmpStr, cardID, : String;
-  i, cnt: Integer;
+  s1, s2, title, product, faction, cardCost, cardType, forcePips,
+      combatIcons, traits, health, resources, cardText, forceSide,
+      oSet, cardInSet, unique, packName: String;
+  i, j, k, cnt: Integer;
+
+  function Scrape(s: String; attr: String): String;
+  var
+     i: Integer;
+     rs: String;
+  begin
+    rs := '';
+    for i:=Pos(attr, s)+Length(attr)+2 to 99 do
+    begin
+      if s[i] = '"' then break
+      else if s[i] <> '"' then
+        rs := rs + s[i];
+    end;
+    result := rs;
+  end;
+
 begin
   OpenDialog1.Filter := 'XML files|*.xml';
   if OpenDialog1.Execute then
   begin
     try
+      addedCards := true;
       Memo1.Clear;
       cnt := 0;
       AssignFile(f, OpenDialog1.FileName);
       Reset(f);
       while not EoF(f) do
       begin
-        Readln(f, tmpStr);
-        Memo1.Lines.Add(tmpStr);
+        Readln(f, s1);
+        Memo1.Lines.Add(s1);
         Inc(cnt);
       end;
     finally
@@ -2020,12 +2038,82 @@ begin
     end;
     for i:=0 to cnt do
     begin
-      // This is where we read from the memo and construct our DB records from
-      // scraping the card info out of the XML data
-
+      s1 := Memo1.Lines[i];
+      if Pos('<set', s1) > 0 then
+      begin
+        packName := Scrape(s1, 'name');
+        for j:=0 to cbxProduct.Items.Count-1 do
+        begin
+          if Pos(packName, cbxProduct.Items[j]) > 0 then
+          begin
+            product := cbxProduct.Items[j];
+            break;
+          end;
+        end;
+      end
+      else if Pos('<card id=', s1) > 0 then
+      begin
+        title := Scrape(s1, 'name');
+      end
+      else if Pos('<property', s1) > 0 then
+      begin
+        if Pos('Cost', s1) > 0 then cardCost := Scrape(s1, 'value')
+        else if Pos('Type', s1) > 0 then cardType := Scrape(s1, 'value')
+        else if Pos('Force', s1) > 0 then forcePips := Scrape(s1, 'value')
+        else if Pos('Combat', s1) > 0 then combatIcons := Scrape(s1, 'value')
+        else if Pos('Traits', s1) > 0 then
+        begin
+          traits := Scrape(s1, 'value');
+          if Pos('Unique', traits) > 0 then
+            unique := 'X'
+          else
+            unique := '';
+        end
+        else if Pos('Damage', s1) > 0 then health := Scrape(s1, 'value')
+        else if Pos('Resources', s1) > 0 then resources := Scrape(s1, 'value')
+        else if Pos('Text', s1) > 0 then
+        begin
+          s2 := s1;
+          k := 0;
+          while Pos('/>', s2) <= 0 do
+          begin
+            Inc(k);
+            s2 := s2 + Memo1.Lines[i+k];
+          end;
+          cardText := Scrape(s2, 'value');
+        end
+        else if Pos('Side', s1) > 0 then forceSide := Scrape(s1, 'value')
+        else if Pos('Affiliation', s1) > 0 then faction := Scrape(s1, 'value')
+        else if Pos('Block', s1) > 0 then oSet := Scrape(s1, 'value')
+        else if Pos('Block Number', s1) > 0 then cardInSet := Scrape(s1,'value')
+      end
+      else if Pos('</card', s1) > 0 then
+      begin
+        Inc(recordCount);
+        SetLength(cardDB, recordCount);
+        cardDB[recordCount-1].cardNumber := oSet + '-' + cardInSet;
+        cardDB[recordCount-1].product := product;
+        cardDB[recordCount-1].cardTitle := title;
+        cardDB[recordCount-1].unique := unique;
+        cardDB[recordCount-1].setNumber := oSet;
+        cardDB[recordCount-1].cardInSet := cardInSet;
+        cardDB[recordCount-1].faction := faction;
+        cardDB[recordCount-1].side := forceSide;
+        cardDB[recordCount-1].cardType := cardType;
+        cardDB[recordCount-1].cost := cardCost;
+        cardDB[recordCount-1].forcePips := forcePips;
+        cardDB[recordCount-1].resources := resources;
+        cardDB[recordCount-1].health := health;
+        cardDB[recordCount-1].combatIcons := combatIcons;
+        cardDB[recordCount-1].traits := traits;
+        cardDB[recordCount-1].abilityText := cardText;
+        cardDB[recordCount-1].cardPic := '';
+      end;
     end;
+    SetStringGrid;
     PageControl1Change(Sender);
-  end;                end;
+  end;
+end;
 
 procedure TForm1.cbxCardTypeChange(Sender: TObject);
 begin
@@ -2630,7 +2718,6 @@ begin
     for i:=0 to cardSets.Count-1  do
     begin
       cbxProduct.Items.Add(cardSets[i]);
-      lbxSet.Items.add(cardSets[i]);
       //cbxFilterProduct.Items.Add(cardSets[i]);
       SetLength(selectedProducts, i+1);
       selectedProducts[i,0] := cardSets[i];

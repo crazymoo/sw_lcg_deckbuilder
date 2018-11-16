@@ -1750,4 +1750,196 @@
 289-4/42-Promise of Power/Secret Information/ /289/4/Neutral/Dark/Enhancement/2/1/1/ / /Item./Enhance your play area. Influence./42-289-4.jpg
 289-5/42-Promise of Power/Chain Reaction/ /289/5/Neutral/Dark/Event/1/3/ / / //Reaction: After a Reaction ability resolves, resolve its effect again as if you control the effect, ignoring any costs and trigger conditions. You may choose new target(s), if applicable./42-289-5.jpg
 289-6/42-Promise of Power/Allies of Necessity/ /289/6/Neutral/Dark/Fate/ /2/ / / //You may target 2 participating units you control that do not share an affiliation. If you do, one targeted unit gains UD and the other gains OD until the end of the engagement.  FATE: 6/42-289-6.jpg
-////////////////
+1-//Legends Emerge//1//Jedi/Light/Objective/0/0/2/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Sulon//
+2-//Kyle Katarn//2//Jedi/Light/Unit/4/Character-Force User-Unique/0/3/UD:3, BD:0, T:0, EE-UD:0, EE-BD:1, EE-T:0/Sulon/While this unit is attacking alone, the def/
+3-//Sulon Sympathizer//3//Neutral/Light/Unit/2/1/1/2/UD:0, BD:0, T:0, EE-UD:0, EE-BD:1, EE-T:0/Character-Civilian//
+4-//The Way of the Jedi//4//Jedi/Light/Enhancement/2/Force-Mercy/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Character-Civilian/Enhance an enemy Character unit with 4 or f/
+5-//Qu Rahn&#39;s Lightsaber//5//Jedi/Light/Enhancement/1/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Weapon/Enhance a Force Sensitive or Force User uni/
+6-//Temptation//6//Jedi/Light/Event/2/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Reaction: After a friendly Character unit i/
+1-//The Power of the Valley//1//Jedi/Light/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Ruusan/Limit 1 per objective deck.&#xD;&#xA;Reacti/
+2-//Trapped Spirit//2//Jedi/Light/Unit/2/1/0/2/UD:0, BD:0, T:1, EE-UD:0, EE-BD:0, EE-T:0/Character/Protect unit committed to the Force.&#xD;&#/
+3-//Trapped Spirit//3//Jedi/Light/Unit/2/1/0/2/UD:0, BD:0, T:1, EE-UD:0, EE-BD:0, EE-T:0/Character/Protect unit committed to the Force.&#xD;&#/
+4-//Nexus of Power//4//Neutral/Light/Enhancement/2/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Enhance a friendly objective.&#xD;&#xA;This/
+5-//Nexus of Power//5//Neutral/Light/Enhancement/2/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Enhance a friendly objective.&#xD;&#xA;This/
+6-//My Ally is the Force//6//Jedi/Light/Event/3/Force/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Reaction: After you win a Force struggle, d/
+1-//Venerating Lady Vader//1//Jedi/Light/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Honoghr/While this objective has 2 or fewer damage /
+2-//Khabarakh/X/2//Jedi/Light/Unit/3/2/0/3/UD:2, BD:0, T:0, EE-UD:0, EE-BD:1, EE-T:0/Character-Unique/Protect Force Sensitive or Force User unit./
+3-//Noghri Commando//3//Neutral/Light/Unit/2/1/0/2/UD:0, BD:1, T:0, EE-UD:1, EE-BD:0, EE-T:0/Character/Targeted strike./
+4-//Free From Slavery//4//Jedi/Light/Enhancement/2/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Enhance an enemy objective.&#xD;&#xA;Interr/
+5-//Uncertain Loyalties//5//Jedi/Light/Enhancement/1/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Enhance a Character unit.&#xD;&#xA;Treat en/
+6-//Subtle Sabotage//6//Jedi/Light/Event/0/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Action: Move a shield token from target uni/
+1-//Concealed Heritage//1//Jedi/Light/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Coruscant/Reaction: After this objective enters play,/
+2-//Corran Horn//2//Jedi/Light/Unit/4/Character-Force User-Pilot-Unique/0/3/UD:1, BD:0, T:0, EE-UD:0, EE-BD:2, EE-T:1/Coruscant/While this unit is participating in an enga/
+3-//Rogue Nine/X/3//Jedi/Light/Unit/3/3/0/3/UD:1, BD:1, T:0, EE-UD:1, EE-BD:0, EE-T:0/Vehicle-Fighter-Unique/Interrupt: If this unit would be destroyed /
+4-//Corran&#39;s Lightsaber//4//Jedi/Light/Enhancement/1/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Weapon/Enhance a Force Sensitive or Force User uni/
+5-//His Father&#39;s Message//5//Jedi/Light/Enhancement/1/0/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Enhance a Force Sensitive or Force User uni/
+6-//Jedi Reflexes//6//Jedi/Light/Event/1/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Reaction: After an edge battle resolves, ta/
+1-//The Future of the Jedi//1//Jedi/Light/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Yavin 4/Jedi Affiliation Only.&#xD;&#xA;Reaction:Af/
+2-//Promising Student//2//Jedi/Light/Unit/2/Character-Force User/0/2/UD:1, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Yavin 4/Reaction: After an enemy objective is destr/
+3-//Promising Student//3//Jedi/Light/Unit/2/Character-Force User/0/2/UD:1, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Yavin 4/Reaction: After an enemy objective is destr/
+4-//The Jedi Praxeum/X/4//Jedi/Light/Enhancement/3/2/3/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Location-Yavin 4-Unique/Enhance your play area.&#xD;&#xA;Reaction: /
+5-//The New Order/X/5//Jedi/Light/Enhancement/1/0/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Unique/Enhance your affiliation card.&#xD;&#xA;Thi/
+6-//Twist of Fate//6//Neutral/Light/Fate/0/0/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Cancel this edge battle and the card effect/
+1-//Duty and Loyalty//1//Rebel Alliance/Light/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Folor/Reaction: After a friendly unit is destroye/
+2-//Corran Horn//2//Rebel Alliance/Light/Unit/4/Character-Pilot-Force Sensitive-Unique/0/3/UD:1, BD:0, T:0, EE-UD:0, EE-BD:2, EE-T:1/Folor/Pilot(2). (As long as enhanced Fighter unit/
+3-//Rogue Five/X/3//Rebel Alliance/Light/Unit/2/2/0/2/UD:1, BD:1, T:0, EE-UD:0, EE-BD:0, EE-T:0/Vehicle-Fighter-Unique/While this unit is piloted, it gains [Tacti/
+4-//Scouting Vessel//4//Neutral/Light/Unit/2/1/0/2/UD:0, BD:1, T:0, EE-UD:1, EE-BD:0, EE-T:0/Vehicle-Fighter/Interrupt: When this unit resolves its [Bla/
+5-//Whistler/X/5//Rebel Alliance/Light/Enhancement/1/0/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Upgrade-Unique/Enhance a friendly Fighter unit.&#xD;&#xA;W/
+6-//Torpedo Lock//6//Rebel Alliance/Light/Event/1/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Maneuver/Reaction: After a Fighter unit is focused t/
+1-//Covert Operation//1//Rebel Alliance/Light/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Oulanne/Action: Focus this objective to shuffle a c/
+2-//Jan Ors/X/2//Rebel Alliance/Light/Unit/3/2/0/3/UD:1, BD:0, T:1, EE-UD:0, EE-BD:1, EE-T:0/Character-Spy-Unique/Elite.&#xD;&#xA;While this unit is particip/
+3-//Rebel Guerrilla//3//Rebel Alliance/Light/Unit/2/1/0/1/UD:1, BD:0, T:0, EE-UD:0, EE-BD:1, EE-T:0/Character-Spy/Reaction: After this unit enters play, deal/
+4-//Staging Post//4//Rebel Alliance/Light/Enhancement/0/3/1/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Location/Enhance your play area.&#xD;&#xA;This enhan/
+5-//Espionage//5//Rebel Alliance/Light/Event/1/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Mission/Reaction: Look at the top 3 cards of your d/
+6-//Supporting Fire//6//Neutral/Light/Fate/0/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Target friendly player may place 1 non-fate/
+1-//Stealing Secrets//1//Rebel Alliance/Light/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Home One/Reaction: After a unit you control resolves/
+2-//Borsk Fey&#39;lya/X/2//Rebel Alliance/Light/Unit/4/3/0/3/UD:0, BD:1, T:1, EE-UD:0, EE-BD:0, EE-T:1/Character-Bothan-Leader-Unique/Action: Remove 1 focus token from this unit/
+3-//Insightful Infiltrator//3//Rebel Alliance/Light/Unit/2/1/0/2/UD:0, BD:0, T:0, EE-UD:0, EE-BD:1, EE-T:0/Character-Bothan-Spy/Reaction: After this unit is focused to str/
+4-//Bothan Spy//4//Neutral/Light/Unit/1/1/0/1/UD:1, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Character-Bothan-Spy/Reaction: After this unit enters play, look/
+5-//Political Clout//5//Rebel Alliance/Light/Enhancement/1/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Enhance a Leader unit.&#xD;&#xA;Enhanced un/
+6-//Fatal Flaw//6//Neutral/Light/Enhancement/1/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Enhance an enemy objective.&#xD;&#xA;As an /
+1-//The New Republic&#39;s Finest//1//Rebel Alliance/Light/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Home One/Reaction: After a Pilot enhancement leaves /
+2-//Wedge Antilles/X/2//Rebel Alliance/Light/Unit/2/1/0/2/UD:1, BD:0, T:0, EE-UD:0, EE-BD:1, EE-T:0/Character-Pilot-Unique/Pilot (2). (Enhanced Fighter or Speeder uni/
+3-//Rogue Leader/X/3//Rebel Alliance/Light/Unit/3/2/0/3/UD:2, BD:1, T:0, EE-UD:0, EE-BD:0, EE-T:0/Vehicle-Fighter-Unique/While this unit is piloted and participatin/
+4-//Dedicated Bacta Supply//4//Rebel Alliance/Light/Enhancement/2/2/1/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Enhance your play area&#xD;&#xA;Reaction: A/
+5-//Do The Impossible//5//Rebel Alliance/Light/Event/0/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Maneuver/Action: Focus a Pilot enhancement to remove/
+6-//Stay on Target//6//Neutral/Light/Fate/0/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//You may put a Pilot into play from your han/
+1-//Games of Deception//1//Rebel Alliance/Light/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Limit 1 per objective deck.&#xD;&#xA;Reacti/
+2-//Wes Janson/X/2//Rebel Alliance/Light/Unit/2/1/0/2/UD:1, BD:0, T:0, EE-UD:0, EE-BD:1, EE-T:0/Character-Pilot-Scoundrel-Unique/Pilot (1). (Enhanced Fighter unit gains [Un/
+3-//Pirated Interceptor//3//Rebel Alliance/Light/Unit/2/1/0/2/UD:0, BD:1, T:0, EE-UD:1, EE-BD:0, EE-T:0/Vehicle-Fighter/Enhancements attached to this unit can&#39;/
+4-//Pirated Interceptor//4//Rebel Alliance/Light/Unit/2/1/0/2/UD:0, BD:1, T:0, EE-UD:1, EE-BD:0, EE-T:0/Vehicle-Fighter/Enhancements attached to this unit can&#39;/
+5-//Lt&#46; Kettch//5//Rebel Alliance/Light/Enhancement/1/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Enhance a friendly Vehicle unit.&#xD;&#xA;I/
+6-//&#34;Faulty&#34; Comms Board//6//Neutral/Light/Enhancement/2/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Upgrade/Enhance a Vehicle unit.&#xD;&#xA;Enhanced u/
+1-//Veiled Rebellion//1//Rebel Alliance/Light/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Peregrine&#39;s Nest/Rebel Alliance affiliation only.&#xD;&#xA;W/
+2-//General Garm Bel Iblis/X/2//Rebel Alliance/Light/Unit/4/3/0/3/UD:2, BD:1, T:0, EE-UD:0, EE-BD:0, EE-T:1/Character-Leader-Unique/Elite.&#xD;&#xA;As long as this unit is com/
+3-//Naval Strategist//3//Rebel Alliance/Light/Unit/3/2/0/3/UD:1, BD:1, T:0, EE-UD:0, EE-BD:0, EE-T:1/Character/Reaction: After you win a Force struggle, d/
+4-//Oppressed Citizen//4//Neutral/Light/Unit/1/1/0/1/UD:0, BD:0, T:0, EE-UD:1, EE-BD:0, EE-T:0/Character/While this unit is committed to the Force, /
+5-//Local Support//5//Neutral/Light/Enhancement/1/0/1/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Enhance a friendly objective./
+6-//Reserve Forces//6//Rebel Alliance/Light/Event/0/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Tactic/Action: Declare a target friendly unit as a/
+1-//Bargaining for Profit//1//Smugglers and Spies/Light/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Corellia/Action: Spend 1 resource to draw 1 card. An/
+2-//Booster Terrik/X/2//Smugglers and Spies/Light/Unit/4/2/0/3/UD:0, BD:0, T:1, EE-UD:2, EE-BD:0, EE-T:0/Character-Smuggler-Unique/Elite&#xD;&#xA;While this unit is defending/
+3-//Errant Venture/X/3//Smugglers and Spies/Light/Unit/5/2/0/4/UD:2, BD:0, T:0, EE-UD:1, EE-BD:0, EE-T:0/Vehicle-Capital Ship-Unique/Shielding&#xD;&#xA;Reaction: After this uni/
+4-//Business Partner//4//Neutral/Light/Unit/2/1/0/1/UD:1, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:1/Character/Reaction: After edge stacks are revealed, t/
+5-//Cloud City Casino//5//Neutral/Light/Enhancement/1/0/1/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Cloud City-Location/Enhance your play area.&#xD;&#xA;Limited. (/
+6-//Expert Haggling//6//Smugglers and Spies/Light/Event/0/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Talent/Action: Focus a [Smuggler and Spies] Charac/
+1-//Under the Radar//1//Smugglers and Spies/Light/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Outer Rim/Reaction: After your refresh phase beings, /
+2-//Wild Karrde/X/2//Smugglers and Spies/Light/Unit/4/3/0/3/UD:1, BD:1, T:0, EE-UD:1, EE-BD:1, EE-T:0/Vehicle-Transport-Unique/Elite&#xD;&#xA;Reaction: After his unit is /
+3-//Cargo Hauler//3//Smugglers and Spies/Light/Unit/3/1/0/3/UD:0, BD:1, T:1, EE-UD:0, EE-BD:1, EE-T:0/Vehicle-Transport/Forced Reaction: After this unit is declare/
+4-//Personal Modifications//4//Smugglers and Spies/Light/Enhancement/1/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Upgrade/Enhance a Transport unit.&#xD;&#xA;While en/
+5-//Legitimate Business//5//Smugglers and Spies/Light/Event/0/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Deal/Limited.&#xD;&#xA;Action: During the deploy/
+6-//Flase Indentification//6//Smugglers and Spies/Light/Event/1/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Interrupt: When an exhausted unit you conro/
+1-//Endless Boredom//1//Smugglers and Spies/Light/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Action: During the deployment phase, focus /
+2-//Zakarisz Ghent/X/2//Smugglers and Spies/Light/Unit/2/1/0/2/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:1/Character-Unique/Reaction: After your conflict phase begins,/
+3-//Freelance Operative//3//Neutral/Light/Unit/3/2/0/2/UD:0, BD:1, T:0, EE-UD:1, EE-BD:0, EE-T:1/Character-Spy/Action: Spend 1 resource to discard the top/
+4-//Old Imperial Code//4//Neutral/Light/Enhancement/1/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Enhance a friendly unit.&#xD;&#xA;While enh/
+5-//Evading Authority//5//Smugglers and Spies/Light/Event/2/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Action: Name a card type. Each opponent mus/
+6-//Betrayal//6//Neutral/Light/Fate/0/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//If you win the edge battle, target particip/
+1-//Wraiths From the Sky//1//Smugglers and Spies/Light/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Outer Rim/Action: Focus this objective and a piloted /
+2-//Kell Tainer/X/2//Smugglers and Spies/Light/Unit/3/2/0/3/UD:2, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Character-Pilot-Unique/Pilot (2). (Enhanced Vehicle gain [Edge ena/
+3-//Garik &#34;Face&#34; Loran/X/3//Smugglers and Spies/Light/Unit/2/1/0/1/UD:0, BD:0, T:1, EE-UD:1, EE-BD:0, EE-T:0/Character-Pilot-Spy-Unique/Pilot (2). (Enhanced Vehicle is immune to e/
+4-//Wraith Squadron X-Wing//4//Smugglers and Spies/Light/Unit/2/0/0/3/UD:1, BD:1, T:0, EE-UD:0, EE-BD:0, EE-T:0/Vehicle-Fighter/Action: Focus a Pilot unit you control to r/
+5-//Hawkbat Base//5//Smugglers and Spies/Light/Enhancement/2/1/1/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Location-Outer Rim/Enhance your play area.&#xD;&#xA;Reaction: /
+6-//Impersonating the Crew//6//Smugglers and Spies/Light/Event/2/3/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Tactic/Reaction: After an enemy unit is focused to/
+1-//The Hostile Jungle//1//Smugglers and Spies/Light/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Myrkr/Reaction: After an enemy unit is committed /
+2-//Drang/X/2//Smugglers and Spies/Light/Unit/3/1/0/3/UD:2, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Creature-Unique/Protect [Smugglers and Spies] Character. Th/
+3-//Sturm/X/3//Smugglers and Spies/Light/Unit/3/1/0/3/UD:2, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Creature-Unique/This unit deals double damage to units comm/
+4-//Ysalamiri//4//Neutral/Light/Enhancement/1/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Creature/Enhance a friendly Character unit.&#xD;&#xA/
+5-//Ysalamiri//5//Neutral/Light/Enhancement/1/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Creature/Enhance a friendly Character unit.&#xD;&#xA/
+6-//Echoes of the Force//6//Neutral/Light/Fate/0/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//You may commit a target unit to or remove a/
+1-//Tomb of Darkness//1//Sith/Dark/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Dagobah/Limit 1 per objective deck.&#xD;&#xA;During/
+2-//Dark Specter//2//Sith/Dark/Enhancement/2/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Enhance a [Sith] objective.&#xD;&#xA;During/
+3-//Dark Specter//3//Sith/Dark/Enhancement/2/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Enhance a [Sith] objective.&#xD;&#xA;During/
+4-//Nexus of Power//4//Neutral/Dark/Enhancement/2/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Enhance a friendly objective.&#xD;&#xA;This/
+5-//Nexus of Power//5//Neutral/Dark/Enhancement/2/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Enhance a friendly objective.&#xD;&#xA;This/
+6-//Well Equipped//6//Neutral/Dark/Fate/0/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Remove 1 token (any type) from a unit or ob/
+1-//Reconditioning Techniques//1//Sith/Dark/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Lusankya/Interrupt: If a unit card would be rescued,/
+2-//Ysanne Isard/X/2//Sith/Dark/Unit/4/3/0/3/UD:0, BD:0, T:1, EE-UD:1, EE-BD:1, EE-T:0/Character-Officer-Unique/Elite&#xD;&#xA;Reaction: After you win a Fo/
+3-//Lusankya Interrogator//3//Neutral/Dark/Unit/2/2/0/2/UD:1, BD:0, T:0, EE-UD:1, EE-BD:0, EE-T:0/Character/Reaction: After you capture a card, remove /
+4-//Solitary Confinement//4//Neutral/Dark/Enhancement/1/1/1/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Torture/Enhance your play area.&#xD;&#xA;Limited.&#/
+5-//Official Inquiry//5//Sith/Dark/Event/1/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Action: Look at the top 3 cards of an oppon/
+6-//Betrayal//6//Neutral/Dark/Fate/0/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//If you win the edge battle, target particip/
+1-//The Dark Youth//1//Sith/Dark/Objective/0/0/1/8/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Sulon//
+2-//Yun//2//Sith/Dark/Unit/3/Character-Force User-Unique/0/2/UD:1, BD:1, T:0, EE-UD:0, EE-BD:1, EE-T:0/Sulon/Reaction: After an opponent plays a unique /
+3-//Sulon Garrison//3//Neutral/Dark/Unit/2/2/0/2/UD:1, BD:0, T:0, EE-UD:1, EE-BD:0, EE-T:0/Character-Trooper/Reaction: After this unit is focused to str/
+4-//Sulon Garrison//4//Neutral/Dark/Unit/2/2/0/2/UD:1, BD:0, T:0, EE-UD:1, EE-BD:0, EE-T:0/Character-Trooper/Reaction: After this unit is focused to str/
+5-//Yun&#39;s Lightsaber/X/5//Sith/Dark/Enhancement/1/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Item-Weapon-Unique/Enhance a Force Sensitive or Force User uni/
+6-//Force Blinding//6//Sith/Dark/Event/2/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Tactic/Reaction: After an enemy Character or Creat/
+1-//Engineered Suffering//1//Sith/Dark/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Coruscant/Action: During the conflict phase, play an /
+2-//Evir Derricote/X/2//Sith/Dark/Unit/4/2/0/3/UD:1, BD:0, T:1, EE-UD:0, EE-BD:1, EE-T:0/Character-Officer-Unique/Shielding.&#xD;&#xA;After you play a [Sith]/
+3-//Research Officer//3//Sith/Dark/Unit/2/1/0/2/UD:1, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:1/Character-Officer/Action: Focus this unit to return the topmo/
+4-//The Krytos Virus//4//Sith/Dark/Enhancement/0/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Enhance an enemy Character unit. Limit 1 pe/
+5-//The Krytos Virus//5//Sith/Dark/Enhancement/0/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Enhance an enemy Character unit. Limit 1 pe/
+6-//Uncontrolled Plague//6//Sith/Dark/Event/2/3/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Disaster/Action: Deal 1 damage to each enemy Charact/
+1-//I Rule//1//Sith/Dark/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Weyland/Sith Affiliation only.&#xD;&#xA;While the b/
+2-//Joruus C&#39;baoth//2//Sith/Dark/Unit/4/Character-Force User-Unique/0/3/UD:2, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:1/Weyland/Focus tokens placed by this unit&#39;s comb/
+3-//Oppressed Citizen//3//Neutral/Dark/Unit/1/1/0/1/UD:0, BD:0, T:0, EE-UD:1, EE-BD:0, EE-T:0/Character/While this unit is committed to the Force, /
+4-//Enslaved//4//Neutral/Dark/Enhancement/2/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Enhance a non-Vehicle unit with printed cos/
+5-//Force of Will//5//Sith/Dark/Event/1/Force-Control-Alter/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Action: Move 1 focus token from a target un/
+6-//Force Storm//6//Sith/Dark/Event/4/Force-Control-Alter/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Play only if the Balance of the Force is wi/
+1-//Pellaeon&#39;s Plan//1//Imperial Navy/Dark/Objective/0/0/1/4/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Chimaera/Reaction: After an engagement is declared a/
+2-//Captain Gilad Pellaeon/X/2//Imperial Navy/Dark/Unit/3/2/0/2/UD:0, BD:1, T:1, EE-UD:0, EE-BD:0, EE-T:0/Character-Officer-Unique/Elite.&#xD;&#xA;Action: During an engagemen/
+3-//TIE Defense Wing//3//Imperial Navy/Dark/Unit/2/1/0/2/UD:2, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Vehicle-Fighter/Action: Sacrifice this unit to place 1 shie/
+4-//Engineering Deck//4//Imperial Navy/Dark/Enhancement/2/0/1/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Location-Chimaera/Enhance your play area.&#xD;&#xA;Action: Fo/
+5-//Minor Setback//5//Imperial Navy/Dark/Event/1/3/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Reaction: After a friendly player&#39;s obj/
+6-//Protection//6//Neutral/Dark/Fate/0/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Place 1 shield on a target unit or objectiv/
+1-//Advanced Designs//1//Imperial Navy/Dark/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Arc Hammer/Action: Commit a unit you control to the Fo/
+2-//Phase II Dark Trooper//2//Imperial Navy/Dark/Unit/3/2/0/3/UD:0, BD:0, T:0, EE-UD:2, EE-BD:2, EE-T:0/Droid-Trooper/As long as this unit is committed to the Fo/
+3-//Phase II Dark Trooper//3//Imperial Navy/Dark/Unit/3/2/0/3/UD:0, BD:0, T:0, EE-UD:2, EE-BD:2, EE-T:0/Droid-Trooper/As long as this unit is committed to the Fo/
+4-//Supply Station//4//Imperial Navy/Dark/Enhancement/1/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Location-Anteevy/Enhance your play area.&#xD;&#xA;Reaction: /
+5-//Successful Demonstration//5//Imperial Navy/Dark/Event/1/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Reaction: After an enemy objective is destr/
+6-//Suppression Tactics//6//Neutral/Dark/Fate/0/0/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//You may focus a participating Trooper unit /
+1-//Experimental Weaponry//1//Imperial Navy/Dark/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Arc Hammer/While this objective has 2 or fewer damage /
+2-//Weapons Developer//2//Imperial Navy/Dark/Unit/2/2/0/2/UD:1, BD:0, T:0, EE-UD:0, EE-BD:1, EE-T:0/Character-Engineer/Elite/
+3-//Weapons Developer//3//Imperial Navy/Dark/Unit/2/2/0/2/UD:1, BD:0, T:0, EE-UD:0, EE-BD:1, EE-T:0/Character-Engineer/Elite/
+4-//Phase III Dark Trooper Armor//4//Imperial Navy/Dark/Enhancement/3/3/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Weapon/Enhance an [Imperial Navy] Character unit.&/
+5-//Private Research Facility//5//Imperial Navy/Dark/Enhancement/2/0/1/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Location-Arc Hammer/Enhance your play area.&#xD;&#xA;Damage dea/
+6-//Deadly Weaponry//6//Imperial Navy/Dark/Event/1/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Reaction: After a unit that is committed to/
+1-//Private Death Commandos//1//Imperial Navy/Dark/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Chimaera/Reaction: After you win a contested edge ba/
+2-//Ruhk/X/2//Imperial Navy/Dark/Unit/4/2/0/4/UD:1, BD:1, T:0, EE-UD:0, EE-BD:1, EE-T:0/Character-Unique/Shielding.&#xD;&#xA;Each unit with &#34;Nog/
+3-//Noghri Commando//3//Neutral/Dark/Unit/2/1/0/2/UD:0, BD:1, T:0, EE-UD:1, EE-BD:0, EE-T:0/Character/Targeted strike./
+4-//Kidnapping Target//4//Imperial Navy/Dark/Enhancement/1/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Enhance an enemy Character unit.&#xD;&#xA;R/
+5-//Command Meditation Chamber//5//Neutral/Dark/Enhancement/1/1/1/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Location-Chimaera/Enhance your play area.&#xD;&#xA;Limited.&#/
+6-//Target of Opportunity//6//Neutral/Dark/Fate/0/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//If you are the attacking player, deal 1 dam/
+1-//The Grand Admiral&#39;s Strategy//1//Imperial Navy/Dark/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Chimaera/Limit 1 per objective deck.&#xD;&#xA;Reacti/
+2-//Ysalamiri//2//Neutral/Dark/Enhancement/1/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Creature/Enhance a friendly Character unit.&#xD;&#xA/
+3-//Ysalamiri//3//Neutral/Dark/Enhancement/1/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Creature/Enhance a friendly Character unit.&#xD;&#xA/
+4-//Ysalamiri//4//Neutral/Dark/Enhancement/1/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Creature/Enhance a friendly Character unit.&#xD;&#xA/
+5-//Cultural Art Records//5//Neutral/Dark/Enhancement/0/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Item-Chimaera/Enhance your play area.&#xD;&#xA;Interrupt:/
+6-//The Emperor&#39;s Reserves//6//Imperial Navy/Dark/Event/1/3/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Action: Search your deck for a card that sh/
+1-//Commanding the Remnant//1//Imperial Navy/Dark/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Interrupt: When you play a card, discard 1 /
+2-//Warlord Zsinj/X/2//Imperial Navy/Dark/Unit/4/2/0/3/UD:1, BD:1, T:0, EE-UD:0, EE-BD:1, EE-T:0/Character-Officer-Unique/Elite.&#xD;&#xA;Reaction: After this unit r/
+3-//SpecForce Raptor//3//Imperial Navy/Dark/Unit/2/1/0/2/UD:1, BD:0, T:0, EE-UD:0, EE-BD:1, EE-T:0/Character-Trooper/During engagements against enemy objectives/
+4-//SpecForce Raptor//4//Imperial Navy/Dark/Unit/2/1/0/2/UD:1, BD:0, T:0, EE-UD:0, EE-BD:1, EE-T:0/Character-Trooper/During engagements against enemy objectives/
+5-//Withering Fire//5//Imperial Navy/Dark/Event/3/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//During an engagement, deal 1 damage to each/
+6-//Preparation and Planning//6//Neutral/Dark/Fate/0/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Reduce the cost of the next event card you /
+1-//The Ruthless Hunter//1//Scum and Villainy/Dark/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Interrupt: When a friendly unit is destroye/
+2-//Dengar/X/2//Scum and Villainy/Dark/Unit/4/3/0/3/UD:1, BD:1, T:1, EE-UD:0, EE-BD:0, EE-T:0/Character-Bounty Hunter-Pilot-Unique/Pilot(2). (Reaction: After enhanced unit is/
+3-//Punishing One/X/3//Scum and Villainy/Dark/Unit/3/1/0/3/UD:2, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Vehicle-Transport-Unique/Action: During your deployment phase, attac/
+4-//Scouting Vessel//4//Neutral/Dark/Unit/2/1/0/2/UD:0, BD:1, T:0, EE-UD:1, EE-BD:0, EE-T:0/Vehicle-Fighter/Interrupt: When this unit resolves its [Bla/
+5-//Astromech Gunner//5//Neutral/Dark/Enhancement/1/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Upgrade/Enhance a Fighter or Transport unit.&#xD;&#/
+6-//Explosive Charge//6//Scum and Villainy/Dark/Event/1/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Action: Discard a target enhancement with a/
+1-//Dangerous Criminals//1//Scum and Villainy/Dark/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Reaction: After you capture a card from pla/
+2-//Bossk/X/2//Scum and Villainy/Dark/Unit/4/3/0/3/UD:2, BD:0, T:0, EE-UD:0, EE-BD:2, EE-T:0/Character-Bounty Hunter-Pilot-Unique/Elite.&#xD;&#xA;Pilot (3). (Enhanced unit g/
+3-//Hound&#39;s Tooth/X/3//Scum and Villainy/Dark/Unit/4/3/0/3/UD:1, BD:1, T:0, EE-UD:1, EE-BD:1, EE-T:0/Vehicle-Transport-Unique/As long as this unit is particpating in an /
+4-//Prized Possession//4//Neutral/Dark/Enhancement/1/0/1/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Tatooine-Item/Enhance your play area.&#xD;&#xA;Limited. (/
+5-//Picked Up//5//Scum and Villainy/Dark/Event/1/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Action: During an engagement, capture targe/
+6-//Heat of Battle//6//Neutral/Dark/Fate/0/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Deal 1 damage to a target participating ene/
+1-//Double-Cross on Nar Shaddaa//1//Scum and Villainy/Dark/Objective/0/0/2/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Nar Shaddaa/Reaction: After a card is captured at this /
+2-//8t88/X/2//Scum and Villainy/Dark/Unit/4/2/0/3/UD:0, BD:1, T:1, EE-UD:0, EE-BD:0, EE-T:1/Droid-Bounty Hunter-Unique/This unit has elite while committed to the /
+3-//Freelance Operative//3//Neutral/Dark/Unit/3/2/0/2/UD:0, BD:1, T:0, EE-UD:1, EE-BD:0, EE-T:1/Character-Spy/Action: Spend 1 resource to discard the top/
+4-//Stolen Data Disk//4//Scum and Villainy/Dark/Enhancement/1/3/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Item/Enhance your play area.&#xD;&#xA;Action: Fo/
+5-//Decrypting Station//5//Neutral/Dark/Enhancement/2/0/1/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Location/Enhance your play area.&#xD;&#xA;Action: Fo/
+6-//Intercepted Transmission//6//Neutral/Dark/Event/1/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Action: Capture a card in target opponent&#/
+1-//Pursuing the Bounty//1//Scum and Villainy/Dark/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Tatooine/Reaction:After you capture any number of ca/
+2-//IG-88/X/2//Scum and Villainy/Dark/Unit/4/2/0/3/UD:2, BD:1, T:0, EE-UD:0, EE-BD:1, EE-T:0/Droid-Bounty Hunter-Pilot-Unique/Pilot (2). (Enhanced unit gains [Unit Damag/
+3-//IG-2000/X/3//Scum and Villainy/Dark/Unit/4/3/0/3/UD:1, BD:1, T:1, EE-UD:0, EE-BD:0, EE-T:0/Vehicle-Transport-Unique/While this unit is participating in an enga/
+4-//Inertial Dampeners//4//Scum and Villainy/Dark/Enhancement/1/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Upgrade/Enhance a Vehicle unit.&#xD;&#xA;Reaction: /
+5-//Holowan Manufactory//5//Scum and Villainy/Dark/Enhancement/1/1/1/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Location/Enhance your play area.&#xD;&#xA;Resources /
+6-//Segnor&#39;s Loop//6//Scum and Villainy/Dark/Event/1/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Interrupt: When an enemy card effect or com/
+1-//The Long Pursuit//1//Scum and Villainy/Dark/Objective/0/0/1/5/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//Action: Spend 1 resource to attach a Pilot /
+2-//Zuckuss/X/2//Scum and Villainy/Dark/Unit/3/3/0/3/UD:1, BD:1, T:0, EE-UD:0, EE-BD:0, EE-T:1/Character-Bounty Hunter-Pilot-Unique/Elite.&#xD;&#xA;Pilot (2). (Action: Focus t/
+3-//4-LOM/X/3//Scum and Villainy/Dark/Unit/2/1/0/3/UD:1, BD:1, T:0, EE-UD:0, EE-BD:0, EE-T:0/Droid-Bounty Hunter-Pilot-Unique/Pilot (2). (This Pilot enhancement does not/
+4-//Mist Hunter/X/4//Scum and Villainy/Dark/Unit/3/2/0/3/UD:1, BD:0, T:1, EE-UD:0, EE-BD:1, EE-T:0/Vehicle-Transport-Unique/While this unit is piloted, it gains, &#34;/
+5-//The Uncanny One//5//Neutral/Dark/Enhancement/1/1/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0/Location/Enhance a Pilot card.&#xD;&#xA;As long as e/
+6-//Stay on Target//6//Neutral/Dark/Fate/0/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//You may put a Pilot card into play from you/
+6-//Stay on Target//6//Neutral/Dark/Fate/0/2/0/0/UD:0, BD:0, T:0, EE-UD:0, EE-BD:0, EE-T:0//You may put a Pilot card into play from you/
