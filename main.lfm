@@ -22,19 +22,19 @@ object Form1: TForm1
     Height = 624
     Top = 0
     Width = 1089
-    ActivePage = tabAddCards
+    ActivePage = tabEditor
     Align = alClient
-    TabIndex = 2
+    TabIndex = 0
     TabOrder = 0
     TabPosition = tpBottom
     OnChange = PageControl1Change
     object tabEditor: TTabSheet
       Caption = 'Deck Editor'
-      ClientHeight = 601
+      ClientHeight = 591
       ClientWidth = 1081
       object PairSplitter1: TPairSplitter
         Left = 0
-        Height = 601
+        Height = 591
         Top = 0
         Width = 1081
         Align = alClient
@@ -42,15 +42,15 @@ object Form1: TForm1
         object PairSplitterSide1: TPairSplitterSide
           Cursor = crArrow
           Left = 0
-          Height = 601
+          Height = 591
           Top = 0
           Width = 285
           ClientWidth = 285
-          ClientHeight = 601
+          ClientHeight = 591
           object PairSplitter2: TPairSplitter
             Cursor = crVSplit
             Left = 0
-            Height = 601
+            Height = 591
             Top = 0
             Width = 285
             Align = alClient
@@ -91,31 +91,31 @@ object Form1: TForm1
             object PairSplitterSide4: TPairSplitterSide
               Cursor = crArrow
               Left = 0
-              Height = 204
+              Height = 194
               Top = 397
               Width = 285
               ClientWidth = 285
-              ClientHeight = 204
+              ClientHeight = 194
               object Panel2: TPanel
                 Left = 0
-                Height = 204
+                Height = 194
                 Top = 0
                 Width = 285
                 Align = alClient
-                ClientHeight = 204
+                ClientHeight = 194
                 ClientWidth = 285
                 Color = 9018178
                 ParentColor = False
                 TabOrder = 0
                 object ScrollBox1: TScrollBox
                   Left = 1
-                  Height = 202
+                  Height = 192
                   Top = 1
                   Width = 283
                   HorzScrollBar.Page = 100
                   VertScrollBar.Page = 165
                   Align = alClient
-                  ClientHeight = 198
+                  ClientHeight = 188
                   ClientWidth = 279
                   Color = clDefault
                   ParentColor = False
@@ -260,14 +260,14 @@ object Form1: TForm1
         object PairSplitterSide2: TPairSplitterSide
           Cursor = crArrow
           Left = 290
-          Height = 601
+          Height = 591
           Top = 0
           Width = 791
           ClientWidth = 791
-          ClientHeight = 601
+          ClientHeight = 591
           object sgdCards: TStringGrid
             Left = 0
-            Height = 486
+            Height = 476
             Top = 115
             Width = 791
             Align = alClient
@@ -5574,6 +5574,15 @@ object Form1: TForm1
         Color = clSilver
         ParentColor = False
         TabOrder = 0
+        object Memo1: TMemo
+          Left = 384
+          Height = 514
+          Top = 8
+          Width = 355
+          TabOrder = 19
+          Visible = False
+          WordWrap = False
+        end
         object btnNewCard: TButton
           Left = 616
           Height = 25
@@ -7501,15 +7510,6 @@ object Form1: TForm1
           ParentShowHint = False
           Style = csDropDownList
           TabOrder = 8
-        end
-        object Memo1: TMemo
-          Left = 384
-          Height = 514
-          Top = 8
-          Width = 355
-          TabOrder = 19
-          Visible = False
-          WordWrap = False
         end
         object Button1: TButton
           Left = 440

@@ -1,6 +1,7 @@
 181st TIE Interceptor*
 4-LOM
 501st Trooper*
+8t88
 AAC-1 Speeder Tank*
 Academy Pilot*
 Admiral Ackbar
@@ -23,12 +24,15 @@ Battle of Hoth
 Battlefield Engineers
 Believer Initiate*
 Believer in the Old Ways
+Betrayal
 Black Squadron Fighter*
 Black Squadron Pilot
 Black Sun Headhunter
 Blaster Pistol [33]
 Blizzard Force AT-ST*
 Boba Fett
+Bossk
+Bothan Spy
 Bounty
 B-Wing*
 C-3P0
@@ -45,11 +49,13 @@ Contract Hunter*
 Control Room
 Coordinated Strike
 Corellian Corvette*
+Corran Horn
 Corrupt Official*
 Dagobah Training Grounds
 Dark Alliance*
 Dark Memories*
 Dark Side Apprentice
+Dark Specter*
 Dark Trooper Legion*
 Darth Vader
 Dash Rendar
@@ -72,6 +78,7 @@ Energy Spider*
 Entangled
 Espo Trooper*
 ET-74 Communications Droid*
+Evading Authority
 Ewok Ally*
 Ewok Ambusher*
 Ewok Horde*
@@ -80,13 +87,16 @@ Ewok Lookout*
 Ewok Scout*
 Executor
 Expendable Scout
+Explosive Charge
 Ezra Bridger
 Force Choke
 Force Rejuvenation
 Force Stasis
+Force Storm
 Force Wraith*
 Forward Command Post*
 Freelance Hunter
+Freelance Operative
 Fringer Captain*
 Galactic Scum*
 Gamma Squadron TIE Bomber*
@@ -112,6 +122,7 @@ Home One
 Hoth Rearguard*
 Human Replica Droid*
 Icetromper*
+IG-88
 IG-RM Bodyguard Droid*
 I Have You Now
 Imperial Enforcers*
@@ -124,6 +135,7 @@ Interrogation Droid*
 ISB Liaison*
 Ithorian Junk Dealer*
 Jabba the Hutt
+Jan Ors
 Jawa Scavenger*
 Jawa Scrap Dealers*
 Jawa Warrior*
@@ -133,7 +145,7 @@ Join Me
 Jubba Bird*
 Kihraxz-class Assault Fighter*
 Kuati Security Team
-Kyle Katarn* [226]
+Kyle Katarn* [226,L01]
 Lando Calrissian
 Lannik Lackey*
 Leia Organa
@@ -149,16 +161,21 @@ Millennium Falcon
 Moisture Farmer*
 Mon Mothma
 MTV-7*
+My Ally Is the Force
 Navigation Droid*
 Necessary Alliances
+Nexus of Power*
 Nightsister*
 Nightsister Warrior*
 Niman Training*
 Noghri Bodyguard*
+Noghri Commando
 Novice Starship Thief*
 Obi-Wan Kenobi
+Official Inquiry
 Old Ben's Spirit*
 Operations Planner*
+Oppressed Citizen
 Outer Rim Mystic*
 Over My Dead Body
 Page's Commandos*
@@ -171,8 +188,10 @@ Precision Flying*
 Preparation and Planning
 Prized Possesion
 Probe Droid*
+Promising Student*
 Prophet of the Dark Side*
 Protection
+Punishing One
 R2-D2
 Racing Swoop*
 Rebel Assault
@@ -188,9 +207,12 @@ Reprogrammed DRK-1 Droid*
 Rescue Mission
 Reserve Troopers*
 Return of the Jedi
+Rogue Leader
+Rogue Nine
 Rogue Squadron X-Wing*
 Ruusan Colonist*
 Scout Trooper*
+Scouting Vessel
 Secret Informant*
 Secret Objective
 Security Protocols
@@ -208,11 +230,14 @@ Smuggling Freighter*
 Snowspeeder
 Spacer Cantina
 SpecForce Pathfinder*
+SpecForce Raptor*
 Spice Visions
 Stay on Target
 Subzero Defenses*
 Succumb to the Cold*
 Sullustan Weapon Tech*
+Sulon Garrison*
+Sulon Sympathizer
 Supporting Fire
 Swindled
 System Patrol Craft*
@@ -221,6 +246,7 @@ Tallon Roll
 Target of Opportunity
 Tauntaun
 Terentatek*
+The Krytos Virus*
 TIE Advanced
 TIE Escort*
 TIE Fighter
@@ -243,16 +269,20 @@ Victory-class Star Destroyer*
 Viper Probe Droid*
 VT-49 Decimator*
 Wampa*
+Weapons Developer*
 Wedge Antilles
 Weequay Elite*
 Well Equipped
 Well Paid*
+Wes Janson
 Whiphid Enforcer*
 Wilderness Fighters*
 Wolfman Scout*
 Wookie Warrior*
 X-Wing
 Yoda
+Ysalamiri* [L26*]
+Ysanne Isard
 Yub Yub!*
 Y-Wing
 Z-95 Headhunter*

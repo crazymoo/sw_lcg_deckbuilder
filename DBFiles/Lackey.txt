@@ -40,3 +40,4 @@
 40-Swayed by the Dark Side/AC
 41-Trust in the Force/AC
 42-Promise of Power/AC
+43-Legends of the Force/LotF

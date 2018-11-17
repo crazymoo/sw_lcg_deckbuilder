@@ -1997,10 +1997,10 @@ end;
 procedure TForm1.Button1Click(Sender: TObject);
 var
   f: TextFile;
-  s1, s2, title, product, faction, cardCost, cardType, forcePips,
+  s1, title, product, faction, cardCost, cardType, forcePips,
       combatIcons, traits, health, resources, cardText, forceSide,
       oSet, cardInSet, unique, packName: String;
-  i, j, k, cnt: Integer;
+  i, j, cnt: Integer;
 
   function Scrape(s: String; attr: String): String;
   var
@@ -2058,10 +2058,10 @@ begin
       else if Pos('<property', s1) > 0 then
       begin
         if Pos('Cost', s1) > 0 then cardCost := Scrape(s1, 'value')
-        else if Pos('Type', s1) > 0 then cardType := Scrape(s1, 'value')
-        else if Pos('Force', s1) > 0 then forcePips := Scrape(s1, 'value')
-        else if Pos('Combat', s1) > 0 then combatIcons := Scrape(s1, 'value')
-        else if Pos('Traits', s1) > 0 then
+        else if Pos('"Type"', s1) > 0 then cardType := Scrape(s1, 'value')
+        else if Pos('"Force"', s1) > 0 then forcePips := Scrape(s1, 'value')
+        else if Pos('"Combat Icons"', s1) > 0 then combatIcons := Scrape(s1, 'value')
+        else if Pos('"Traits"', s1) > 0 then
         begin
           traits := Scrape(s1, 'value');
           if Pos('Unique', traits) > 0 then
@@ -2069,23 +2069,17 @@ begin
           else
             unique := '';
         end
-        else if Pos('Damage', s1) > 0 then health := Scrape(s1, 'value')
-        else if Pos('Resources', s1) > 0 then resources := Scrape(s1, 'value')
-        else if Pos('Text', s1) > 0 then
+        else if Pos('"Damage Capacity"', s1) > 0 then health := Scrape(s1, 'value')
+        else if Pos('"Resources"', s1) > 0 then resources := Scrape(s1, 'value')
+        else if Pos('"Text"', s1) > 0 then
         begin
-          s2 := s1;
-          k := 0;
-          while Pos('/>', s2) <= 0 do
-          begin
-            Inc(k);
-            s2 := s2 + Memo1.Lines[i+k];
-          end;
-          cardText := Scrape(s2, 'value');
+          s1 := Memo1.Lines[i+1];
+          cardText := Copy(s1, Pos('"', s1)+1, Length(s1)-3-Pos('"', s1));
         end
-        else if Pos('Side', s1) > 0 then forceSide := Scrape(s1, 'value')
-        else if Pos('Affiliation', s1) > 0 then faction := Scrape(s1, 'value')
-        else if Pos('Block', s1) > 0 then oSet := Scrape(s1, 'value')
-        else if Pos('Block Number', s1) > 0 then cardInSet := Scrape(s1,'value')
+        else if Pos('"Side"', s1) > 0 then forceSide := Scrape(s1, 'value')
+        else if Pos('"Affiliation"', s1) > 0 then faction := Scrape(s1, 'value')
+        else if Pos('"Block"', s1) > 0 then oSet := Scrape(s1, 'value')
+        else if Pos('"Block Number"', s1) > 0 then cardInSet := Scrape(s1,'value')
       end
       else if Pos('</card', s1) > 0 then
       begin
@@ -2107,7 +2101,10 @@ begin
         cardDB[recordCount-1].combatIcons := combatIcons;
         cardDB[recordCount-1].traits := traits;
         cardDB[recordCount-1].abilityText := cardText;
-        cardDB[recordCount-1].cardPic := '';
+        if forceSide = 'Light' then
+          cardDB[recordCount-1].cardPic := 'Card-Back-LS.jpg'
+        else
+          cardDB[recordCount-1].cardPic := 'Card-Back-DS.jpg';
       end;
     end;
     SetStringGrid;

@@ -3,6 +3,7 @@ Alderaan.
 Almas.
 Alter.
 Anoat.
+Anteevy.
 Aquaris.
 Arc Hammer.
 Armor.
@@ -19,6 +20,7 @@ Boz Pity.
 Capital Ship.
 Carida.
 Character.
+Chimaera.
 Civilian.
 Classified.
 Cloud City.
@@ -32,12 +34,14 @@ Cyborg.
 Dagobah.
 Dantooine.
 Dathomir.
+Deal.
 Death Squadron.
 Death Star.
 Decoy.
 Deneba.
 Despayre.
 Diplomacy.
+Disaster.
 Doctrine.
 Droid.
 Dromund Kaas.
@@ -50,6 +54,7 @@ Ewok.
 Executor.
 Fighter.
 Fleet.
+Folor.
 Force.
 Force Sensitive.
 Force Spirit.
@@ -66,6 +71,7 @@ Grand Vizier.
 Gunner.
 Helmet.
 Home One.
+Honoghr.
 Hoth.
 Hutt.
 Imdaar Alpha.
@@ -89,6 +95,7 @@ Masterpiece.
 Marksman.
 Mechis III.
 Mercenary.
+Mercy.
 Millenium Falcon.
 Mission.
 Mon Cala.
@@ -101,7 +108,9 @@ Obsidian Squadron.
 Officer.
 Operation.
 Ord Mantell.
+Oulanne.
 Outer Rim.
+Peregrine's Nest.
 Pilot.
 Prakith.
 Prefsbelt.
@@ -132,15 +141,18 @@ Spy.
 Squadron.
 Stygeon Prime.
 Sullust.
+Sulon.
 Sulon Star.
 Taanab.
 Tactic.
 Tactician.
 Talay.
+Talent.
 Tatooine.
 Tepasi.
 Thief.
 Title.
+Torture.
 Trandosha.
 Transport.
 Trap.
@@ -149,5 +161,6 @@ Upgrade.
 Vehicle.
 Walker.
 Weapon.
+Weyland.
 Wookiee.
 Yavin 4.

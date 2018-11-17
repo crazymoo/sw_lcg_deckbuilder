@@ -1,3 +1,7 @@
+Update - (11/16/2018)
+- Added Legends of the Force Fan-made Force Pack
+- Fixed a few Lackey Deck creation bugs...still testing to try and find others if they exist.
+
 Update - (04/28/2018)
 - Added Trust in the Force Force Pack
 - Added Promise of Power Force Pack
