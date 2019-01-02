@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 236
+  Left = 371
   Height = 649
-  Top = 109
+  Top = 168
   Width = 1089
   AllowDropFiles = True
   Caption = 'Star Wars The Card Game Deck Builder'
@@ -113,7 +113,10 @@ object Form1: TForm1
                   Top = 1
                   Width = 283
                   HorzScrollBar.Page = 100
+                  VertScrollBar.Increment = 16
                   VertScrollBar.Page = 165
+                  VertScrollBar.Smooth = True
+                  VertScrollBar.Tracking = True
                   Align = alClient
                   ClientHeight = 188
                   ClientWidth = 279
@@ -133,9 +136,9 @@ object Form1: TForm1
                       '================================'
                     )
                     ItemHeight = 20
-                    OnClick = BucketClick
-                    OnDblClick = BucketDblClick
                     OnExit = BucketExit
+                    OnMouseDown = BucketMouseDown
+                    OnMouseWheel = lbxObjectivesMouseWheel
                     ParentFont = False
                     TabOrder = 0
                   end
@@ -151,9 +154,9 @@ object Form1: TForm1
                       'Faction - <none selected>'
                     )
                     ItemHeight = 20
-                    OnClick = BucketClick
-                    OnDblClick = BucketDblClick
                     OnExit = BucketExit
+                    OnMouseDown = BucketMouseDown
+                    OnMouseWheel = lbxObjectivesMouseWheel
                     ParentFont = False
                     TabOrder = 1
                   end
@@ -170,9 +173,9 @@ object Form1: TForm1
                       '================================'
                     )
                     ItemHeight = 20
-                    OnClick = BucketClick
-                    OnDblClick = BucketDblClick
                     OnExit = BucketExit
+                    OnMouseDown = BucketMouseDown
+                    OnMouseWheel = lbxObjectivesMouseWheel
                     ParentFont = False
                     TabOrder = 2
                   end
@@ -189,9 +192,9 @@ object Form1: TForm1
                       '================================'
                     )
                     ItemHeight = 20
-                    OnClick = BucketClick
-                    OnDblClick = BucketDblClick
                     OnExit = BucketExit
+                    OnMouseDown = BucketMouseDown
+                    OnMouseWheel = lbxObjectivesMouseWheel
                     ParentFont = False
                     TabOrder = 3
                   end
@@ -208,9 +211,9 @@ object Form1: TForm1
                       '================================'
                     )
                     ItemHeight = 20
-                    OnClick = BucketClick
-                    OnDblClick = BucketDblClick
                     OnExit = BucketExit
+                    OnMouseDown = BucketMouseDown
+                    OnMouseWheel = lbxObjectivesMouseWheel
                     ParentFont = False
                     TabOrder = 4
                   end
@@ -227,9 +230,9 @@ object Form1: TForm1
                       '================================'
                     )
                     ItemHeight = 20
-                    OnClick = BucketClick
-                    OnDblClick = BucketDblClick
                     OnExit = BucketExit
+                    OnMouseDown = BucketMouseDown
+                    OnMouseWheel = lbxObjectivesMouseWheel
                     ParentFont = False
                     TabOrder = 5
                   end
@@ -246,9 +249,9 @@ object Form1: TForm1
                       '================================'
                     )
                     ItemHeight = 20
-                    OnClick = BucketClick
-                    OnDblClick = BucketDblClick
                     OnExit = BucketExit
+                    OnMouseDown = BucketMouseDown
+                    OnMouseWheel = lbxObjectivesMouseWheel
                     ParentFont = False
                     TabOrder = 6
                   end
@@ -309,10 +312,10 @@ object Form1: TForm1
               ParentColor = False
               TabOrder = 0
               object btnClearFilters: TButton
-                Left = 8
+                Left = 0
                 Height = 25
                 Top = 1
-                Width = 75
+                Width = 96
                 Caption = 'Clear Filters'
                 OnClick = btnClearFiltersClick
                 TabOrder = 0
@@ -454,7 +457,7 @@ object Form1: TForm1
                 Left = 488
                 Height = 28
                 Top = 58
-                Width = 187
+                Width = 211
                 AutoSize = False
                 ItemHeight = 20
                 ItemIndex = 0
@@ -470,7 +473,7 @@ object Form1: TForm1
               end
               object btnProducts: TButton
                 Left = 100
-                Height = 23
+                Height = 25
                 Top = 58
                 Width = 187
                 Caption = 'Select Product(s)'

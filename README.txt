@@ -20,10 +20,10 @@ when the grid is in the Card ID# sort order (ascending).
 To put an objective set into your deck, double-click on a card within the grid.
 This puts a single copy of the entire objective set into the decks you are 
 constructing (both Objective deck and Command deck).  To remove an objective set 
-from your decks, simply double-click on a card within the 'Deck constructed 
-view' pane (lower-left under the card viewer pane) and all cards from that 
-single set will be removed from the decks (both Objective deck and Command 
-deck).  
+from your decks, select any card within a bucket with a left-click within the 
+'Deck constructed view' pane (lower-left under the card viewer pane) and then 
+right-click on that selection.  All cards from that single set will be removed 
+from the decks (both Objective deck and Command deck).  
 
 The 'Deck constructed view' pane shows your current decks broken down by card 
 types.  Your entire Objective deck is contained within the Objectives viewer 

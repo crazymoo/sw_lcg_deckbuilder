@@ -8,7 +8,7 @@ uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ComCtrls,
   ExtCtrls, Grids, StdCtrls, LCLType, LazLogger, TAGraph, TATools, TASeries,
   TAChartUtils, IntfGraphics, GraphType, PairSplitter, Menus,
-  Unit1, Unit2, Globals;
+  Unit1, Unit2, Globals, Types;
 
 type
 
@@ -222,6 +222,9 @@ type
     procedure FormDestroy(Sender: TObject);
     procedure FormDropFiles(Sender: TObject; const FileNames: array of String);
     procedure FormMouseDown(Sender: TObject; Button: TMouseButton);
+    procedure BucketMouseDown(Sender: TObject; Button: TMouseButton);
+    procedure lbxObjectivesMouseWheel(Sender: TObject; Shift: TShiftState;
+      WheelDelta: Integer; MousePos: TPoint; var Handled: Boolean);
     procedure mniLoadLackeyClick(Sender: TObject);
     procedure mniLoadOctgnClick(Sender: TObject);
     procedure mniNewDeckClick(Sender: TObject);
@@ -235,8 +238,8 @@ type
     procedure radCommandClick(Sender: TObject);
     procedure sgdCardsClick(Sender: TObject);
     procedure sgdCardsDblClick(Sender: TObject);
-    procedure BucketClick(Sender: TObject);
-    procedure BucketDblClick(Sender: TObject);
+    procedure BucketSelectClick(Sender: TObject);
+    procedure BucketDelClick(Sender: TObject);
     procedure sgdCardsMouseDown(Sender: TObject; Button: TMouseButton);
     procedure sgdCardsSelection(Sender: TObject);
     procedure BucketExit(Sender: TObject);
@@ -373,6 +376,21 @@ begin
   if Button = mbRight then
     tabAddCards.TabVisible := not tabAddCards.TabVisible;
 end;
+
+procedure TForm1.BucketMouseDown(Sender: TObject; Button: TMouseButton);
+begin
+  if Button = mbRight then
+    BucketDelClick(Sender)
+  else if Button = mbLeft then
+    BucketSelectClick(Sender);
+end;
+
+procedure TForm1.lbxObjectivesMouseWheel(Sender: TObject; Shift: TShiftState;
+  WheelDelta: Integer; MousePos: TPoint; var Handled: Boolean);
+begin
+  Handled := true;
+end;
+
 
 procedure TForm1.mniLoadLackeyClick(Sender: TObject);
 var
@@ -1241,28 +1259,32 @@ begin
   pnlCommandDeck.Visible:=True;
 end;
 
-procedure TForm1.BucketClick(Sender: TObject);
+procedure TForm1.BucketSelectClick(Sender: TObject);
 var
   s, title, setnumber, cardNum, tmpStr: String;
   i, j, index, start, stop: Integer;
 begin
   if TListBox(Sender) <> formerBucket then
     formerBucket.Color := clDefault;
-  TListBox(Sender).Color := clSLOTSELECT;
   bucket := Trim(Copy(TListBox(Sender).Name, 4, 99));
   if (TListBox(Sender).Name = 'lbxFaction') then
   begin
+    TListBox(Sender).Color := clSLOTSELECT;
     btnClearFiltersClick(Sender);
     TListBox(Sender).ItemIndex := -1
   end
   else
   if (TListBox(Sender).Height = 21) and (TListBox(Sender).ItemIndex < 2) and
      (TListBox(Sender).Name <> 'lbxFaction') then
+  begin
+    TListBox(Sender).Color := clSLOTSELECT;
     ResizeBucket(TListBox(Sender))
+  end
   else
   if (TListBox(Sender).Height > 21) and (TListBox(Sender).ItemIndex < 2) and
      (TListBox(Sender).Name <> 'lbxFaction') then
   begin
+    TListBox(Sender).Color := clSLOTSELECT;
     TListBox(Sender).Height := 21;
     TListBox(Sender).ItemIndex := -1;
     lbxMissions.Top := 0;
@@ -1279,12 +1301,14 @@ begin
   index:=99;
   if TListBox(Sender).ItemIndex > 1 then
   begin
+    TListBox(Sender).Color := clSLOTSELECT;
     btnClearFiltersClick(Sender);
     index := Pos('(', TListBox(Sender).Items[TListBox(Sender).ItemIndex]);
   end;
   if (TListBox(Sender).Name = 'lbxFaction') and
      (TListBox(Sender).Items[0] <> 'Faction - <none selected>') then
   begin
+    TListBox(Sender).Color := clSLOTSELECT;
     j := Pos('- ', TListBox(Sender).Items[0]);
     s := Trim(Copy(TListBox(Sender).Items[0], j+2, index-(j+2)-1));
     for i:=1 to sgdCards.RowCount-1 do
@@ -1297,6 +1321,7 @@ begin
   else
   if (TListBox(Sender).Name <> 'lbxFaction') and (TListBox(Sender).ItemIndex > 1) then
   begin
+    TListBox(Sender).Color := clSLOTSELECT;
     s := Copy(TListBox(Sender).Items[TListBox(Sender).ItemIndex], 5, index+1);
     tmpStr:= Trim(Copy(s, index-5, 99));
     start:=Pos('(', tmpStr)+1;
@@ -1315,7 +1340,7 @@ begin
   end;
 end;
 
-procedure TForm1.BucketDblClick(Sender: TObject);
+procedure TForm1.BucketDelClick(Sender: TObject);
 var
   sNum, tmpStr: String;
   start, stop: Integer;

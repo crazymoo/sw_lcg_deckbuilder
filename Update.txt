@@ -1,17 +1,28 @@
 Update - version 1.0.7.1 (01/01/2019)
-- Fixed the mouse wheel to now scroll the list and not the selection.
+- Fixed the mouse wheel to now scroll the grid and not the selection within the grid.
+- New behavior for the card 'Buckets'; removed the mouse double-click to remove a set from 
+  your deck.  There were some timing issues involved between single and double clicks when 
+  the mouse was within a bucket, causing a set to not be properly deleted sometimes.
+  
+  You now must first select a card in any of the buckets with a left click and then if you 
+  wish to remove the selected set from your deck simply click the right mouse button on the 
+  highlighted selection to delete the set from the buckets and deck.
+
 
 Update - (11/16/2018)
 - Added Legends of the Force Fan-made Force Pack
 - Fixed a few Lackey Deck creation bugs...still testing to try and find others if they exist.
 
+
 Update - (04/28/2018)
 - Added Trust in the Force Force Pack
 - Added Promise of Power Force Pack
-= All of the Alliances Cycle has now been scanned in.
+- All of the Alliances Cycle has now been scanned in.
+
 
 Update - (01/24/2018)
 - Fixed the set view window to display the proper set now when grid filters are on.
+
 
 Update - (01/19/2017)
 - Added Swayed by the Dark Side Force Pack
@@ -21,26 +32,33 @@ Update - (01/19/2017)
 - NOTE: Using FFG watermarked images for these packs until I can get a 
         new scanner and scan in my own card images.
 
+
 Update - (03/16/2017)
 - Added Power of the Force Force Pack
 - Modified the Select Products grid button to allow users to select multiple products to filter by.
 
+
 Update - (1/12/2017)
 - Added Scrap Metal Force Pack
+
 
 Update - version 1.0.6.0 (1/1/2017)
 - Added Lackey Deck Load/Save functionality
 - Added a bit of color to the User Interface
 - Added the ability to drap/drop card image files onto the app for the highlighted card in the grid.
 
+
 Update - version 1.0.5.5 (12/19/2016)
  - Added 'A Wretched Hive' & 'Meditation and Mastery'
+
 
 Update - version 1.0.5.4 (09/09/2016)
  - Added Ancient Rivals
 
+
 Update - version 1.0.5.3 (07/14/2016)
  - Added Redemption and Return
+
 
 Update - version 1.0.5.2 (06/12/2016)
  - Added Galactic Ambitions
@@ -53,7 +71,6 @@ Update - version 1.0.5.1 (05/31/2016)
  - Fixed a bug where similar names of card titles (e.g. Maw of Madness and Maw)
    was causing the wrong card to appear on the Objective Flop on the Deck
    Stats tab.
-   
    
 
 Update - version 1.0.4.1 (xx/xx/xxxx)
@@ -71,7 +88,6 @@ Update - version 1.0.4.1 (xx/xx/xxxx)
    
    To exit the Set View window, either click the 'X' button or right-mouse click
    anywhere within the window.
-
 
 
 Update - version 1.0.3.5 (04/07/2016)
