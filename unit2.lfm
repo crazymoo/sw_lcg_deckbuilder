@@ -7,9 +7,10 @@ object frmProductsSelect: TfrmProductsSelect
   Caption = 'Select the products to filter by:'
   ClientHeight = 420
   ClientWidth = 402
+  DesignTimePPI = 120
   OnShow = FormShow
   Position = poMainFormCenter
-  LCLVersion = '1.8.0.6'
+  LCLVersion = '1.8.2.0'
   object Button1: TButton
     Left = 840
     Height = 25
@@ -25,6 +26,8 @@ object frmProductsSelect: TfrmProductsSelect
     Width = 402
     HorzScrollBar.Page = 1
     VertScrollBar.Page = 1
+    VertScrollBar.Smooth = True
+    VertScrollBar.Tracking = True
     Align = alClient
     TabOrder = 1
   end
